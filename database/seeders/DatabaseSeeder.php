@@ -3,6 +3,10 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\Role;
+use App\Models\User;
+use App\Models\MediaLibrary;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,6 +17,23 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        // Roles
+        Role::firstOrCreate(['name' => Role::ROLE_EDITOR]);
+        $role_admin = Role::firstOrCreate(['name' => Role::ROLE_ADMIN]);
+
+        // MediaLibrary
+        MediaLibrary::firstOrCreate([]);
+
+        // Users
+        $user = User::firstOrCreate(
+            ['email' => 'tantoan1909@gmail.com'],
+            [
+                'name' => 'Tan Toan',
+                'password' => Hash::make('password'),
+                'email_verified_at' => now()
+            ]
+        );
+
+        $user->roles()->sync([$role_admin->id]);
     }
 }
