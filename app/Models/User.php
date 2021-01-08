@@ -57,4 +57,19 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(Role::class)->withTimestamps();
     }
+
+    public function hasRole(string $role): bool
+    {
+        return $this->roles->where('name', $role)->isNotEmpty();
+    }
+
+    public function isAdmin(): bool
+    {
+        return $this->hasRole(Role::ROLE_ADMIN);
+    }
+
+    public function isEditor(): bool
+    {
+        return $this->hasRole(Role::ROLE_EDITOR);
+    }
 }
