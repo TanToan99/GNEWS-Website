@@ -19,6 +19,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
+                    @include('admin/shared/alerts')
                     <div class="card">
                         <div class="card-body">
                             @yield('content')

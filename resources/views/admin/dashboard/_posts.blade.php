@@ -8,7 +8,7 @@
     </div>
 
     <x-slot name="footer">
-        <a href="#" class="d-flex justify-content-between text-dark">
+        <a href="{{ route('admin.posts.index') }}" class="d-flex justify-content-between text-dark">
             <span>Details</span>
             <span><i class="fa fa-arrow-circle-right"></i></span>
         </a>
