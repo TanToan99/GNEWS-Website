@@ -29,6 +29,6 @@
             @enderror
         </div>
         <a href="{{ route('admin.posts.index') }}" class="btn btn-secondary">Back</a>
-        <input class="btn btn-primary" type="submit" value="Update">
+        <input class="btn btn-primary" type="submit" value="Create">
     </form>
 @endsection
