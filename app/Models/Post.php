@@ -15,12 +15,11 @@ class Post extends Model
         'author_id',
         'title',
         'content',
-        'posted_at',
         'thumbnail_id',
     ];
 
     protected $dates = [
-        'posted_at'
+        'created_at'
     ];
 
     public function author(): BelongsTo

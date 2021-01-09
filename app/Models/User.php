@@ -82,4 +82,11 @@ class User extends Authenticatable
     {
         return Str::title($this->name);
     }
+
+    public function scopeAuthors(Builder $query): Builder
+    {
+        return $query->whereHas('roles', function ($query) {
+            $query->where('roles.name', Role::ROLE_ADMIN)->orWhere('roles.name', Role::ROLE_EDITOR);
+        });
+    }
 }

@@ -13,7 +13,7 @@
             <tr>
                 <td>{{ $post->title }}</td>
                 <td>{{ $post->author->fullname }}</td>
-                <td>{{ humanize_date($post->posted_at, 'd/m/Y H:i:s') }}</td>
+                <td>{{ humanize_date($post->created_at, 'd/m/Y H:i:s') }}</td>
                 <td>
                     
                 </td>

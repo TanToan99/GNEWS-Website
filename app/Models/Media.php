@@ -3,29 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Spatie\MediaLibrary\MediaCollections\Models\Media as BaseMedia;
 
-class Media extends Model
+class Media extends BaseMedia
 {
     use HasFactory;
-
-    protected $fillable = [
-        'name',
-        'file_name',
-        'uuid',
-        'conversions_disk',
-        'thumbnail_id',
-        'model',
-        'collection_name',
-        'mime_type',
-        'disk',
-        'size',
-        'manipulations',
-        'custom_properties',
-        'responsive_images',
-        'posted_at',
-        'order_column'
-    ];
 
     protected $dates = [
         'posted_at'

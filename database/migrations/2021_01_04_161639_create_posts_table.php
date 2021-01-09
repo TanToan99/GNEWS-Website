@@ -18,7 +18,6 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->index('title');
             $table->text('content');
-            $table->datetime('posted_at');
             $table->bigInteger('author_id')->unsigned()->nullable();
             $table->foreign('author_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
