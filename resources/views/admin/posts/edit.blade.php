@@ -1,0 +1,34 @@
+@extends('admin.layouts.app')
+
+@section('content')
+    <p>Edit post</p>
+    <form method="PUT" action="{{ route('admin.posts.update',$post) }}" enctype="multipart/form-data">
+        <div class="form-group">
+            {{ $media('thumb') }}
+        </div>
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input class="form-control" required="" name="title" type="text" value="Hello World" id="title">
+        </div>
+        <div class="form-group">
+            <label for="thumbnail">Thumbnail image(If dont change, no need to input)</label>
+            <input type="file" name="thumbnail" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="content">Content</label>
+            <textarea class="form-control form-control trumbowyg-form" id="content" name="content">{{ $post->content }}</textarea>
+            @error('content')
+                <span class="invalid-feedback">{{ $message }}</span>
+            @enderror
+        </div>
+        <div class="pull-left">
+            <a href="{{ route('admin.posts.index') }}" class="btn btn-secondary">Back</a>
+            <input class="btn btn-primary" type="submit" value="Update">
+        </div>
+    </form>
+    <form method="POST" action="{{ route('admin.posts.destroy',$post) }}">
+        @csrf
+        <input name="_method" type="hidden" value="DELETE">
+        <input class="btn btn-primary" type="submit" value="Delete">
+    </form>
+@endsection
