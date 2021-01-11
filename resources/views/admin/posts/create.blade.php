@@ -15,7 +15,7 @@
             @enderror
         </div>
         <div class="form-group">
-            <label for="thumbnail">Thumbnail image</label>
+            <label for="thumbnail">Thumbnail Image</label>
             <input type="file" name="thumbnail" class="form-control">
             @error('thumbnail')
                 <span class="invalid-feedback">{{ $message }}</span>

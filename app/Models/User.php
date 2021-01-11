@@ -89,4 +89,9 @@ class User extends Authenticatable
             $query->where('roles.name', Role::ROLE_ADMIN)->orWhere('roles.name', Role::ROLE_EDITOR);
         });
     }
+
+    public function canBeAuthor()
+    {
+        return $this->isAdmin() || $this->isEditor();
+    }
 }
