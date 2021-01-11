@@ -2,8 +2,10 @@
 
 @section('content')
     <p>Edit post</p>
-    <form method="PUT" action="{{ route('admin.posts.update',$post) }}" enctype="multipart/form-data">
-        <div class="form-group" style="text-align: center; ">
+    <form method="POST" action="{{ route('admin.posts.update',$post) }}" enctype="multipart/form-data">
+        @csrf
+        <input name="_method" type="hidden" value="PATCH">
+        <div class="form-group" style="text-align: center;">
             <img src="{{ $post->thumbnail->getUrl('thumb') }}" alt="image" class="img-thumbnail ">
         </div>
         <div class="form-group">

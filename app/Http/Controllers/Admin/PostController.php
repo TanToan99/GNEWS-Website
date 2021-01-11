@@ -90,9 +90,21 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Post $post)
     {
-        //
+        $data = $request->only(['title', 'content']);
+        if($request->has('thumbnail')){
+            $post->thumbnail->delete();
+            $image = $request->file('thumbnail');
+            $name = md5(time()).'.jpg';;
+            $id = MediaLibrary::first()
+                ->addMedia($image)
+                ->usingName($name)
+                ->toMediaCollection()->id;
+            $data = array_merge($data,['thumbnail_id' => $id,]);
+        }
+        $post->update($data);
+        return redirect()->route('admin.posts.edit', $post)->withSuccess("Update success");
     }
 
     /**
@@ -103,8 +115,8 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        $post->thumbnail()->media()->delete();
+        $post->thumbnail->delete();
         $post->delete();
-        return redirect()->route('admin.posts.index')->withSuccess(__('posts.deleted'));
+        return redirect()->route('admin.posts.index')->withSuccess("Delete post success");
     }
 }
