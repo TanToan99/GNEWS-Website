@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
     <div class="container">
         <!-- Branding Image -->
-        <a href="{{ route('home') }}" class="navbar-brand">DSC OuG</a>
+        <a href="{{ route('home') }}" class="navbar-brand">DSC Greenwich</a>
 
         <!-- Collapsed Hamburger -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
