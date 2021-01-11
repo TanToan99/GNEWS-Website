@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\PostsRequest;
+use App\Models\Media;
+use App\Models\MediaLibrary;
 use App\Models\Post;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -44,7 +46,7 @@ class PostController extends Controller
     {
         $image = $request->file('thumbnail');
         $name = md5(time()).'.jpg';;
-        $id = Post::first()
+        $id = MediaLibrary::first()
             ->addMedia($image)
             ->usingName($name)
             ->toMediaCollection()->id;;
@@ -77,8 +79,7 @@ class PostController extends Controller
     public function edit(Post $post)
     {
         return view('admin.posts.edit', [
-            'post' => $post,
-            'media' => Post::find($post->id)->first()->getFirstMedia()
+            'post' => $post
         ]);
     }
 
@@ -102,7 +103,7 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        Post::find($post->id)->first()->media()->delete();
+        $post->thumbnail()->media()->delete();
         $post->delete();
         return redirect()->route('admin.posts.index')->withSuccess(__('posts.deleted'));
     }
