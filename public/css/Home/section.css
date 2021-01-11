@@ -1,0 +1,197 @@
+/* slide */
+
+* {
+   box-sizing: border-box
+}
+
+h2 {
+   text-align: center;
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+   max-width: 500px;
+   position: relative;
+   margin: auto;
+}
+
+.slideshow-container img {
+   width: 1000px;
+   height: 550px;
+   margin-left: -250px;
+   margin-top: 20px;
+}
+
+.mySlides {
+   display: none;
+}
+
+/* định dạng các chấm chuyển đổi các slide */
+
+.dot {
+   cursor: pointer;
+   height: 13px;
+   width: 13px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+}
+
+/* khi được hover, active đổi màu nền */
+
+.active, .dot:hover {
+   background-color: #717171;
+}
+
+/* Thêm hiệu ứng khi chuyển đổi các slide */
+
+.fade {
+   -webkit-animation-name: fade;
+   -webkit-animation-duration: 3s;
+   animation-name: fade;
+   animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+   from {
+      opacity: .4
+   }
+   to {
+      opacity: 1
+   }
+}
+
+@keyframes fade {
+   from {
+      opacity: .4
+   }
+   to {
+      opacity: 1
+   }
+}
+
+/* Fact */
+
+.fact {
+   display: inline;
+   margin-top: 700px;
+}
+
+.container {
+   background: url("/Image/back1.gif");
+}
+
+.fact1 {
+   display: flex;
+   align-items: center;
+}
+
+.fact2 {
+   display: flex;
+   align-items: center;
+}
+
+.textfact {
+   display: inline;
+   align-items: center;
+}
+
+.fact img {
+   width: 400px;
+   height: 400px;
+   border-radius: 20px;
+}
+
+.fact1 {
+   background: white;
+   background-size: 200px 300px;
+   border-style: groove;
+   border-radius: 15px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+.fact1 img {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 80px;
+}
+
+.fact2 {
+   background: white;
+   background-size: 200px 300px;
+   border-style: groove;
+   border-radius: 15px;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+
+.fact2 img {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-left: 65%;
+}
+
+.textfact h3 {
+   text-align: center;
+   color: rgb(255, 52, 1);
+   font-size: 22px;
+}
+
+.textfact h4 {
+   text-align: justify;
+   margin-left: 70px;
+   margin-right: 100px;
+   font-weight: 100;
+   line-height: 30px;
+   font-size: 18px;
+}
+
+.fact .fact2 .textfact h3 {
+   margin-left: -1100px;
+   margin-right: 600px;
+}
+
+.fact .fact2 .textfact h4 {
+   margin-left: -1100px;
+   margin-right: 600px;
+}
+
+/* DSC in your mind */
+
+.mind {
+   display: flex;
+}
+
+#mindh3 {
+   text-align: center;
+   font-weight: bold;
+   font-style: georgia;
+   padding: 25px;
+   padding-bottom: 15px;
+   background: url("/Image/back2.gif");
+   background-size: 100px 200px;
+   color: rgb(255, 81, 37);
+   font-size: 25px;
+}
+
+.yourmind img {
+   width: 420px;
+   height: 270px;
+   padding: 10px;
+   border-style: ridge;
+   border-radius: 5px;
+   margin-left: 20px;
+}
+
+.gitvideo {
+   text-align: center;
+   margin-top: 20px;
+}
