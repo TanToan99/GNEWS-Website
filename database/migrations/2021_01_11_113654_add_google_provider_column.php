@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddGoogleIdColumn extends Migration
+class AddGoogleProviderColumn extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class AddGoogleIdColumn extends Migration
      */
     public function up()
     {
-        Schema::table('users', function ($table) {
-            $table->string('google_id')->nullable();
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('provider');
+            $table->string('provider_id');
         });
     }
 
@@ -25,6 +26,9 @@ class AddGoogleIdColumn extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('provider');
+            $table->dropColumn('provider_id');
+        });
     }
 }
