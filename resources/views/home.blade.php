@@ -24,15 +24,13 @@
                <li><a class="acti" href="#home">Home</a></li>
                <li><a href="https://www.facebook.com/dsc.uog">Fanpage</a></li>
                <li><a href="#AboutUs">About Us</a></li>
-               @guest
-               <li><a href="{{ route('login') }}">Login</a></li>
-               @endguest
-               @if(auth()->user()->canBeAuthor())
-               <li><a href="{{ route('admin.dashboard.index') }}">Admin</a></li>
+               @if(!Auth::check())
+               <li><a href="{{ URL::to('auth/google') }}">Login</a></li>
+               @else
+               {{ Auth::user()->fullname }}
                @endif
             </ul>
          </div>
-
       </div>
    </header>
    <section>

@@ -3,9 +3,6 @@
 @section('content')
     <h1>@lang('Create post')</h1>
     <form method="POST" action="{{ route('admin.posts.store') }}" enctype="multipart/form-data">
-        @php
-            $posted_at = old('posted_at') ?? (isset($post) ? $post->posted_at->format('Y-m-d\TH:i') : null);
-        @endphp
         @csrf
         <div class="form-group">
             <label for="title">Title</label>

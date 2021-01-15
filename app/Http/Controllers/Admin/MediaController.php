@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
+use App\Http\Requests\Admin\MediaRequest;
+use App\Models\Media;
+use App\Models\MediaLibrary;
 
 class MediaController extends Controller
 {
@@ -14,7 +16,9 @@ class MediaController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.media.index', [
+            'media' => MediaLibrary::first()->media()->get()
+        ]);
     }
 
     /**
@@ -24,18 +28,26 @@ class MediaController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.media.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  MediaRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(MediaRequest $request)
     {
-        //
+        $image = $request->file('image');
+        $name = $image->getClientOriginalName();
+
+        MediaLibrary::first()
+            ->addMedia($image)
+            ->usingName($name)
+            ->toMediaCollection();
+
+        return redirect()->route('admin.media.index')->withSuccess("Create success");
     }
 
     /**
@@ -44,32 +56,9 @@ class MediaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Media $medium): Media
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
+        return $medium;
     }
 
     /**
@@ -78,8 +67,9 @@ class MediaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Media $medium)
     {
-        //
+        $medium->delete();
+        return redirect()->route('admin.media.index')->withSuccess("Delete success");
     }
 }

@@ -1,8 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
     <div class="container">
         <!-- Branding Image -->
-        <a href="{{ route('home') }}" class="navbar-brand">DSC Greenwich</a>
-
+        <a href="{{ route('home') }}" class="navbar-brand">DSC UoG (DN Campus)</a>
         <!-- Collapsed Hamburger -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

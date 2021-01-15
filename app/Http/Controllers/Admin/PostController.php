@@ -45,7 +45,7 @@ class PostController extends Controller
     public function store(PostsRequest $request)
     {
         $image = $request->file('thumbnail');
-        $name = md5(time()).'.jpg';;
+        $name = $image->getClientOriginalName();
         $id = MediaLibrary::first()
             ->addMedia($image)
             ->usingName($name)
