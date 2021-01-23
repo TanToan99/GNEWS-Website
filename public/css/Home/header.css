@@ -1,21 +1,118 @@
 body {
-   background-color: #FAFAFA;
+   background-color: #f3ededa6 !important;
    background-repeat: no-repeat;
    background-size: 500px 300px;
    background-position: center top 100px;
 }
 
 .navbar {
-   height: 72px;
-   background-color: white;
+   background-color: rgb(255, 255, 255);
    display: flex;
    align-items: center;
+   height: 80px;
+}
+
+.navbar ul {
+   list-style-type: none;
+   margin: auto;
+   padding: 0;
+   float: right;
+}
+
+li {
+   text-decoration: none;
+   list-style-type: none;
+   margin-top: -4px;
+}
+
+.navbar li {
+   float: left;
+   list-style-type: none;
+   margin-left: 20px;
+}
+
+.navbar li a {
+   display: block;
+   color: rgb(37, 41, 37);
+   text-align: center;
+   padding: 14px 16px;
+   font-size: 20px;
+   text-decoration: none;
+   list-style-type: none;
+}
+
+.navbar li a:hover {
+   background-color: rgb(245, 238, 238);
 }
 
 #Logo {
    border-radius: 50%;
    width: 70px;
    height: 70px;
+   margin-top: -4px;
+}
+
+/* Login */
+
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+.login {
+   background-color: #000000;
+   border: none;
+   color: #ffffff !important;
+   cursor: pointer;
+   display: inline-block;
+   font-family: 'BenchNine', Arial, sans-serif;
+   font-size: 15px !important;
+   line-height: 0.5em;
+   margin-left: 450px;
+   outline: none;
+   position: relative;
+   font-weight: 700;
+   margin-top: 12px;
+   border-radius: 5px;
+}
+
+.login:before, .login:after {
+   border-color: transparent;
+   -webkit-transition: all 0.25s;
+   transition: all 0.25s;
+   border-style: solid;
+   border-width: 0;
+   content: "";
+   height: 10px s;
+   position: absolute;
+   width: 10px;
+}
+
+.login:before {
+   border-color: #474543;
+   border-top-width: 2px;
+   left: 0px;
+   top: -5px;
+}
+
+.login:after {
+   border-bottom-width: 2px;
+   border-color: #474543;
+   bottom: -5px;
+   right: 0px;
+}
+
+.login:hover, .login.hover {
+   background-color: #c0bab5;
+   color: rgb(70, 88, 78) !important;
+}
+
+.login:hover:before, .login.hover:before, .login:hover:after, .login.hover:after {
+   height: 100%;
+   width: 100%;
+}
+
+.username {
+   color: rgb(128, 120, 120);
+   margin-left: 270px !important;
+   border: 1px solid rgb(99, 93, 93);
+   border-radius: 8px;
 }
 
 .LogoText {
@@ -30,33 +127,8 @@ body {
    -webkit-background-clip: text;
    font-family: Charcoal;
    text-align: center;
-   font-size: 30px;
-   margin-left: 5px;
+   font-size: 33px;
+   margin-left: 10px;
    font-weight: 400;
-}
-
-.navbar ul {
-   list-style-type: none;
-   margin: auto;
-   padding: 0;
-   float: right;
-}
-
-li {
-   float: left;
-   list-style-type: none;
-   margin-left: 20px;
-}
-
-li a {
-   display: block;
-   color: rgb(37, 41, 37);
-   text-align: center;
-   padding: 14px 16px;
-   text-decoration: none;
-   font-size: 20px;
-}
-
-li a:hover {
-   background-color: rgb(245, 238, 238);
+   margin-top: -8px;
 }

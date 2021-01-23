@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 //Auth::routes(); //no need to use
-
+Route::get('/AboutUs', 'AboutUsController@index')->name('aboutus');
 Route::get('/', 'HomeController@index')->name('home');
-
-Route::get('logout', 'Auth\LoginController@logout');
+Route::get('/Home', 'HomeController@index')->name('home');
+Route::get('/logout', 'Auth\LoginController@logout');
 
 Route::get('/auth/{provider}', 'SocialAuthController@redirectToProvider');
 Route::get('/auth/{provide}/callback', 'SocialAuthController@handleProviderCallback');
