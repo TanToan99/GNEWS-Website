@@ -5,7 +5,7 @@
 4. cp .env.example .env and config .env file
 5. php artisan key:generate
 6. php artisan migrate
-7. php artisan make:seeder DatabaseSeeder (to create default value)
+7.  php artisan db:seed (to create default value)
 
 
 ## Note
