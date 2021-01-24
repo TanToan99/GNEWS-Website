@@ -14,17 +14,17 @@
                 
                 <li class="nav-item" active>
                     <a class="nav-link" href="{{ route('home') }}" onclick="scrollToDownload()">
-                        <i class="material-icons">home</i>Home
+                        <i class="fa fa-home"></i>Home
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('forum') }}" onclick="scrollToDownload()">
-                        <i class="material-icons">forum</i> Forum
+                        <i class="fa fa-wpforms"></i>Forum
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('aboutus') }}" onclick="scrollToDownload()">
-                        <i class="material-icons">cloud_download</i> About Us
+                        <i class="fa fa-address-card"></i>About Us
                     </a>
                 </li>
                 <li class="nav-item">

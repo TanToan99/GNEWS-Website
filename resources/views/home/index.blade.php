@@ -19,6 +19,7 @@
                 </div>
             </div>
         </div>
+        <hr>
         <div class="row">
             <div class="col-md-9">
                 <h3 class="title">
@@ -32,6 +33,7 @@
                 <img src="/image/DSCWhy.png" alt="" class="rounded img-fluid">
             </div>
         </div>
+        <hr>
         <div class="row">
             <div class="col-md-3">
                 <img src="/image/DSCWhat.png" alt="" class="rounded img-fluid">
