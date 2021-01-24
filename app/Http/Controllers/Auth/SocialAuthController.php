@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Socialite, Auth, Redirect, Session, URL;
@@ -34,8 +34,13 @@ class SocialAuthController extends Controller
         $user = Socialite::driver($provider)->user();
 
         $authUser = $this->findOrCreateUser($user, $provider);
-        Auth::login($authUser, true);
-        return Redirect::to(Session::get('pre_url'));
+        Auth::login($authUser);
+        if(Auth::check()){
+            return redirect()->route('home');
+        }
+        else{
+            return 'Login not done';
+        }
     }
 
     /**

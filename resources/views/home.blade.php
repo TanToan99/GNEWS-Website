@@ -25,7 +25,7 @@
       <div class="navbar">
          <div class="LogoText">
             <a href="{{ URL::to('/Home') }}" title="DSC UoG" class="hide-text">
-               <img id="Logo" alt="DSC UoG" src="/Image/DSCLogo.png">
+               <img id="Logo" alt="DSC UoG" src="/Image/DSCLogo.png" height="100px">
             </a>
             <span id="text-mask"><a href="{{ URL::to('/Home') }}" style="font-size: 70%">DSC UoG (Danang campus)</a> </span>
             <ul class="Navbar">
