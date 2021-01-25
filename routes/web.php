@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Auth;
 */
 //Auth::routes(); //no need to use
 Route::get('/aboutus', 'AboutUsController@index')->name('aboutus');
-Route::get('/forum', 'AboutUsController@index')->name('forum');
+Route::get('/forum', 'ForumController@index')->name('forum');
+Route::post('/forum', 'ForumController@search')->name('forum.search');
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('logout', 'Auth\LoginController@logout');
 
