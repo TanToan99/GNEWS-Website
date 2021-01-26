@@ -10,7 +10,7 @@
         </div>
         <div class="form-group">
             <label for="title">Title</label>
-            <input class="form-control" required="" name="title" type="text" value="Hello World" id="title">
+            <input class="form-control" required="" name="title" type="text" value="{{ $post->title }}" id="title">
         </div>
         <div class="form-group">
             <label for="thumbnail">Thumbnail image(If dont change, no need to input)</label>

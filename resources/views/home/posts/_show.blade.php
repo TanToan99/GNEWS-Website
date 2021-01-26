@@ -2,7 +2,7 @@
     <div class="card-body ">
         <div class="row">
             <div class="col-md-4">
-                <img src="{{ $post->thumbnail->getUrl('thumb') }}" alt="image" class="rounded img-fluid">
+                <a href="{{ route('posts.show',$post->id) }}"><img src="{{ $post->thumbnail->getUrl('thumb') }}" alt="image" class="rounded img-fluid"></a>
             </div>
             <div class="col-md-8">
                 <h4 class="card-title">{{ $post->title }}</h4>

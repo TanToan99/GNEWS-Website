@@ -1,6 +1,6 @@
 <div class="card">
     <div class="card-body ">
-        <form id="options_search" method="POST" action="{{ route('forum.search') }}">
+        <form id="options_search" method="POST" action="{{ route('posts.search') }}">
             @csrf
             <div class="form-group has-search">
                 <label for="category-select">Key word</label>
