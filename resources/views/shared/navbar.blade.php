@@ -18,7 +18,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('forum') }}" onclick="scrollToDownload()">
+                    <a class="nav-link" href="{{ route('posts') }}" onclick="scrollToDownload()">
                         <i class="fa fa-wpforms"></i>Bài viết
                     </a>
                 </li>

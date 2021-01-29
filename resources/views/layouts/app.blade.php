@@ -8,11 +8,12 @@
     <title>DSC-UoG (DaNang Campus)</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
     <link href="{{ mix('/css/home.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/aboutus.css') }}" rel="stylesheet">
+    @yield('custom-js')
 </head>
 
 <body class="index-page sidebar-collapse">
     @include('shared/navbar')
+    @yield('header')
     <div class="main main-raised">
         @yield('content')
     </div>
