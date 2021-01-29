@@ -23,7 +23,7 @@
                             Logout
                         </a>
 
-                        <form id="logout-form" class="d-none" action="{{ url('/logout') }}" method="POST">
+                        <form id="logout-form" class="d-none" action="{{ url('/logout') }}" method="GET">
                             @csrf
                         </form>
                     </div>
