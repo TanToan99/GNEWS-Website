@@ -4,7 +4,7 @@
             <ul>
                 <li>
                     <a href="https://www.creative-tim.com/">
-                        Contact:  658 Ngô Quyền, Quận Sơn Trà, Đà Nẵng
+                        Liên hệ:  658 Ngô Quyền, Quận Sơn Trà, Đà Nẵng
                     </a>
                 </li>
                 <li>
@@ -14,7 +14,7 @@
                 </li>
                 <li>
                     <a href="https://www.creative-tim.com/blog">
-                        Phone: 0915 684 515
+                        Số điện thoại: 0915 684 515
                     </a>
                 </li>
             </ul>

@@ -14,17 +14,17 @@
                 
                 <li class="nav-item" active>
                     <a class="nav-link" href="{{ route('home') }}" onclick="scrollToDownload()">
-                        <i class="fa fa-home"></i>Home
+                        <i class="fa fa-home"></i>Trang chủ
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('forum') }}" onclick="scrollToDownload()">
-                        <i class="fa fa-wpforms"></i>Forum
+                        <i class="fa fa-wpforms"></i>Bài viết
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('aboutus') }}" onclick="scrollToDownload()">
-                        <i class="fa fa-address-card"></i>About Us
+                        <i class="fa fa-address-card"></i>Thông tin thêm
                     </a>
                 </li>
                 <li class="nav-item">
@@ -42,7 +42,7 @@
                 @if(auth()->user()->canBeAuthor())
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('admin.dashboard.index') }}">
-                    <i class="fa fa-user"></i></i>Admin</i>
+                    <i class="fa fa-user"></i></i>Quản trị viên</i>
                     </a>
                 </li>
                 @endif
