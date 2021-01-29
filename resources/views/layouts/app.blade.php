@@ -6,13 +6,14 @@
     <link rel="icon" href="favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>DSC-UoG (DaNang Campus)</title>
-    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport'/>
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
     <link href="{{ mix('/css/home.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/aboutus.css') }}" rel="stylesheet">
 </head>
 
 <body class="index-page sidebar-collapse">
     @include('shared/navbar')
-    
+
     <div class="main main-raised">
         @yield('content')
     </div>
@@ -24,4 +25,5 @@
     <script src="js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
     <script src="js/material-kit.js?v=2.0.7" type="text/javascript"></script>
 </body>
+
 </html>

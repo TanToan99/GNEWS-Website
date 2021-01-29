@@ -1,5 +1,6 @@
 <!Doctype html>
 <html lang="{{ app()->getLocale() }}">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +13,10 @@
     <!-- Styles -->
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
     <link href="{{ mix('/css/admin.css') }}" rel="stylesheet">
+    <link href="{{ mix('/css/adoutus.css') }}" rel="stylesheet">
+
 </head>
+
 <body>
     @include('admin/shared/navbar')
 
@@ -35,4 +39,5 @@
     <script src="{{ mix('/js/app.js') }}"></script>
     <script src="{{ mix('/js/admin.js') }}"></script>
 </body>
+
 </html>
