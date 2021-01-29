@@ -29,12 +29,7 @@ class Post extends Model
 
     public function thumbnail(): BelongsTo
     {
-        return $this->belongsTo(Media::class);
-    }
-
-    public function comments(): HasMany
-    {
-        return $this->hasMany(Comment::class);
+        return $this->belongsTo(Media::class, 'id');
     }
 
     public function hasThumbnail(): bool

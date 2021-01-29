@@ -13,17 +13,17 @@
 
 <body class="index-page sidebar-collapse">
     @include('shared/navbar')
-
     <div class="main main-raised">
         @yield('content')
     </div>
     <!--   Footer   -->
     @include('shared/footer')
     <!--   Core JS Files   -->
-    <script src="js/core/jquery.min.js" type="text/javascript"></script>
-    <script src="js/core/popper.min.js" type="text/javascript"></script>
-    <script src="js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-    <script src="js/material-kit.js?v=2.0.7" type="text/javascript"></script>
+    <script src="../js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="../js/core/popper.min.js" type="text/javascript"></script>
+    <script src="../js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+    <script src="../js/material-kit.js?v=2.0.7" type="text/javascript"></script>
+    @yield('custom-js')
 </body>
 
 </html>

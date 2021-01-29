@@ -2,7 +2,10 @@
 
 @section('title','DSC | Forum')
 
-@include('shared.header')
+@section('header')
+    @include('shared.header')
+@endsection
+
 @section('content')
 <div class="section section-basic">
     <div class="container">
