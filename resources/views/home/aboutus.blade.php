@@ -22,16 +22,16 @@
          </div>
       </div>
    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 ml-auto mr-auto">
-               <div class="brand">
-                   <h1>Developer Student Club</h1>
-                   <h3>Universiry of Greenwich (Da Nang campus)</h3>
-               </div>
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12 ml-auto mr-auto">
+            <div class="brand">
+               <h1>Developer Student Club</h1>
+               <h3>Universiry of Greenwich (Da Nang campus)</h3>
             </div>
-        </div>
-    </div>
+         </div>
+      </div>
+   </div>
 </div>
 @endsection
 
@@ -40,9 +40,8 @@
    <div class="container">
       <h3 class="title text-center">TEAM LEAD</h3>
       <div class="tab-pane text-justify mb-5">
-         𝐃𝐒𝐂-𝐔𝐨𝐆 (𝐃𝐚𝐧𝐚𝐧𝐠 𝐜𝐚𝐦𝐩𝐮𝐬) gồm 2 mảng chính là Tech và non-Tech (Business, Marketing và Design).
-         Chúng mình mong muốn thúc đẩy sự sáng tạo của các bạn đến từ nhiều chuyên ngành khác nhau, đồng
-         thời, tạo cơ hội cho các bạn phát triển kỹ năng làm việc và mở rộng mối quan hệ cá nhân.
+         𝐃𝐒𝐂-𝐔𝐨𝐆 (𝐃𝐚𝐧𝐚𝐧𝐠 𝐜𝐚𝐦𝐩𝐮𝐬) includes 2 main segments: Tech and non-Tech (Business, Marketing and Design). We want to promote your creativity from many different disciplines, 
+         at the same time, give you the opportunity to develop your work skills and broaden personal relationships.
       </div>
       <div class="row text-center justify-content-md-center">
          <div class="col-sm-2">
@@ -79,11 +78,11 @@
    <div class="container">
       <h3 class="title text-center">TEAM TECHNICAL</h3>
       <div class="tab-pane text-justify mb-5">
-         Team Technical có thể được xem là trái tim của 𝐃𝐒𝐂-𝐔𝐨𝐆 (𝐃𝐚𝐧𝐚𝐧𝐠 𝐜𝐚𝐦𝐩𝐮𝐬). Đây là nơi lí tưởng
-         cho các bạn sinh viên có thể cùng nhau tạo ra các dự án và giải pháp công nghệ. Technical cũng là team lên
-         nội dung cho các buổi Workshop/Techtalk do 𝐃𝐒𝐂-𝐔𝐨𝐆 (𝐃𝐚𝐧𝐚𝐧𝐠 𝐜𝐚𝐦𝐩𝐮𝐬) tổ chức. Để là một thành viên của Tech,
-         các bạn không chỉ cần đam mê lập trình, có kiến thức về CNTT,...mà còn phải có khả năng làm việc nhóm, hoà
-         đồng, năng động. Và hơn hết chính là khát khao học hỏi và phát triển không ngừng.
+         Team Technical can be seen as the heart of 𝐃𝐒𝐂-𝐔𝐨𝐆 (𝐃𝐚𝐧𝐚𝐧𝐠 𝐜𝐚𝐦𝐩𝐮𝐬). This is the ideal place
+         for you students can create technology projects and solutions together. Technical is also team up
+         content for the Workshop / Techtalk sessions organized by 𝐃𝐒𝐂-𝐔𝐨𝐆 (𝐃𝐚𝐧𝐚𝐧𝐠 𝐜𝐚𝐦𝐩𝐮𝐬). To be a member of Tech,
+         you not only need to have passion for programming, have knowledge of IT, ... but also have the ability to work
+         in groups, sociable and dynamic. And most of all, it is the desire to learn and develop continuously.
       </div>
       <div class="row text-center justify-content-md-center">
          <div class="col-sm-2">
@@ -112,11 +111,11 @@
    </div>
 
    <div class="container">
-      <h3 class="title text-center">TEAM BUSINESS</h3>
+      <h3 class="title text-center">BUSINESS TEAM </h3>
       <div class="tab-pane text-justify mb-5">
-         Team Business chịu trách nhiệm cho mọi vấn đề về tài chính, giấy tờ, đối ngoại, quan hệ công chúng,...của câu lạc bộ.
-         Họ còn là người hoạch định tiềm năng kinh doanh của các giải pháp công nghệ do DSC đưa ra. Có thể nói, Business chính là những
-         người mang DSC đến gần hơn với cộng đồng
+         Team Business is responsible for all financial matters, paperwork, external relations, public relations, ... of the club.
+         They are also the business potential planners of the technology solutions offered by DSC. It can be said, Business is what
+         people bring DSC closer to the community
       </div>
       <div class="row text-center justify-content-md-center">
          <div class="col-sm-2">
@@ -149,14 +148,50 @@
       </div>
       <hr>
    </div>
-
-   
    <div class="container">
-      <h3 class="title text-center">TEAM DESIGN</h3>
+      <h3 class="title text-center">MARKETING TEAM </h3>
       <div class="tab-pane text-justify mb-5">
-         Thế giới công nghệ tưởng chừng khô khan, cứng nhắc, nhưng khi đi qua trí tưởng tượng và sức sáng tạo
-               không giới hạn của các bạn Designers đã trở nên thu hút và thú vị hơn rất nhiều phải không nào? Đây chính là nơi
-               để các bạn phô diễn khả năng nghệ thuật của mình đấy!
+         Team Marketing plays an important role in bringing the image of 𝐃𝐒𝐂-𝐔𝐨𝐆 (𝐃𝐚𝐧𝐚𝐧𝐠 𝐜𝐚𝐦𝐩𝐮𝐬) closer to the students.
+         Through media campaigns, or publications on fanpage, ... Marketing can promote Club programs and events to the
+         public.
+      </div>
+      <div class="row text-center justify-content-md-center">
+         <div class="col-sm-2">
+            <img src="/Image/Member/duonghpn.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <h5>Head Marketing</h5>
+            <p>Huỳnh Phạm Nguyệt Dương</p>
+         </div>
+      </div>
+      <div class="row text-center">
+         <div class="col-sm-2">
+            <img src="/Image/Member/philth.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <p>Lê Thị Hoàng Phi</p>
+         </div>
+         <div class="col-sm-2 ml-auto">
+            <img src="/Image/Member/toanta.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <p>Thái Anh Toàn</p>
+         </div>
+         <div class="col-sm-2 ml-auto">
+            <img src="/Image/Member/anhtn.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <p>Trần Nguyên Anh</p>
+         </div>
+         <div class="col-sm-2 ml-auto">
+            <img src="/Image/Member/thinhtd.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <p>Trần Đình Thịnh</p>
+         </div>
+         <div class="col-sm-2 ml-auto">
+            <img src="/Image/Member/minhnpt.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <p>Nguyễn Phan Thanh Minh</p>
+         </div>
+      </div>
+      <hr>
+   </div>
+   <div class="container">
+      <h3 class="title text-center">DESIGN TEAM </h3>
+      <div class="tab-pane text-justify mb-5">
+         The world of technology seems to be dry and rigid, but when you go through your unlimited
+         imagination and creativity, Designers has become much more attractive and interesting, right?
+         This is the place for you to show off your artistic abilities!
       </div>
       <div class="row text-center justify-content-md-center">
          <div class="col-sm-2">
@@ -171,6 +206,12 @@
             <p>Phạm Phú Trường</p>
          </div>
       </div>
+      <!-- <div class="row text-center justify-content-md-center">
+         <div class="col-sm-2">
+            <img src="/Image/Member/huyhk.png" alt="Rounded Image" class="rounded-circle img-fluid">
+            <p>Huỳnh Khắc Huy</p>
+         </div>
+      </div> -->
       <hr>
    </div>
 </div>
