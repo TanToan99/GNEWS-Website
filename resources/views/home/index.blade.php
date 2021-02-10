@@ -73,7 +73,7 @@
                                     <div class="carousel-item card-body container">
                                         <div class="row">
                                             <div class="col-md-4">
-                                                <img src="/Image/mind8.jpg" alt="" class="rounded img-fluid">
+                                                <img src="/image/mind8.jpg" alt="" class="rounded img-fluid">
                                             </div>
                                             <div class="col-md-8">
                                                 <h4 class="title">Vũ Thu Thủy - Cán bộ CTSV Đại Học Greenwich Việt Nam(CS Đà Nẵng)</h4>
