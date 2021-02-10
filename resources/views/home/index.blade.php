@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <img src="/image/DSCWhat.png" alt="" class="rounded img-fluid">
+                <img src="/Image/DSCWhat.png" alt="" class="rounded img-fluid">
             </div>
             <div class="col-md-9">
                 <h3 class="title">
@@ -29,12 +29,12 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <img src="/image/DSCWhy.png" alt="" class="rounded img-fluid">
+                <img src="/Image/DSCWhy.png" alt="" class="rounded img-fluid">
             </div>
         </div>
         <div class="row">
             <div class="col-md-3">
-                <img src="/image/DSCHow.png" alt="" class="rounded img-fluid">
+                <img src="/Image/DSCHow.png" alt="" class="rounded img-fluid">
             </div>
             <div class="col-md-9">
                 <h3 class="title">
@@ -73,7 +73,7 @@
                                     <div class="carousel-item card-body container">
                                         <div class="row">
                                             <div class="col-md-4">
-                                                <img src="/image/mind8.jpg" alt="" class="rounded img-fluid">
+                                                <img src="/Image/mind8.jpg" alt="" class="rounded img-fluid">
                                             </div>
                                             <div class="col-md-8">
                                                 <h4 class="title">Vũ Thu Thủy - Cán bộ CTSV Đại Học Greenwich Việt Nam(CS Đà Nẵng)</h4>
@@ -88,7 +88,7 @@
                                     <div class="carousel-item card-body container">
                                         <div class="row">
                                             <div class="col-md-4">
-                                                <img src="/image/mind3.jpg" alt="" class="rounded img-fluid">
+                                                <img src="/Image/mind3.jpg" alt="" class="rounded img-fluid">
                                             </div>
                                             <div class="col-md-8">
                                                 <h4 class="title">Hồ Ngọc Trâm Anh - Cán bộ CTSV Đại Học Greenwich Việt Nam(CS Đà Nẵng)</h4>
@@ -104,7 +104,7 @@
                                     <div class="carousel-item active card-body container">
                                         <div class="row">
                                             <div class="col-md-4">
-                                                <img src="/image/mind2.jpg" alt="" class="rounded img-fluid">
+                                                <img src="/Image/mind2.jpg" alt="" class="rounded img-fluid">
                                             </div>
                                             <div class="col-md-8">
                                                 <h4 class="title">Lữ Quốc Đạt - Cán bộ CTSV Đại Học Greenwich Việt Nam(CS Đà Nẵng)</h4>
@@ -118,7 +118,7 @@
                                     <div class="carousel-item card-body container">
                                         <div class="row">
                                             <div class="col-md-4">
-                                                <img src="/image/mind1.jpg" alt="" class="rounded img-fluid">
+                                                <img src="/Image/mind1.jpg" alt="" class="rounded img-fluid">
                                             </div>
                                             <div class="col-md-8">
                                                 <h4 class="title">Nguyễn Thị Ngọc Trinh - Cán bộ CTSV Đại Học Greenwich Việt Nam(CS Đà Nẵng)</h4>
@@ -133,7 +133,7 @@
                                     <div class="carousel-item card-body container">
                                         <div class="row">
                                             <div class="col-md-4">
-                                                <img src="/image/mind4.jpg" alt="" class="rounded img-fluid">
+                                                <img src="/Image/mind4.jpg" alt="" class="rounded img-fluid">
                                             </div>
                                             <div class="col-md-8">
                                                 <h4 class="title">Nguyễn Võ Gia Miên - Cán bộ CTSV Đại Học Greenwich Việt Nam(CS Đà Nẵng)</h4>
@@ -147,7 +147,7 @@
                                     <div class="carousel-item card-body container">
                                         <div class="row">
                                             <div class="col-md-4">
-                                                <img src="/image/mind5.jpg" alt="" class="rounded img-fluid">
+                                                <img src="/Image/mind5.jpg" alt="" class="rounded img-fluid">
                                             </div>
                                             <div class="col-md-8">
                                                 <h4 class="title">Nguyễn Hoàng Giang - Cán bộ CTSV Đại Học Greenwich Việt Nam(CS Đà Nẵng)</h4>
@@ -164,7 +164,7 @@
                                     <div class="carousel-item card-body container">
                                         <div class="row">
                                             <div class="col-md-4">
-                                                <img src="/image/mind7.jpg" alt="" class="rounded img-fluid">
+                                                <img src="/Image/mind7.jpg" alt="" class="rounded img-fluid">
                                             </div>
                                             <div class="col-md-8">
                                                 <h4 class="title">Võ Thị Thục Đoan - Cán bộ CTSV Đại Học Greenwich Việt Nam(CS Đà Nẵng)</h4>
@@ -179,7 +179,7 @@
                                     <div class="carousel-item card-body container">
                                         <div class="row">
                                             <div class="col-md-4">
-                                                <img src="/image/mind6.jpg" alt="" class="rounded img-fluid">
+                                                <img src="/Image/mind6.jpg" alt="" class="rounded img-fluid">
                                             </div>
                                             <div class="col-md-8">
                                                 <h4 class="title">Hồ Thị Tuyết Sương - Cán bộ CTSV Đại Học Greenwich Việt Nam(CS Đà Nẵng)</h4>
