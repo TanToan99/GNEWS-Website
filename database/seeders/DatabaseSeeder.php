@@ -25,14 +25,7 @@ class DatabaseSeeder extends Seeder
         MediaLibrary::firstOrCreate([]);
 
         // Users
-        $user = User::firstOrCreate(
-            ['email' => 'toanlntgcd191338@fpt.edu.vn'],
-            [
-                'name' => 'Tan Toan',
-                'password' => Hash::make('password'),
-                'email_verified_at' => now()
-            ]
-        );
+        $user = User::first();
 
         $user->roles()->sync([$role_admin->id]);
     }
