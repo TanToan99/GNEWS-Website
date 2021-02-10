@@ -46,29 +46,29 @@
       </div>
       <div class="row text-center justify-content-md-center">
          <div class="col-sm-2">
-            <img src="/Image/member/mynt.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <img src="/Image/Member/mynt.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
             <h5>DSC Lead</h5>
             <p>Ngô Tiểu My</p>
          </div>
       </div>
       <div class="row text-center">
          <div class="col-sm-2">
-            <img src="/Image/member/tungls.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <img src="/Image/Member/tungls.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
             <h5>Head Business</h5>
             <p>Lê Sơn Tùng</p>
          </div>
          <div class="col-sm-2 ml-auto">
-            <img src="/Image/member/duonghpn.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <img src="/Image/Member/duonghpn.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
             <h5>Head Marketing</h5>
             <p>Huỳnh Phạm Nguyệt Dương</p>
          </div>
          <div class="col-sm-2 ml-auto">
-            <img src="/Image/member/chinl.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <img src="/Image/Member/chinl.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
             <h5>Head Design</h5>
             <p>Nguyễn Linh Chi</p>
          </div>
          <div class="col-sm-2 ml-auto">
-            <img src="/Image/member/lamnh.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <img src="/Image/Member/lamnh.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
             <h5>Head Technical</h5>
             <p>Nguyễn Hoàng Lâm</p>
          </div>
@@ -87,7 +87,7 @@
       </div>
       <div class="row text-center justify-content-md-center">
          <div class="col-sm-2">
-            <img src="/Image/member/lamnh.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <img src="/Image/Member/lamnh.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
             <h5>Head Technical</h5>
             <p>Nguyễn Hoàng Lâm</p>
          </div>
@@ -95,15 +95,15 @@
       <div class="row text-center">
          <div class="col-sm-2"></div>
          <div class="col-sm-2 ml-auto">
-            <img src="/Image/member/nampt.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <img src="/Image/Member/nampt.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
             <p>Phạm Trung Nam</p>
          </div>
          <div class="col-sm-2 ml-auto">
-            <img src="/Image/member/toanlnt.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <img src="/Image/Member/toanlnt.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
             <p>Lê Ngọc Tấn Toàn</p>
          </div>
          <div class="col-sm-2 ml-auto">
-            <img src="/Image/member/nguyetbtm.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <img src="/Image/Member/nguyetbtm.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
             <p>Bùi Thị Minh Nguyệt</p>
          </div>
          <div class="col-sm-2 ml-auto"></div>
@@ -120,30 +120,30 @@
       </div>
       <div class="row text-center justify-content-md-center">
          <div class="col-sm-2">
-            <img src="/Image/member/tungls.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <img src="/Image/Member/tungls.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
             <h5>Head Business</h5>
             <p>Lê Sơn Tùng</p>
          </div>
       </div>
       <div class="row text-center">
          <div class="col-sm-2">
-            <img src="/Image/member/yttm.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <img src="/Image/Member/yttm.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
             <p>Trần Thị Mỹ Ý</p>
          </div>
          <div class="col-sm-2 ml-auto">
-            <img src="/Image/member/quangtld.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <img src="/Image/Member/quangtld.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
             <p>Trần Lê Đức Quang</p>
          </div>
          <div class="col-sm-2 ml-auto">
-            <img src="/Image/member/hieunv.png" alt="Rounded Image" class="rounded-circle img-fluid">
+            <img src="/Image/Member/hieunv.png" alt="Rounded Image" class="rounded-circle img-fluid">
             <p>Nguyễn Văn Hiếu</p>
          </div>
          <div class="col-sm-2 ml-auto">
-            <img src="/Image/member/thaonnn.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <img src="/Image/Member/thaonnn.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
             <p>Nguyễn Ngô Như Thảo</p>
          </div>
          <div class="col-sm-2 ml-auto">
-            <img src="/Image/member/mylnt.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <img src="/Image/Member/mylnt.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
             <p>Lê Nguyễn Thảo My</p>
          </div>
       </div>
@@ -160,14 +160,14 @@
       </div>
       <div class="row text-center justify-content-md-center">
          <div class="col-sm-2">
-            <img src="/Image/member/chinl.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <img src="/Image/Member/chinl.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
             <h5>Head Design</h5>
             <p>Nguyễn Linh Chi</p>
          </div>
       </div>
       <div class="row text-center justify-content-md-center">
          <div class="col-sm-2">
-            <img src="/Image/member/truongpp.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
+            <img src="/Image/Member/truongpp.jpg" alt="Rounded Image" class="rounded-circle img-fluid">
             <p>Phạm Phú Trường</p>
          </div>
       </div>
