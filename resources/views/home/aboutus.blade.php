@@ -27,7 +27,7 @@
          <div class="col-md-12 ml-auto mr-auto">
             <div class="brand">
                <h1>Developer Student Club</h1>
-               <h3>Universiry of Greenwich (Da Nang campus)</h3>
+               <h3>University of Greenwich (Da Nang campus)</h3>
             </div>
          </div>
       </div>
