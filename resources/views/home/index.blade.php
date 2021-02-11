@@ -41,7 +41,7 @@
             </div>
             <div class="col-md-9">
                 <h3 class="title">
-                    How Does DSC Work?
+                    How does DSC work?
                 </h3>
                 <div class="tab-pane text-justify">
                     DSC will organize Workshop / Techtalk sessions on topics around Google technologies to help students
