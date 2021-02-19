@@ -14,17 +14,17 @@
                 
                 <li class="nav-item" active>
                     <a class="nav-link" href="{{ route('home') }}" onclick="scrollToDownload()">
-                        <i class="fa fa-home"></i>Trang chủ
+                        <i class="fa fa-home"></i>Home
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('posts') }}" onclick="scrollToDownload()">
-                        <i class="fa fa-wpforms"></i>Bài viết
+                        <i class="fa fa-wpforms"></i>Forum
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('aboutus') }}" onclick="scrollToDownload()">
-                        <i class="fa fa-address-card"></i>Thông tin thêm
+                        <i class="fa fa-address-card"></i>About Us
                     </a>
                 </li>
                 <li class="nav-item">
