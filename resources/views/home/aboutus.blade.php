@@ -40,7 +40,7 @@
    <div class="container">
       <h3 class="title text-center">TEAM LEAD</h3>
       <div class="tab-pane text-justify mb-5">
-         𝐃𝐒𝐂-𝐔𝐨𝐆 (𝐃𝐚𝐧𝐚𝐧𝐠 𝐜𝐚𝐦𝐩𝐮𝐬) includes 2 main segments: Tech and non-Tech (Business, Marketing and Design). We want to promote your creativity from many different disciplines, 
+         𝐃𝐒𝐂-𝐔𝐨𝐆 (𝐃𝐚𝐧𝐚𝐧𝐠 𝐜𝐚𝐦𝐩𝐮𝐬) includes 2 main segments: Tech and non-Tech (Business, Marketing and Design). We want to promote your creativity from many different disciplines,
          at the same time, give you the opportunity to develop your work skills and broaden personal relationships.
       </div>
       <div class="row text-center justify-content-md-center">

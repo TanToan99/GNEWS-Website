@@ -16,8 +16,8 @@
                 </h3>
                 <div class="tab-pane text-justify">
                     Developer Student Club (DSC) is a community developed by Google_Developers at universities.
-                    <br>With the desire to build an environment to help students develop themselves from the 
-                    resources of 𝐆𝐨𝐨𝐠𝐥𝐞 and apply those luggage for you to join hands in creating, realizing 
+                    <br>With the desire to build an environment to help students develop themselves from the
+                    resources of 𝐆𝐨𝐨𝐠𝐥𝐞 and apply those luggage for you to join hands in creating, realizing
                     ideas into solutions for the community. , for local businesses.
                 </div>
             </div>
@@ -41,7 +41,7 @@
             </div>
             <div class="col-md-9">
                 <h3 class="title">
-                    How Does DSC Work?
+                    How does DSC work?
                 </h3>
                 <div class="tab-pane text-justify">
                     DSC will organize Workshop / Techtalk sessions on topics around Google technologies to help students
