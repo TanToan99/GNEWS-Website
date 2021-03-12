@@ -32,6 +32,6 @@ return [
     'google' => [
         'client_id' => '929205905-16luo471mfusoftt07babh8i4h3jeoq3.apps.googleusercontent.com',
         'client_secret' => 'psIt5W6mSD3XEYGJQC8pGRw0',
-        'redirect' => 'http://dsc-uog-dn.herokuapp.com/auth/google/callback',
-    ], 
+        'redirect' => 'https://dsc-uog-dn.herokuapp.com/auth/google/callback',
+    ],
 ];
