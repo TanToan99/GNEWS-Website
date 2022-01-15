@@ -30,8 +30,8 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
     'google' => [
-        'client_id' => '929205905-16luo471mfusoftt07babh8i4h3jeoq3.apps.googleusercontent.com',
-        'client_secret' => 'X3Wj9_tozKRD7YvbfdMw7Yai',
-        'redirect' => 'https://dsc-uog-dn.herokuapp.com/auth/google/callback',
+        'client_id'     => env('GOOGLE_CLIENT_ID'),
+        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
+        'redirect'      => env('GOOGLE_REDIRECT'),
     ],
 ];

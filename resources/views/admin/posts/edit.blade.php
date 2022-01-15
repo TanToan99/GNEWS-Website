@@ -6,7 +6,7 @@
         @csrf
         <input name="_method" type="hidden" value="PATCH">
         <div class="form-group" style="text-align: center;">
-            <img src="{{ $post->thumbnail->getUrl('thumb') }}" alt="image" class="img-thumbnail ">
+            <img src="{{ $post->thumbnail->getUrl() }}" alt="image" class="img-thumbnail ">
         </div>
         <div class="form-group">
             <label for="title">Title</label>

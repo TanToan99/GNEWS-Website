@@ -78,6 +78,7 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
+        $post = Post::find($post->id);
         return view('admin.posts.edit', [
             'post' => $post
         ]);
@@ -101,7 +102,9 @@ class PostController extends Controller
                 ->addMedia($image)
                 ->usingName($name)
                 ->toMediaCollection()->id;
-            $data = array_merge($data,['thumbnail_id' => $id,]);
+            $data = array_merge($data,[
+                'thumbnail_id' => $id
+            ]);
         }
         $post->update($data);
         return redirect()->route('admin.posts.edit', $post)->withSuccess("Update success");

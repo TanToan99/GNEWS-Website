@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <link rel="icon" href="favicon.ico" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>DSC-UoG (DaNang Campus)</title>
+    <title>GNEWS CLUB - ADMIN</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
     <link href="{{ mix('/css/home.css') }}" rel="stylesheet">
-    @yield('custom-js')
+    @yield('custom-css')
 </head>
 
 <body class="index-page sidebar-collapse">

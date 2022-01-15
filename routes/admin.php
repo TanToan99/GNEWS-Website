@@ -9,3 +9,5 @@ Route::resources([
     'users' => UserController::class,
     'media' => MediaController::class,
 ]);
+
+Route::get("/export","ExportController@export")->name('export');
