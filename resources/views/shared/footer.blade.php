@@ -1,33 +1,14 @@
-<footer class="footer" data-background-color="black">
-    <div class="container">
-        <nav class="float-left">
-            <ul>
-                <li>
-                    <a href="https://www.creative-tim.com/">
-                        Location:  658 Ngô Quyền, Quận Sơn Trà, Đà Nẵng
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.creative-tim.com/presentation">
-                        Email: dsc.uog@gmail.com
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.creative-tim.com/blog">
-                        Phone: 0915 684 515
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div class="float-right">
-            <ul>
-                <li>
-                    <a href="{{ route('home') }}">
-                        <img id="Logo" alt="DSC UoG" src="/Image/DSCLogo.png" height="20px">
-                        DSC UoG (Da Nang Campus)
-                    </a>
-                </li>
-            </ul>
+<footer>
+    <div class="footer">
+      <div class="copyright">
+        <p>© Greenwich Newspacer Club 2022</p>
+        <div class="social-icon">
+          <a href="https://www.facebook.com/gnewsclub.grevn"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/gnewsclub"><i class="fab fa-instagram"></i></i></a>
+          <a href="https://www.tiktok.com/@gnewsclub"><i class="fab fa-tiktok"></i></a>
+          <a href="https://www.youtube.com/channel/UCrIe5kGIfdv3CHNXbKksycQ"><i class="fab fa-youtube"></i></a>
         </div>
     </div>
-</footer>
+      <a class="button-btn-2">Support</a>
+    </div>
+  </footer>
