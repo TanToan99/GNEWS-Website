@@ -1,7 +1,8 @@
 @import url("styles.css");
 
 .news {
-  margin-top: 10em;
+  margin: 3em 0;
+
 }
 
 .title h1 {
@@ -54,6 +55,7 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin-top: 0.5em;
   padding-top: 0.5em;
   border-top: 1px solid var(--cam);
 }
@@ -130,10 +132,10 @@
   }
   .card {
     width: 550px;
-    height: 450px;
+    height: 350px;
   }
   .card-body {
-    height: 15em;
+    height: 10em;
   }
   .card-title {
     font-size: 20px;
@@ -142,5 +144,12 @@
 @media (max-width: 425px) {
   .card-container {
     padding: 1em 1em;
+  }
+  .card {
+    width: 550px;
+    height: 350px;
+  }
+  .card-body {
+    height: 10em;
   }
 }
