@@ -14,6 +14,12 @@
                             <li><a href="news.html">News</a></li>
                             <li><a href="animation.html">Events</a></li>
                             <li><a href="about.html">About Us</a></li>
+                            @guest
+                            @else
+                                @if(auth()->user()->canBeAuthor())
+                                <li><a href="{{ route('admin.dashboard.index') }}">Admin</a></li>
+                                @endif
+                            @endguest
                         </ul>
                     </div>
                 </div>
