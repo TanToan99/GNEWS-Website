@@ -11,9 +11,9 @@
                     <div class="nav-element">
                         <ul>
                             <li><a href="{{ route('home') }}">Home</a></li>
-                            <li><a href="news.html">News</a></li>
+                            <li><a href="{{ route('posts') }}">News</a></li>
                             <li><a href="animation.html">Events</a></li>
-                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="{{ route('aboutus') }}">About Us</a></li>
                             @guest
                             @else
                                 @if(auth()->user()->canBeAuthor())
@@ -50,9 +50,16 @@
             <div id="myDropdown" class="dropdown-content">
                 <a href="{{ URL::to('auth/google') }}"><i class="fab fa-google"></i>Sign In with Google</a>
                 <a href="{{ route('home') }}"><i class="fas fa-home"></i>Home</a>
-                <a href="news.html"><i class="fas fa-newspaper"></i>News</a>
+                <a href="{{ route('posts') }}"><i class="fas fa-newspaper"></i>News</a>
                 <a href="animation.html"><i class="fas fa-glass-cheers"></i>Events</a>
-                <a href="#contact"><i class="fas fa-address-card"></i>About Us</a>
+                <a href="{{ route('aboutus') }}"><i class="fas fa-address-card"></i>About Us</a>
+                
+                @guest
+                @else
+                    @if(auth()->user()->canBeAuthor())
+                    <a href="{{ route('admin.dashboard.index') }}">Admin</a>
+                    @endif
+                @endguest
             </div>
         </div>
 

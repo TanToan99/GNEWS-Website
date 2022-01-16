@@ -23,6 +23,7 @@
                             <h4 class="card-title">
                                 {{ $post->title }}
                             </h4>
+                            <span class="card-link">{{ substr(preg_replace ('/<[^>]*>/', ' ', $post->content), 0, 35) }}...</span>
                         </div>
                         <div class="card-option">
                             <a href="#" class="card-link">Xem thêm</a>
