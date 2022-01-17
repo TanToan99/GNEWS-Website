@@ -26,8 +26,8 @@
                             <span class="card-link">{{ substr(preg_replace ('/<[^>]*>/', ' ', $post->content), 0, 100) }}...</span>
                         </div>
                         <div class="card-option">
-                            <a href="#" class="card-link">Xem thêm</a>
-                            <a href="#"><i class="fas fa-long-arrow-alt-right"></i></a>
+                            <a href="{{ route('posts.show',$post->id) }}" class="card-link">Xem thêm</a>
+                            <a href="{{ route('posts.show',$post->id) }}"><i class="fas fa-long-arrow-alt-right"></i></a>
                         </div>
                     </div>
                 </div>

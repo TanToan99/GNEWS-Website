@@ -8,7 +8,7 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 :root {
@@ -542,7 +542,7 @@ img {
   .footer {
     padding: 0.7em 5em;
     display: flex;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     width: 100%;
     flex-direction: row;
