@@ -746,6 +746,8 @@ img {
     display: block;
   }
 
+
+  /* drop search */
   .dropbtn-search {
     background-color: var(--trang);
     color: var(--cam);
