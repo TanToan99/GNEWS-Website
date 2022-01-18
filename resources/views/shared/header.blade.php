@@ -59,7 +59,7 @@
                 @guest
                 @else
                     @if(auth()->user()->canBeAuthor())
-                    <a href="{{ route('admin.dashboard.index') }}"><i class="fas fa-users-cog"></i>Admin</a>
+                    <a href="{{ route('admin.dashboard.index') }}">Admin</a>
                     @endif
                 @endguest
             </div>

@@ -12,13 +12,13 @@
 }
 
 .detail-header {
+    padding: 0;
     margin: 0;
     display: flex;
     width: 100%;
     flex-direction: column;
     align-content: center;
     align-items: center;
-    width: 50%;
 }
 
 .detail-title {
@@ -26,12 +26,12 @@
 }
 
 .detail-title h2 {
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 700;
 }
 
 .detail-img {
-    width: 120%;
+    width: 70%;
 }
 
 .detail-content {
@@ -50,12 +50,7 @@
 }
 
 .Detail-copyright {
-    display: flex;
-    padding: 1em 0.2em;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
+    padding: 1em 0;
 }
 .text-muted {
     width: auto;
@@ -67,24 +62,8 @@
     font-size: 14px;
 }
 
-.text-like i {
-    padding-right: 1em;
-    color: var(--cam);
-    background-color: var(--trang);
-    font-size: 20px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.text-like i:active {
-    font-size: 24px;
-}
-
 @media (max-width: 1440px) {
     .detail-content {
-        width: 55%;
-    }
-    .detail-header {
         width: 55%;
     }
 }
@@ -92,19 +71,10 @@
     .detail-content {
         width: 60%;
     }
-    .detail-header {
-        width: 60%;
-    }
 }
 @media (max-width: 998px) {
     .detail-content {
         width: 65%;
-    }
-    .detail-header {
-        width: 65%;
-    }
-    .detail-img {
-        width: 110%;
     }
 }
 @media (max-width: 768px) {
@@ -115,16 +85,12 @@
     .detail-content {
         width: 70%;
     }
-    .detail-header {
-        width: 70%;
+    .detail-img {
+        width: 80%;
     }
-    
     .detail-description p {
         padding: 1em 0;
         font-size: 16px;
-    }
-    .detail-img {
-        width: 100%;
     }
 }
 @media (max-width: 650px) {
@@ -135,10 +101,9 @@
     .detail-content {
         width: 80%;
     }
-    .detail-header {
+    .detail-img {
         width: 80%;
     }
-  
     .detail-description p {
         padding: 1em 0;
         font-size: 16px;
@@ -155,10 +120,9 @@
     .detail-content {
         width: 90%;
     }
-    .detail-header {
+    .detail-img {
         width: 90%;
     }
-  
 }
 @media (max-width: 320px) {
     .detail-title h2 {
@@ -168,3 +132,4 @@
         font-size: 10px;
     }
 }
+
