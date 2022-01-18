@@ -19,6 +19,20 @@
   --trang: #ffffff;
 }
 
+/* hlml */
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--trang);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--cam);
+  opacity: 60%;
+}
+
 /* Header section */
 .navbar {
   padding: 0.3em 10em;
@@ -542,7 +556,6 @@ img {
   .footer {
     padding: 0.7em 5em;
     display: flex;
-    /* position: fixed; */
     bottom: 0;
     width: 100%;
     flex-direction: row;

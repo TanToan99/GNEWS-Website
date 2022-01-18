@@ -24,6 +24,7 @@
                     </div>
                 </div>
                 <div class="nav-btn">
+                    @if ( Request::is('posts') )
                     <div class="nav-search">
                         <div class="search-box">
                             <button class="btn-search">
@@ -32,6 +33,7 @@
                             <input type="text" class="input-search" placeholder="Type to search..." />
                         </div>
                     </div>
+                    @endif
                     @guest
                         <a href="{{ URL::to('auth/google') }}" class="button-btn-2"><i class="fab fa-google"></i>Sign
                             In</a>

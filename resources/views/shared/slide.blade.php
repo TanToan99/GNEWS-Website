@@ -6,9 +6,9 @@
             <img src="images/banner-1-web.jpg" style="width:100%">
         </div>
 
-        <div class="mySlides fade">
+        <!-- <div class="mySlides fade">
             <img src="images/banner-2-web.jpg" style="width:100%">
-        </div>
+        </div> -->
 
         <div class="dot-all" style="text-align:center">
             <span class="dot"></span>
@@ -29,9 +29,9 @@
             <img src="images/banner-1-phone.jpg" style="width:100%">
         </div>
 
-        <div class="mySlidesmn fade">
+        <!-- <div class="mySlidesmn fade">
             <img src="images/banner-2-phone.jpg" style="width:100%">
-        </div>
+        </div> -->
 
         <div class="dot-all" style="text-align:center">
             <span class="dot"></span>
