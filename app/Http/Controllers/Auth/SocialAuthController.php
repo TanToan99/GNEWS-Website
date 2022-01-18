@@ -32,8 +32,10 @@ class SocialAuthController extends Controller
     public function handleProviderCallback($provider)
     {
         $user = Socialite::driver($provider)->stateless()->user();
-
+        //dd($user);
         $authUser = $this->findOrCreateUser($user, $provider);
+        $authUser->avatar = $user->avatar;
+        $authUser->save();
         Auth::login($authUser);
         if(Auth::check()){
             return redirect()->route('home');

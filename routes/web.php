@@ -24,7 +24,9 @@ Route::post('/posts', 'PostsController@search')->name('posts.search');
 Route::get('/posts/{id}', 'PostsController@show')->name('posts.show');
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('logout', 'Auth\LoginController@logout');
+Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/auth/{provider}', 'Auth\SocialAuthController@redirectToProvider');
 Route::get('/auth/{provide}/callback', 'Auth\SocialAuthController@handleProviderCallback');
+
+Route::get('/event','EventController@index')->name('event');

@@ -16,6 +16,7 @@ class FacebookUser extends Migration
         Schema::table('users', function (Blueprint $table) {
             $table->string("link_fb")->nullable();
             $table->string("uid_fb")->nullable();
+            $table->string("avatar")->nullable();
         });
     }
 
