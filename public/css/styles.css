@@ -432,7 +432,9 @@ img {
 .button-btn-2 i {
     padding-right: 5px;
 }
-
+.navbar-mobile {
+ display: none
+}
 @media (max-width: 998px) {
   .navbar {
     display: none;
@@ -529,6 +531,7 @@ img {
 
   .dropdown-search {
     display: none;
+    }
 }
 
 
