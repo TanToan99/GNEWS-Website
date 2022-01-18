@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 //Auth::routes(); //no need to use
+Route::get('/profile','UserController@index')->name('profile');
+Route::post('/profile','UserController@add_link_fb')->name('add_link_facebook');
+
 Route::get('/aboutus', 'AboutUsController@index')->name('aboutus');
 
 Route::get('/posts', 'PostsController@index')->name('posts');

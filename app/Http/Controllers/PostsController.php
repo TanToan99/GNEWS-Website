@@ -9,7 +9,7 @@ class PostsController extends Controller
 {
     public function index(Request $request)
     {
-        return view('home.posts.index', [
+        return view('posts.index', [
             'posts' => Post::latest()->paginate(10)
         ]);
     }
@@ -22,7 +22,7 @@ class PostsController extends Controller
         }else{
             $posts = Post::oldest()->where('title', 'like', '%' . $key . '%')->paginate($request->paginate);
         }
-        return view('home.posts.index',[
+        return view('posts.index',[
             'posts' => $posts,
             'key' => $key
         ]);
@@ -32,7 +32,7 @@ class PostsController extends Controller
     {
         $post = Post::where('id',$id)->first();
         if($post){
-            return view('home.posts.post',[
+            return view('posts.post',[
                 'post' => $post
             ]);
         }
