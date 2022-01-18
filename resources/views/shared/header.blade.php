@@ -5,7 +5,7 @@
             <div class="navbar">
                 <div class="nav-menu">
                     <div class="nav-brand">
-                        <a href="{{ route('home') }}"><img class="logo" src="/images/logoG_2.png"
+                        <a href="{{ route('home') }}"><img class="logo" src="/images/logoG_4.png"
                                 alt="logo" /></a>
                     </div>
                     <div class="nav-element">
@@ -36,7 +36,15 @@
                         <a href="{{ URL::to('auth/google') }}" class="button-btn-2"><i class="fab fa-google"></i>Sign
                             In</a>
                     @else
-                        <p>Welcome, {{ auth()->user()->name }}</p>
+                        <div class="user-dropdown">
+                            <img onclick="userFunction()" class="user-img" src="https://scontent.fdad4-1.fna.fbcdn.net/v/t39.30808-6/272000826_483527643141091_4617989553483562623_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=5wKEH09XBuQAX-b2qBN&_nc_ht=scontent.fdad4-1.fna&oh=00_AT_UtUS8CM8lqw7CNcwvEt5sVL1k-GgUg3-5vB91K7QZVQ&oe=61EB0F8B" />
+                            <div id="userDrop" class="user-content">
+                                
+                                <p>Hi, {{ auth()->user()->name }}</p>
+                                <a href="{{ route('profile')}}">Profile</a>
+                                <a href="#about">Logout</a>
+                            </div>
+                        </div>
                     @endguest
                 </div>
             </div>

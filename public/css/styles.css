@@ -16,6 +16,8 @@
     --xanhden: #14213d;
     --vang: #fcb315;
     --trang: #ffffff;
+    --do: #ef0303;
+
 }
 
 
@@ -85,7 +87,7 @@ html::-webkit-scrollbar-thumb {
 
 .nav-element a {
     text-decoration: none;
-    color: var(--cam);
+    color: var(--do);
     font-weight: 750;
     font-size: 16px;
     padding: 0.5em 0.7em;
@@ -94,7 +96,7 @@ html::-webkit-scrollbar-thumb {
 
 .nav-element a:hover {
     color: var(--trang);
-    background-color: var(--cam);
+    background-color: var(--do);
     width: 3em;
 }
 
@@ -132,11 +134,11 @@ html::-webkit-scrollbar-thumb {
     transition: all 0.5s ease-in-out;
     background-color: var(--trang);
     padding-right: 40px;
-    color: var(--cam);
+    color: var(--do);
 }
 
 .input-search::placeholder {
-    color: var(--cam);
+    color: var(--do);
     font-size: 16px;
     letter-spacing: 2px;
     font-weight: 400;
@@ -153,7 +155,7 @@ html::-webkit-scrollbar-thumb {
     border-radius: 50%;
     position: absolute;
     right: 0px;
-    color: var(--cam);
+    color: var(--do);
     background-color: transparent;
     pointer-events: painted;
 }
@@ -162,7 +164,7 @@ html::-webkit-scrollbar-thumb {
     width: 350px;
     border-radius: 0px;
     background-color: transparent;
-    border-bottom: 1px solid var(--cam);
+    border-bottom: 1px solid var(--do);
     transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
 
@@ -170,7 +172,7 @@ html::-webkit-scrollbar-thumb {
     width: 350px;
     border-radius: 0px;
     background-color: transparent;
-    border-bottom: 1px solid var(--cam);
+    border-bottom: 1px solid var(--do);
     transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
 
@@ -182,7 +184,7 @@ html::-webkit-scrollbar-thumb {
     background-color: var(--trang);
     border-radius: 4em;
     /* font-size: 16px; */
-    color: var(--cam);
+    color: var(--do);
     padding: 0.5em 1.8em;
     cursor: pointer;
     user-select: none;
@@ -195,7 +197,7 @@ html::-webkit-scrollbar-thumb {
 
 .button:hover {
     transition-duration: 0.1s;
-    background-color: var(--cam);
+    background-color: var(--do);
     color: var(--trang);
 }
 
@@ -226,7 +228,47 @@ html::-webkit-scrollbar-thumb {
 .button:active {
     top: 1px;
 }
-
+/* ===================== */
+/* ===================== */
+/* user dropdown */
+.user-img {
+    padding: 1em;
+    width: 70px; height: 70px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .user-img:hover, .user-img:focus {
+  }
+  
+  .user-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .user-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .user-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .user-dropdown a:hover {background-color: #ddd;}
+  
+  .show-user {display: block;}
+/* ===================== */
+/* ===================== */
 
 /* body section */
 
@@ -286,7 +328,7 @@ img {
 
 .join-now a {
     text-decoration: none;
-    color: var(--cam);
+    color: var(--do);
     background-color: var(--trang);
     padding: 0.5em 1em;
     border-radius: 30px;
@@ -346,7 +388,7 @@ img {
     align-items: center;
     align-content: center;
     background-color: var(--trang);
-    border-top: 1px solid var(--cam);
+    border-top: 1px solid var(--do);
 }
 
 .copyright {
@@ -360,8 +402,8 @@ img {
 
 .copyright p {
     padding: 0.2em 2em 0.2em 0;
-    border-right: 1.5px solid var(--cam);
-    color: var(--cam);
+    border-right: 1.5px solid var(--do);
+    color: var(--do);
 }
 
 .social-icon {
@@ -370,7 +412,7 @@ img {
 
 .copyright a {
     text-decoration: none;
-    color: var(--cam);
+    color: var(--do);
     size: 30px;
     padding-left: 1em;
 }
@@ -380,7 +422,7 @@ img {
 
 .button-btn-2 {
     position: relative;
-    background-color: var(--cam);
+    background-color: var(--do);
     border-radius: 4em;
     /* font-size: 16px; */
     color: var(--trang);
@@ -397,7 +439,7 @@ img {
 
 .button-btn-2:hover {
     transition-duration: 0.1s;
-    background-color: var(--cam);
+    background-color: var(--do);
     color: var(--trang);
 }
 
@@ -416,7 +458,7 @@ img {
 }
 
 .button-btn-2:active:after {
-    box-shadow: 0 0 0 0 var(--cam);
+    box-shadow: 0 0 0 0 var(--do);
     position: absolute;
     border-radius: 4em;
     left: 0;
@@ -453,7 +495,7 @@ img {
     top: 0;
     width: 100%;
     z-index: 98;
-    /* border-bottom: 1px solid var(--cam); */
+    /* border-bottom: 1px solid var(--do); */
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
   }
   .logo {
@@ -462,7 +504,7 @@ img {
   }
   .dropbtn {
     background-color: var(--trang);
-    color: var(--cam);
+    color: var(--do);
     padding: 1.1em;
     font-size: 16px;
     border: none;
@@ -471,7 +513,7 @@ img {
 
   .dropbtn:hover,
   .dropbtn:focus {
-    background-color: var(--cam);
+    background-color: var(--do);
     color: var(--trang);
   }
 
@@ -491,7 +533,7 @@ img {
   }
 
   .dropdown-content a {
-    color: var(--cam);
+    color: var(--do);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -514,7 +556,7 @@ img {
   /* drop search */
   .dropbtn-search {
     background-color: var(--trang);
-    color: var(--cam);
+    color: var(--do);
     padding: 1em;
     margin: 0;
     font-size: 16px;
@@ -556,7 +598,7 @@ img {
     }
     .nav-element a {
         text-decoration: none;
-        color: var(--cam);
+        color: var(--do);
         font-weight: 700;
         font-size: 16px;
         padding: 0.5em 0.7em;
@@ -564,7 +606,7 @@ img {
     }
     .nav-element a:hover {
         color: var(--trang);
-        background-color: var(--cam);
+        background-color: var(--do);
         width: 3em;
     }
     /* Search Box */
@@ -583,10 +625,10 @@ img {
         transition: all 0.5s ease-in-out;
         background-color: var(--trang);
         padding-right: 40px;
-        color: var(--cam);
+        color: var(--do);
     }
     .input-search::placeholder {
-        color: var(--cam);
+        color: var(--do);
         font-size: 16px;
         letter-spacing: 2px;
         font-weight: 400;
@@ -602,7 +644,7 @@ img {
         border-radius: 50%;
         position: absolute;
         right: 0px;
-        color: var(--cam);
+        color: var(--do);
         background-color: transparent;
         pointer-events: painted;
     }
@@ -610,14 +652,14 @@ img {
         width: 340px;
         border-radius: 0px;
         background-color: transparent;
-        border-bottom: 1px solid var(--cam);
+        border-bottom: 1px solid var(--do);
         transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
     }
     .input-search:focus {
         width: 340px;
         border-radius: 0px;
         background-color: transparent;
-        border-bottom: 1px solid var(--cam);
+        border-bottom: 1px solid var(--do);
         transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
     }
     /* button login */
@@ -626,7 +668,7 @@ img {
         background-color: var(--trang);
         border-radius: 4em;
         /* font-size: 16px; */
-        color: var(--cam);
+        color: var(--do);
         padding: 0.5em 1.8em;
         cursor: pointer;
         user-select: none;
@@ -639,7 +681,7 @@ img {
     }
     .button:hover {
         transition-duration: 0.1s;
-        background-color: var(--cam);
+        background-color: var(--do);
         color: var(--trang);
     }
     .button:after {
@@ -679,7 +721,7 @@ img {
         justify-content: space-between;
         align-items: center;
         align-content: center;
-        border-top: 1px solid var(--cam);
+        border-top: 1px solid var(--do);
     }
     .copyright {
         display: flex;
@@ -691,22 +733,22 @@ img {
     }
     .copyright p {
         padding: 0.2em 2em 0.2em 0;
-        border-right: 1.5px solid var(--cam);
-        color: var(--cam);
+        border-right: 1.5px solid var(--do);
+        color: var(--do);
     }
     .social-icon {
         padding-left: 1em;
     }
     .copyright a {
         text-decoration: none;
-        color: var(--cam);
+        color: var(--do);
         size: 30px;
         padding-left: 1em;
     }
     /* button support */
     .button-btn-2 {
         position: relative;
-        background-color: var(--cam);
+        background-color: var(--do);
         border-radius: 4em;
         /* font-size: 16px; */
         color: var(--trang);
@@ -722,7 +764,7 @@ img {
     }
     .button-btn-2:hover {
         transition-duration: 0.1s;
-        background-color: var(--cam);
+        background-color: var(--do);
         color: var(--trang);
     }
     .button-btn-2:after {
@@ -739,7 +781,7 @@ img {
         box-shadow: 0 0 10px 40px var(--trang);
     }
     .button-btn-2:active:after {
-        box-shadow: 0 0 0 0 var(--cam);
+        box-shadow: 0 0 0 0 var(--do);
         position: absolute;
         border-radius: 4em;
         left: 0;
@@ -766,14 +808,14 @@ img {
         width: 230px;
         border-radius: 0px;
         background-color: transparent;
-        border-bottom: 1px solid var(--cam);
+        border-bottom: 1px solid var(--do);
         transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
     }
     .input-search:focus {
         width: 230px;
         border-radius: 0px;
         background-color: transparent;
-        border-bottom: 1px solid var(--cam);
+        border-bottom: 1px solid var(--do);
         transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
     }
 }
@@ -795,7 +837,7 @@ img {
         top: 0;
         width: 100%;
         z-index: 98;
-        /* border-bottom: 1px solid var(--cam); */
+        /* border-bottom: 1px solid var(--do); */
         box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
     }
     .logo {
@@ -804,7 +846,7 @@ img {
     }
     .dropbtn {
         background-color: var(--trang);
-        color: var(--cam);
+        color: var(--do);
         padding: 1.1em;
         font-size: 16px;
         border: none;
@@ -812,7 +854,7 @@ img {
     }
     .dropbtn:hover,
     .dropbtn:focus {
-        background-color: var(--cam);
+        background-color: var(--do);
         color: var(--trang);
     }
     .dropdown {
@@ -829,7 +871,7 @@ img {
         z-index: 1;
     }
     .dropdown-content a {
-        color: var(--cam);
+        color: var(--do);
         padding: 12px 16px;
         text-decoration: none;
         display: block;
@@ -846,7 +888,7 @@ img {
     }
     .dropbtn-search {
         background-color: var(--trang);
-        color: var(--cam);
+        color: var(--do);
         padding: 1em;
         margin: 0;
         font-size: 16px;
@@ -891,7 +933,7 @@ img {
         color: white;
         flex-shrink: 0;
         border-radius: 4px;
-        background-color: var(--cam);
+        background-color: var(--do);
     }
     .simple-search input {
         width: 100%;
@@ -902,7 +944,7 @@ img {
         font-weight: 500;
     }
     .simple-search input::placeholder {
-        color: var(--cam);
+        color: var(--do);
     }
     /* ============= */
     .show {
@@ -927,7 +969,7 @@ img {
     }
     .join-now a {
         text-decoration: none;
-        color: var(--cam);
+        color: var(--do);
         background-color: var(--trang);
         padding: 0.5em 1em;
         border-radius: 30px;
@@ -939,14 +981,14 @@ img {
         width: 500px;
         border-radius: 0px;
         background-color: transparent;
-        border-bottom: 1px solid var(--cam);
+        border-bottom: 1px solid var(--do);
         transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
     }
     .input-search:focus {
         width: 500px;
         border-radius: 0px;
         background-color: transparent;
-        border-bottom: 1px solid var(--cam);
+        border-bottom: 1px solid var(--do);
         transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
     }
 }
@@ -957,14 +999,14 @@ img {
         width: 300px;
         border-radius: 0px;
         background-color: transparent;
-        border-bottom: 1px solid var(--cam);
+        border-bottom: 1px solid var(--do);
         transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
     }
     .input-search:focus {
         width: 300px;
         border-radius: 0px;
         background-color: transparent;
-        border-bottom: 1px solid var(--cam);
+        border-bottom: 1px solid var(--do);
         transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
     }
     /* footer */
@@ -978,7 +1020,7 @@ img {
         justify-content: space-between;
         align-items: center;
         align-content: center;
-        border-top: 1px solid var(--cam);
+        border-top: 1px solid var(--do);
     }
     .copyright {
         display: flex;
@@ -988,12 +1030,12 @@ img {
         align-items: center;
         justify-content: center;
         padding-right: 2em;
-        border-right: 1px solid var(--cam);
+        border-right: 1px solid var(--do);
     }
     .copyright p {
         padding: 0.2em 0 0.2em 0;
         border-right: none;
-        color: var(--cam);
+        color: var(--do);
     }
     .social-icon {
         width: 100%;
@@ -1007,7 +1049,7 @@ img {
     }
     .copyright a {
         text-decoration: none;
-        color: var(--cam);
+        color: var(--do);
         padding-left: 0em;
     }
     .copyright a i {
@@ -1015,7 +1057,7 @@ img {
         font-size: 20px;
     }
     .copyright a i:hover {
-        background-color: var(--cam);
+        background-color: var(--do);
         color: var(--trang);
         border-radius: 10px;
     }
@@ -1026,14 +1068,14 @@ img {
         width: 300px;
         border-radius: 0px;
         background-color: transparent;
-        border-bottom: 1px solid var(--cam);
+        border-bottom: 1px solid var(--do);
         transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
     }
     .input-search:focus {
         width: 300px;
         border-radius: 0px;
         background-color: transparent;
-        border-bottom: 1px solid var(--cam);
+        border-bottom: 1px solid var(--do);
         transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
     }
     /* footer */
@@ -1047,7 +1089,7 @@ img {
         justify-content: space-between;
         align-items: center;
         align-content: center;
-        border-top: 1px solid var(--cam);
+        border-top: 1px solid var(--do);
     }
     .copyright {
         padding-right: 1em;

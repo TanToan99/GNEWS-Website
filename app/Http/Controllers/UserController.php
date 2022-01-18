@@ -9,8 +9,8 @@ use Curl\Curl;
 class UserController extends Controller
 {
     public function index(){
-        $user = User::find(auth()->user()->id)->select('name','email','link_fb','uid_fb','name_fb')->first();
-        
+        $user = User::find(auth()->user()->id)->select('name','email','link_fb','uid_fb')->first();
+        dd($user);
         return view('user.index',[
             'user' => $user
         ]);

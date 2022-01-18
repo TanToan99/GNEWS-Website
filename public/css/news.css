@@ -7,7 +7,7 @@
     text-align: center;
     font-size: 30px;
     font-weight: 900;
-    color: var(--cam);
+    color: var(--do);
 }
 
 .card-news {
@@ -46,7 +46,7 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
-    height: 200px;
+    height: 250px;
 }
 
 .card-title {
@@ -63,12 +63,12 @@
     margin-top: 0.5em;
     padding-top: 0.5em;
     padding-bottom: 2em;
-    border-top: 1px solid var(--cam);
+    border-top: 1px solid var(--do);
 }
 
 .card-option a {
     text-decoration: none;
-    color: var(--cam);
+    color: var(--do);
 }
 
 .card-link {
@@ -76,7 +76,7 @@
 }
 
 .tag {
-    background: var(--cam);
+    background: var(--do);
     border-radius: 50px;
     font-size: 12px;
     margin: 0;

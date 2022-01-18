@@ -23,6 +23,29 @@ function myFunctionSearch() {
   document.getElementById("myDropdownSearch").classList.toggle("show");
 }
 // =========================
+// =========================
+//  user dropdown
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function userFunction() {
+  document.getElementById("userDrop").classList.toggle("show-user");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.user-img')) {
+    var dropdowns = document.getElementsByClassName("user-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show-user')) {
+        openDropdown.classList.remove('show-user');
+      }
+    }
+  }
+}
+// =========================
+// =========================
 // slide mx
 
 var slideIndexmx = 0;
