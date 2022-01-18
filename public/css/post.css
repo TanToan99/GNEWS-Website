@@ -1,18 +1,20 @@
-@import url("styles.css");
-
 .post-container {
     padding: 7em 10em;
 }
+
 .post-flex {
     display: flex;
 }
 
+
 /* Post-search */
+
 .post-search {
     width: 20vw;
     height: auto;
     padding: 0.5em;
 }
+
 .post-title {
     font-size: 16px;
     padding-bottom: 0.3em;
@@ -23,11 +25,14 @@
     color: var(--cam);
 }
 
+
 /* ==== Post Search Form ==== */
+
 .card {
     width: 100%;
     height: auto;
 }
+
 .card-search {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
     padding: 0.5em;
@@ -39,15 +44,18 @@
     padding: 0.5em;
     flex-direction: column;
 }
+
 .form-search {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
+
 .search-label {
     padding: 0.5em 0;
     color: var(--xanhden);
 }
+
 .search-control {
     width: 100%;
     border: 1px solid rgba(66, 66, 66, 0.384);
@@ -79,6 +87,7 @@
 .search-submit {
     padding: 1em 0;
 }
+
 .search-button {
     float: right;
     padding: 0.5em;
@@ -109,30 +118,26 @@
     .post-search {
         width: 35vw;
     }
-    
 }
+
 @media (max-width: 1200px) {
     .post-search {
         width: 30vw;
     }
-    
-
     .post-container {
         padding: 7em 3em;
     }
-    
 }
+
 @media (max-width: 998px) {
     .post-search {
         width: 35vw;
     }
-   
-
     .post-container {
         padding: 7em 1em;
     }
-    
 }
+
 @media (max-width: 768px) {
     .post-flex {
         display: flex;
@@ -142,13 +147,12 @@
         width: 100vw;
         margin-bottom: 2em;
     }
-    
 }
+
 @media (max-width: 550px) {
     .post-container {
         padding: 7em 0em;
     }
-    
 }
-@media (max-width: 425px) {
-}
+
+@media (max-width: 425px) {}
