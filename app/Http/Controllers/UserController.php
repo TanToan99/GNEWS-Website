@@ -10,7 +10,7 @@ class UserController extends Controller
 {
     public function index(){
         $user = User::find(auth()->user()->id)->select('name','email','link_fb','uid_fb')->first();
-        dd($user);
+        // dd($user);
         return view('user.index',[
             'user' => $user
         ]);
