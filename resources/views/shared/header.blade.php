@@ -40,7 +40,7 @@
                             <img onclick="userFunction()" class="user-img" src="{{ auth()->user()->avatar }}" />
                             <div id="userDrop" class="user-content">
                                 <img src="{{ auth()->user()->avatar }}" alt="profile-pic" class="profile">
-                                <p>{{ auth()->user()->name }}</p>
+                                <p style="font-weight: 500;color: var(--do);">{{ auth()->user()->name }}</p>
                                 <a href="{{ route('profile') }}">Profile</a>
                                 <a href="{{ route('logout') }}">Logout</a>
                             </div>

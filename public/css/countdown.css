@@ -1,0 +1,64 @@
+/* desktop */
+
+.tempo {
+    width: 100%;
+    height: 100%;
+    background: var(--do);
+}
+
+.tempo li {
+    display: inline-block;
+    font-size: 24px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding: 30px 30px;
+}
+
+#tempo {
+    text-align: center;
+    color: #F8F8FF;
+    padding-top: 400px;
+    padding-bottom: 350px;
+}
+
+#dias,
+#horas,
+#minutos,
+#segundos {
+    font-size: 50px;
+}
+
+
+/* mobile */
+
+@media screen and (max-width: 800px) {
+    .tempo li {
+        font-size: 20px;
+        display: block;
+    }
+    #dias,
+    #horas,
+    #minutos,
+    #segundos {
+        font-size: 34px;
+    }
+    #tempo {
+        padding-top: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    li {
+        font-size: 18px;
+        display: block;
+    }
+    #dias,
+    #horas,
+    #minutos,
+    #segundos {
+        font-size: 30px;
+    }
+}
+
+
+/* created by magda pimentel, august 2017 - 31 Dias de Código */

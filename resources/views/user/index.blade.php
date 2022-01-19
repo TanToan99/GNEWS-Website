@@ -17,28 +17,42 @@
                     <h2>Thông tin cơ bản</h2>
                     <div class="card-info">
                         <div class="card-ava-user">
-                            <img src="/images/favicon.png" class="card-ava"/>
+                            <img src="{{ $user->avatar }}" class="card-ava" />
                         </div>
                         <div class="card-info-user">
-                            <p class="info-element">Họ và Tên:</p>
-                            <p class="info-user">Nguyễn Văn Lộc</p>
+                            <p class="info-element">Name:</p>
+                            <p class="info-user">{{ $user->name }}</p>
                             <p class="info-element">Email:</p>
-                            <p class="info-user">locnvgcd18350@fpt.edu.vn</p>
-                            <p class="info-element">Mã số sinh viên:</p>
-                            <p class="info-user">GCD18350</p>
+                            <p class="info-user">{{ $user->email }}</p>
+                            <p class="info-element">Student ID</p>
+                            <p class="info-user">{{ $student_id }}</p>
                         </div>
                     </div>
                 </div>
                 <div class="card-main">
-                    <h2>Liên kết Facebook</p>
-                    <div class="card-info">
-                        <input>
-                        <button>Liên kết</button>
-                    </div>
+                    <h2>Liên kết Facebook</h2>
+                        @if ($user->link_fb == null)
+                            <span>(Lưu ý: Chỉ cập nhật liên kết FB đúng 1 lần)</span>
+                            <form class="card-info" method="POST" action="{{ route('add_link_facebook') }}">
+                                @csrf
+                                <input name="link_fb">
+                                <button type="submit">Link</button>
+                            </form>
+                            @if (session('class'))
+                                <span class="alert">{{ session('message') }}</span>
+                            @endif
+                        @else
+                            <div style="margin-top: 1em;">
+                                <p class="info-element">UID:</p>
+                                <p class="info-user">{{ $user->uid_fb }}</p>
+                                <p class="info-element">Link FB:</p>
+                                <a href="$user->link_fb"><p class="info-user">{{ $user->link_fb }}</p></a>
+                            </div>
+                        @endif
                 </div>
             </div>
         </div>
     </div>
-    
-   
+
+
 @endsection
