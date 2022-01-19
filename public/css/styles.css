@@ -1087,6 +1087,9 @@ img {
         color: var(--trang);
         border-radius: 10px;
     }
+    .dropdown-content a {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 550px) {
