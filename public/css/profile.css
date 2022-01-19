@@ -1,0 +1,103 @@
+.container-profile {
+    display: flex;
+    padding: 10em 0;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.card-profile {
+    width: 80%;
+    display: flex;
+}
+
+.card-left {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+}
+
+.card-left a {
+    width: auto;
+    text-decoration: none;
+    text-align: center;
+    color: var(--den);
+    font-weight: 500;
+    padding: 1em;
+    margin: 0.25em 2em;
+    border-radius: 10px;
+    border: 1px solid var(--den);
+}
+
+.card-right {
+    width: 70%;
+    height: auto;
+}
+
+.card-main {
+    padding: 1em 2em;
+    margin: 0.25em 2em;
+    border-radius: 10px;
+    border: 1px solid var(--den);
+    margin-bottom: 2em;
+}
+.card-main h2 {
+    color: var(--den);
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.card-ava {
+    width: 10em;
+    height: 10em;
+    margin: 2em 0.2em;
+    border-radius: 100%;
+}
+
+.card-info-user {
+    padding: 2em 5em;
+}
+
+
+.info-element {
+    font-size: 16px;
+}
+
+.info-user {
+    padding: 0.5em 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card-info input {
+    margin: 1em 0;
+    padding-left: 1em;
+    width: 90%;
+    border: none;
+    height: 3em;
+    border: 1px solid var(--den);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card-info button {
+    margin: 1em 0;
+    width: 10%;
+    height: 3em;
+    border: 1px solid var(--den);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #4267b2;
+    color: var(--trang);
+}
