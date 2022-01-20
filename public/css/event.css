@@ -90,7 +90,7 @@
 }
 
 .tree-img {
-    width: 25em;
+    width: 30em;
 }
 .tree-text {
     padding: 1em 0;
@@ -310,10 +310,14 @@
     flex-wrap: nowrap;
 }
 
-.input-gr img {
+.chat-ava {
     width: 30px; height: 30px;
     border-radius: 100%;
     margin-right: 0.5em;
+}
+
+.send-icons {
+    width: 20px; height: 20px;
 }
 
 .input-gr input {

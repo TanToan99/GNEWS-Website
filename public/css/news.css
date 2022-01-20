@@ -7,7 +7,7 @@
     text-align: center;
     font-size: 30px;
     font-weight: 900;
-    color: var(--do);
+    color: var(--cam);
 }
 
 .card-news {
@@ -63,12 +63,12 @@
     margin-top: 0.5em;
     padding-top: 0.5em;
     padding-bottom: 2em;
-    border-top: 1px solid var(--do);
+    border-top: 1px solid var(--cam);
 }
 
 .card-option a {
     text-decoration: none;
-    color: var(--do);
+    color: var(--cam);
 }
 
 .card-link {
@@ -76,7 +76,7 @@
 }
 
 .tag {
-    background: var(--do);
+    background: var(--cam);
     border-radius: 50px;
     font-size: 12px;
     margin: 0;

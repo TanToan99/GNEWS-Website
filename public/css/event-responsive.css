@@ -1,0 +1,12 @@
+@media (max-width: 1440px){
+
+}
+@media (max-width: 1200px){}
+@media (max-width: 998px){
+    .event-container {
+        padding-top: 50px;
+    }
+}
+@media (max-width: 768px){}
+@media (max-width: 550px){}
+@media (max-width: 420px){}

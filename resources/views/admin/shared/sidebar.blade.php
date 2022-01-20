@@ -1,4 +1,10 @@
 <ul class="navbar-nav navbar-sidenav">
+    <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Back to Home">
+        <a class="nav-link" href="{{ route('home') }}">
+            <i class="fa fa-home" aria-hidden="true"></i>&nbsp;
+            <span class="nav-link-text">Back to home</span>
+        </a>
+    </li>
     <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Dashboard">
         <a class="nav-link {{ request()->route()->named('admin.dashboard.*') ? 'active' : '' }}" href="{{ route('admin.dashboard.index') }}">
             <i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;

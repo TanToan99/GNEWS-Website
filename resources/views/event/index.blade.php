@@ -3,15 +3,31 @@
 
 @section('custom-css')
     <link rel="stylesheet" href="/css/event.css" />
+    <link rel="stylesheet" href="/css/event-responsive.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" />
 @endsection
 
-@section('content')
-    <div class="event-container">
-        <div class="event-banner">
-            <marquee scrollamount="15">
-                <img src="/images/event-element/Banner-1.png" />
-            </marquee>
+@section('content') 
+<div class="event-container">
+    <div class="event-banner">
+        <marquee scrollamount="15">
+            <img src="/images/event-element/Banner-1.png" />
+        </marquee>
+    </div>
+    <div class="event-main">
+        <div class="bg-element-1">
+            <video autoplay muted loop id="myVideo" >
+                    <source  src="/images/event-element/bg-motion-2.mp4" class="tree-img" type="video/mp4">
+            </video>
+        </div>
+        <div class="event-tree">
+            <h1 class="tree-text-h1">Ban đang có <span>5</span> lượt hái</h1>
+            <!-- <img class="tree-img" src="/images/event-element/tree-event.gif"/> -->
+            <video autoplay muted loop class="tree-img"  id="myVideo" >
+                <source  src="/images/event-element/tree-event.mp4" type="video/mp4">
+            </video>
+            <p class="tree-text-p">Thời gian hái lộc 20h00 - 21h00</p>
+            <a href="#"><img class="tree-btn" src="/images/event-element/button.png"/></a>
         </div>
         <div class="event-main">
             <div class="bg-element-1">
