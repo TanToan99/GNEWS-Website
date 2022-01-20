@@ -11,8 +11,6 @@
     font-size: 16px;
 }
 
-
-
 :root {
     --den: #000000;
     --cam: #f24613;
@@ -22,10 +20,11 @@
     --do: #ef0303;
     --bgevent: #fff5cc;
 }
+
 .body-section {
     min-height: 100%;
-
 }
+
 
 /* hlml */
 
@@ -101,6 +100,11 @@ html::-webkit-scrollbar-thumb {
 }
 
 .nav-element a:hover {
+    border-bottom: 3px solid var(--cam);
+    width: 3em;
+}
+
+.active {
     border-bottom: 3px solid var(--cam);
     width: 3em;
 }
@@ -252,6 +256,7 @@ html::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
+
 /* .user-img:hover,
 .user-img:focus {} */
 
@@ -375,10 +380,6 @@ img {
 .join-now a:hover {
     background-color: var(--vang);
     color: var(--trang);
-}
-
-.active {
-    background-color: #717171;
 }
 
 

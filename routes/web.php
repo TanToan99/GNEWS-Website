@@ -30,3 +30,6 @@ Route::get('/auth/{provider}', 'Auth\SocialAuthController@redirectToProvider');
 Route::get('/auth/{provide}/callback', 'Auth\SocialAuthController@handleProviderCallback');
 
 Route::get('/event','EventController@index')->name('event');
+
+Route::get('messages', 'ChatsController@fetchMessages');
+Route::post('messages', 'ChatsController@sendMessage');

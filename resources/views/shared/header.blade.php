@@ -10,10 +10,10 @@
                     </div>
                     <div class="nav-element">
                         <ul>
-                            <li><a href="{{ route('home') }}">Home</a></li>
-                            <li><a href="{{ route('posts') }}">News</a></li>
-                            <li><a href="{{ route('event') }}">Events</a></li>
-                            <li><a href="{{ route('aboutus') }}">About Us</a></li>
+                            <li><a href="{{ route('home') }}" class="{{ Request::is('/') ? 'active' : ''}}">Home</a></li>
+                            <li><a href="{{ route('posts') }}" class="{{ Request::is('posts') ? 'active' : ''}}">News</a></li>
+                            <li><a href="{{ route('event') }}" class="{{ Request::is('event') ? 'active' : ''}}">Events</a></li>
+                            <li><a href="{{ route('aboutus') }}" class="{{ Request::is('aboutus') ? 'active' : ''}}">About Us</a></li>
                             @guest
                             @else
                                 @if (auth()->user()->canBeAuthor())
@@ -64,7 +64,7 @@
                     @endif
                     <a href="{{ route('home') }}"><i class="fas fa-home"></i>Home</a>
                     <a href="{{ route('posts') }}"><i class="fas fa-newspaper"></i>News</a>
-                    <a href="animation.html"><i class="fas fa-glass-cheers"></i>Events</a>
+                    <a href="{{ route('event') }}"><i class="fas fa-glass-cheers"></i>Events</a>
                     <a href="{{ route('aboutus') }}"><i class="fas fa-question-circle"></i>About Us</a>
                     @guest
                     @else

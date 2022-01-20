@@ -32,7 +32,10 @@ class SocialAuthController extends Controller
     public function handleProviderCallback($provider)
     {
         $user = Socialite::driver($provider)->stateless()->user();
-        //dd($user);
+        if(!preg_match('/^\w+@fpt\.edu\.vn$/i', $user->email) > 0)
+        {
+            return redirect()->route('home');
+        }
         $authUser = $this->findOrCreateUser($user, $provider);
         $authUser->avatar = $user->avatar;
         $authUser->save();

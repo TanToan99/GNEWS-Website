@@ -91,4 +91,9 @@ class User extends Authenticatable
     {
         return $this->isAdmin() || $this->isEditor();
     }
+
+    public function messages()
+    {
+        return $this->hasMany(Message::class);
+    }
 }
