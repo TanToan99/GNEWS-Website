@@ -43,6 +43,7 @@ class UserController extends Controller
             $curl->setOpt(CURLOPT_SSL_VERIFYPEER, false);
             $curl->setOpt(CURLOPT_FOLLOWLOCATION, true);
             $html = $curl->get($link_fb);
+		dd($html);
             if (preg_match('/rid\=(\d+)\&/', $html, $info)) {
                 $uid = $info[1];
                 if(User::where('uid_fb',$uid)){
