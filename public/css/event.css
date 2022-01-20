@@ -1,0 +1,355 @@
+.event-container {
+    padding-top: 87px;
+}
+
+.event-banner {
+    background-color: var(--do);
+}
+
+.event-main {
+    height: 50em;
+    background-color: var(--bgevent);
+    position: relative;
+}
+
+.bg-element-1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    /* background-color: violet; */
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    border: 1px solid var(--bgevent);
+}
+
+.bg-element-2 {
+    position: absolute;
+    top: 30px;
+    right: 10%;
+    height: 90%;
+}
+
+.event-tree {
+    position: absolute;
+    top: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+/* ======================= */
+.event-menu {
+    position: absolute;
+    z-index: 2;
+    top: 10em;
+    left: 10em;
+}
+
+.event-rule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    padding-bottom: 1em;
+}
+
+.eventicon {
+    cursor: pointer;
+}
+
+.eventicon:hover {
+    padding-left: 1em;
+}
+
+.event-rule p {
+    padding-bottom: 0.5em;
+    color: var(--do);
+    font-size: 16px;
+    font-weight: 600;
+}
+/* ======================= */
+/* Cây Hái Lộc */
+.tree-text-h1 {
+    padding: 1em 0;
+    font-size: 30px;
+    color: var(--do);
+    font-weight: 500;
+}
+
+.tree-text-h1 span {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.tree-img {
+    width: 25em;
+}
+.tree-text {
+    padding: 1em 0;
+}
+.tree-btn {
+    width: 20em;
+}
+
+.tree-text-p {
+    padding: 1.5em 0;
+    font-size: 16px;
+    color: var(--do);
+    font-weight: 500;
+}
+/* ======================= */
+/* Style event-menu */
+/* Rule */
+.e-modal-rule {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 5;
+    left: 10em;
+    top: 0em;
+    width: 20em;
+    height: 40em;
+    overflow: visible;
+}
+
+/* Modal Content */
+.e-modal-content-rule {
+    background-color: var(--trang);
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+
+}
+
+.e-modal-content-rule h1 {
+    padding: 2em 1em;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--do);
+}
+
+/* The Close Button */
+.e-close-rule {
+    color: var(--do);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.e-close-rule:hover,
+.e-close-rule:focus {
+    color: var(--do);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ======================== */
+/* Mission */
+.e-modal-mi {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 5;
+    left: 10em;
+    top: 0em;
+    width: 20em;
+    height: 40em;
+    overflow: visible;
+}
+
+/* Modal Content */
+.e-modal-content-mi {
+    background-color: var(--trang);
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+
+}
+
+.e-modal-content-mi h1 {
+    padding: 2em 1em;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--do);
+}
+
+/* The Close Button */
+.e-close-mi {
+    color: var(--do);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.e-close-mi:hover,
+.e-close-mi:focus {
+    color: var(--do);
+    text-decoration: none;
+    cursor: pointer;
+}
+/* ======================= */
+/* history */
+.e-modal-hi {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 5;
+    left: 10em;
+    top: 0em;
+    width: 20em;
+    height: 40em;
+    overflow: visible;
+}
+
+/* Modal Content */
+.e-modal-content-hi {
+    background-color: var(--trang);
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+
+}
+
+.e-modal-content-hi h1 {
+    padding: 2em 1em;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--do);
+}
+
+/* The Close Button */
+.e-close-hi {
+    color: var(--do);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.e-close-hi:hover,
+.e-close-hi:focus {
+    color: var(--do);
+    text-decoration: none;
+    cursor: pointer;
+}
+/* =========================== */
+.list-element {
+    padding: 0.5em 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.list-element p{
+    padding: 0;
+}
+
+.list-element label {
+    color: var(--do);
+}
+
+/* ============================ */
+/* Live Chat */
+.event-chat {
+    position: absolute;
+    top: 10em;
+    right: 10em;
+    width: 300px;
+    height: 500px;
+}
+
+.event-chat h1 {
+    text-align: center;
+    padding: 1em 0;
+    color: var(--do);
+    font-weight: 600;
+}
+.event-chat-main {
+    width: 100%;
+    height: 70%;
+    background-color: var(--trang);
+    border-radius: 20px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.event-chat-main p {
+    color: var(--do);
+    padding: 0.2em 0;
+}
+
+.event-chat-main span {
+    font-weight: 600;
+}
+
+.event-chat-input {
+    width: 100%;
+    height: 10%;
+    background-color: var(--trang);
+    border-radius: 20px;
+    padding: 0.7em 1em;
+    margin-bottom: 1em;
+}
+
+.input-gr {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.input-gr img {
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    margin-right: 0.5em;
+}
+
+.input-gr input {
+    border: none;
+    border-bottom: 1px solid var(--do);
+    padding: 0.2em;
+}
+
+.input-gr input::placeholder {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.input-gr button {
+    padding: 0 0.5em;
+    border: none;
+    background-color: transparent;
+    color: var(--do);
+}
+/* ============================ */
+/* event-noti */
+
+.event-noti {
+    position: absolute;
+    left: 10em; bottom: 5em;
+    width: 30em;
+    height: 5em;
+    border-radius: 20px;
+}
+
+.event-noti p {
+    font-size: 14px;
+    color: var(--do);
+    padding: 0.2em 1em;
+}
+
+.event-noti span {
+    font-weight: 600;
+}

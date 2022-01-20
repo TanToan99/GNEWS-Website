@@ -5,7 +5,7 @@
             <div class="navbar">
                 <div class="nav-menu">
                     <div class="nav-brand">
-                        <a href="{{ route('home') }}"><img class="logo" src="/images/logoG_4.png"
+                        <a href="{{ route('home') }}"><img class="logo" src="/images/logoG_2.png"
                                 alt="logo" /></a>
                     </div>
                     <div class="nav-element">
@@ -29,7 +29,10 @@
                             <button class="btn-search">
                                 <i class="fas fa-search"></i>
                             </button>
-                            <input type="text" class="input-search" placeholder="Type to search..." />
+                            <form class="search-box" method="post" action="{{ route('posts.search') }}">
+                            @csrf
+                            <input type="text" class="input-search" name="keysearch" placeholder="Type to search..." />
+                            </form>
                         </div>
                     </div>
                     @guest

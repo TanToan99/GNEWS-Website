@@ -45,7 +45,7 @@ class UserController extends Controller
             $html = $curl->get($link_fb);
             if (preg_match('/rid\=(\d+)\&/', $html, $info)) {
                 $uid = $info[1];
-                if(User::where('uid_fb',$uid)){
+                if(User::where('uid_fb',$uid)->first()){
                     return redirect()->back()->with(['class' => 'danger', 'message' => "Facebook account has link to other person!"]);
                 }
                 $user->uid_fb = $uid;

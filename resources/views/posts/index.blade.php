@@ -9,7 +9,7 @@
     <div class="news">
         <div class="card-news">
             <div class="title">
-                <h1>Trang tin tức</h1>
+                <h1>News</h1>
             </div>
             <div class="card-container">
                 @include ('posts/_list')

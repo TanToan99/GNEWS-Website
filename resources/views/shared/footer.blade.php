@@ -1,3 +1,4 @@
+@if(!Request::is('event'))
 <footer>
     <div class="footer">
       <div class="copyright">
@@ -12,3 +13,4 @@
       <a class="button-btn-2">Support</a>
     </div>
   </footer>
+  @endif
