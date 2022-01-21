@@ -126,7 +126,6 @@
     width: 100%;
     height: auto;
     padding: 1em;
-
 }
 
 .e-modal-content-rule h1 {
@@ -172,7 +171,6 @@
     width: 100%;
     height: auto;
     padding: 1em;
-
 }
 
 .e-modal-content-mi h1 {
@@ -217,7 +215,6 @@
     width: 100%;
     height: auto;
     padding: 1em;
-
 }
 
 .e-modal-content-hi h1 {
@@ -252,7 +249,7 @@
     align-items: center;
 }
 
-.list-element p{
+.list-element p {
     padding: 0;
 }
 
@@ -277,12 +274,93 @@
     font-weight: 600;
 }
 .event-chat-main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+
+.panel-body {
+    position: relative;
+    overflow: hidden;
     width: 100%;
     height: 70%;
     background-color: var(--trang);
     border-radius: 20px;
     padding: 1em;
     margin-bottom: 1em;
+    scroll-padding: 1em;
+}
+
+.chat {
+    list-style: none;
+    overflow-y: scroll;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1em;
+}
+
+.panel-footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--trang);
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--trang);
+    border-radius: 10px;
+}
+
+span.input-group-btn {
+    width: 20%;
+}
+button#btn-chat {
+    width: 100%;
+    height: 4em;
+    border: none;
+    background-color: transparent;
+    color: var(--do);
+}
+
+input#btn-input {
+
+    width: 80%;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid var(--do);
+    padding: 0.5em;
+    margin-left: 0.5em;
+}
+input#btn-input::placeholder {
+    font-size: 10px;
+    font-style: italic;
+}
+
+.chat-body.clearfix {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+strong.primary-font {
+    font-weight: 700;
+    padding-right: 0.5em;
+    color: var(--do);
 }
 
 .event-chat-main p {
@@ -311,13 +389,15 @@
 }
 
 .chat-ava {
-    width: 30px; height: 30px;
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
     margin-right: 0.5em;
 }
 
 .send-icons {
-    width: 20px; height: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 .input-gr input {
@@ -342,7 +422,8 @@
 
 .event-noti {
     position: absolute;
-    left: 10em; bottom: 5em;
+    left: 10em;
+    bottom: 5em;
     width: 30em;
     height: 5em;
     border-radius: 20px;
