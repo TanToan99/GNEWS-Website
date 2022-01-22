@@ -15,6 +15,7 @@ btn1.onclick = function() {
   modal1.style.display = "block";
   modal2.style.display = "none";
   modal3.style.display = "none";
+  modal4.style.display = "none";
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -44,6 +45,7 @@ btn2.onclick = function() {
   modal2.style.display = "block";
   modal1.style.display = "none";
   modal3.style.display = "none";
+  modal4.style.display = "none";
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -72,6 +74,7 @@ btn3.onclick = function() {
   modal3.style.display = "block";
   modal1.style.display = "none";
   modal2.style.display = "none";
+  modal4.style.display = "none";
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -85,3 +88,34 @@ window.onclick = function(event) {
     modal3.style.display = "none";
   }
 }
+
+
+// Get the modal 4
+var modal4 = document.getElementById("eModalChat");
+
+// Get the button that opens the modal
+var btn4 = document.getElementById("eBtnChat");
+
+// Get the <span> element that closes the modal
+var span4 = document.getElementsByClassName("e-close-chat")[0];
+
+// When the user clicks the button, open the modal 
+btn4.onclick = function() {
+  modal4.style.display = "block";
+  modal1.style.display = "none";
+  modal2.style.display = "none";
+  modal3.style.display = "none";
+}
+
+// When the user clicks on <span> (x), close the modal
+span4.onclick = function() {
+  modal4.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal3) {
+    modal4.style.display = "none";
+  }
+}
+

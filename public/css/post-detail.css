@@ -63,11 +63,13 @@
 .text-muted {
     width: auto;
     padding: 0.5em;
-    background-color: var(--cam);
-    color: var(--trang);
+    
+    color: var(--cam);
     border-radius: 20px;
     font-style: italic;
     font-size: 14px;
+    font-weight: 600;
+
 }
 
 .text-like i {

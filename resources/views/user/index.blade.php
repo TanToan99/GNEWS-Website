@@ -55,7 +55,7 @@
                                 </div>
                                 <div class="info-object">
                                     <p class="info-element">Link FB:</p>
-                                    <a href="{{$user->link_fb}}"><p class="info-user">{{ $user->link_fb }}</p></a>
+                                    <a href="{{$user->link_fb}}"><p class="info-user" >{{ $user->link_fb }}</p></a>
                                 </div>
                             </div>
                         @endif

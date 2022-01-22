@@ -4,7 +4,8 @@
 
         <span class="input-group-btn">
             <button class="btn btn-primary btn-sm" id="btn-chat" @click="sendMessage">
-                Send
+                <img id="eBtnRule" class="send-icons" src="/images/icons/send-icon.png" />
+
             </button>
         </span>
     </div>

@@ -1,5 +1,14 @@
+body {
+    background-color: var(--bgevent);
+}
 .event-container {
-    padding-top: 87px;
+    padding-top: 80px;
+    background-color: var(--bgevent);
+    height: auto;
+}
+
+.event-container-mb {
+    display: none;
 }
 
 .event-banner {
@@ -17,11 +26,12 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    /* background-color: violet; */
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
     border: 1px solid var(--bgevent);
+}
+
+.bg-video {
+    display: block;
+    margin: 0 auto;
 }
 
 .bg-element-2 {
@@ -296,7 +306,7 @@
 
 .chat {
     list-style: none;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     height: auto;
     width: 100%;
     position: absolute;
@@ -352,9 +362,10 @@ input#btn-input::placeholder {
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     align-content: center;
+    padding-bottom: 0.5em;
 }
 
 strong.primary-font {
@@ -363,9 +374,14 @@ strong.primary-font {
     color: var(--do);
 }
 
+.body-chat p{
+    word-wrap: break-word;
+    width: 200px;
+    padding-right: 0.5em;
+}
+
 .event-chat-main p {
     color: var(--do);
-    padding: 0.2em 0;
 }
 
 .event-chat-main span {

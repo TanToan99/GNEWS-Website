@@ -77,7 +77,7 @@
                 </div>
             </div>
 
-            <a href="index.html"><img class="logo" src="/images/logoG_4.png" alt="logo" /></a>
+            <a href="index.html"><img class="logo" src="/images/logoG_2.png" alt="logo" /></a>
 
             <div class="dropdownSearch">
                 <div><i onclick="myFunctionSearch()" class="dropbtn-search fas fa-search"></i></div>

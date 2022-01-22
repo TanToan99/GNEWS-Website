@@ -129,7 +129,7 @@
         height: auto;
     }
     .card-body {
-        height: 10em;
+        height: auto;
     }
     .card-title {
         font-size: 20px;

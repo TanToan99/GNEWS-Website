@@ -2,7 +2,9 @@
 <footer>
     <div class="footer">
       <div class="copyright">
-        <p>© Greenwich Newspacer Club 2022</p>
+        <p>
+          © 2022 - Greenwich Newspaper Club <br/> Câu lạc bộ báo chí thuộc Đại học Greenwich Việt Nam - CS Đà Nẵng
+        </p>
         <div class="social-icon">
           <a href="https://www.facebook.com/gnewsclub.grevn"><i class="fab fa-facebook-square"></i></a>
           <a href="https://www.instagram.com/gnewsclub"><i class="fab fa-instagram"></i></i></a>

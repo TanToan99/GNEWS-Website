@@ -16,7 +16,7 @@
     </div>
     <div class="event-main">
         <div class="bg-element-1">
-            <video autoplay muted loop id="myVideo">
+            <video autoplay muted loop class="bg-video" id="myVideo" >
                 <source src="/images/event-element/bg-motion-2.mp4" type="video/mp4">
             </video>
         </div>
@@ -113,6 +113,8 @@
         </div>
     </div>
 </div>
+
+@include('event/_event-mobile')
     @endsection
 
     @section('custom-js')
