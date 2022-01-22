@@ -16,7 +16,7 @@ class CreateGiftsTable extends Migration
         Schema::create('gifts', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->integer('value'); //image url or card value
+            $table->string('value'); //image url or card value
             $table->integer('quantity'); //-1: unlimited
             $table->bigInteger('giftCategory_id')->unsigned();
             $table->foreign('giftCategory_id')->references('id')->on('gift_categories');

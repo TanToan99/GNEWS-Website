@@ -17,6 +17,9 @@ class FacebookUser extends Migration
             $table->string("link_fb")->nullable();
             $table->string("uid_fb")->nullable();
             $table->string("avatar")->nullable();
+            $table->bigInteger('invited_id')->unsigned()->nullable();
+            $table->foreign('invited_id')->references('id')->on('users');
+            $table->string("times")->default(0);
         });
     }
 

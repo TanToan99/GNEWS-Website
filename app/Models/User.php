@@ -24,7 +24,8 @@ class User extends Authenticatable
         'email',
         'password',
         'provider',
-        'provider_id'
+        'provider_id',
+        'times'
     ];
 
     /**
@@ -95,5 +96,9 @@ class User extends Authenticatable
     public function messages()
     {
         return $this->hasMany(Message::class);
+    }
+
+    public function inviter(){
+        return $this->belongsTo(User::class,'invited_id');
     }
 }

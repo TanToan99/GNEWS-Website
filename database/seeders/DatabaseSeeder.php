@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // Roles
-        /*Role::firstOrCreate(['name' => Role::ROLE_EDITOR]);
+        Role::firstOrCreate(['name' => Role::ROLE_EDITOR]);
         $role_admin = Role::firstOrCreate(['name' => Role::ROLE_ADMIN]);
 
         // MediaLibrary
@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
         // Users
         $user = User::first();
 
-        $user->roles()->sync([$role_admin->id]);*/
+        $user->roles()->sync([$role_admin->id]);
 
         
         GiftCategory::firstOrCreate(['name' => GiftCategory::GIFT_CARD]);

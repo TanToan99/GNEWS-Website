@@ -20,7 +20,7 @@ class CreateGiftUsersTable extends Migration
             $table->bigInteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
             $table->boolean("received")->default(false); //for card
-            $table->boolean("value")->default(false); //data of card
+            $table->string("value")->default(null); //data of card
             $table->timestamps();
         });
     }

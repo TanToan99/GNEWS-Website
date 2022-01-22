@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Auth;
 */
 //Auth::routes(); //no need to use
 Route::get('/profile','UserController@index')->name('profile');
-Route::post('/profile','UserController@add_link_fb')->name('add_link_facebook');
+Route::post('/profile','UserController@add_link_fb')->name('profile.addFB');
+Route::post('/profile/invite','UserController@invite')->name('profile.invite');
 
 Route::get('/aboutus', 'AboutUsController@index')->name('aboutus');
 
@@ -34,4 +35,4 @@ Route::get('/event','EventController@index')->name('event');
 Route::get('messages', 'ChatsController@fetchMessages');
 Route::post('messages', 'ChatsController@sendMessage');
 
-Route::post("/gifts/random","GiftController@random")->name('random');
+Route::get("/gifts/random","GiftController@random")->name('random');

@@ -21,7 +21,11 @@
             </video>
         </div>
         <div class="event-tree">
-            <h1 class="tree-text-h1">Ban đang có <span>5</span> lượt hái</h1>
+            @guest
+            <h1 class="tree-text-h1">Đăng nhập để hái lộc</span> lượt hái</h1>
+            @else
+            <h1 class="tree-text-h1">Ban đang có <span>{{ auth()->user()->times }}</span> lượt hái</h1>
+            @endguest
             <video autoplay muted loop class="tree-img" id="myVideo" >
                 <source src="/images/event-element/tree-event.mp4" type="video/mp4">
             </video>

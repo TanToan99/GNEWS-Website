@@ -11,6 +11,7 @@
             <div class="card-left">
                 <a href="#">Thông tin cơ bản</a>
                 <a href="#">Liên kết Facebook</a>
+                <a href="#">Người giới thiệu</a>
             </div>
             <div class="card-right">
                 <div class="card-main">
@@ -37,28 +38,49 @@
                 </div>
                 <div class="card-main">
                     <h2>Liên kết Facebook</h2>
-                        @if ($user->link_fb == null)
-                            <span>(Lưu ý: Chỉ cập nhật liên kết FB đúng 1 lần)</span>
-                            <form class="card-input" method="POST" action="{{ route('add_link_facebook') }}">
-                                @csrf
-                                <input name="link_fb">
-                                <button type="submit">Link</button>
-                            </form>
-                            @if (session('class'))
-                                <span class="alert">{{ session('message') }}</span>
-                            @endif
-                        @else
-                            <div style="margin-top: 1em;">
-                                <div class="info-object">
-                                    <p class="info-element">UID:</p>
-                                    <p class="info-user">{{ $user->uid_fb }}</p>
-                                </div>
-                                <div class="info-object">
-                                    <p class="info-element">Link FB:</p>
-                                    <a href="{{$user->link_fb}}"><p class="info-user" >{{ $user->link_fb }}</p></a>
-                                </div>
-                            </div>
+                    @if ($user->link_fb == null)
+                        <span>(Lưu ý: Chỉ cập nhật liên kết FB đúng 1 lần)</span>
+                        <form class="card-input" method="POST" action="{{ route('profile.addFB') }}">
+                            @csrf
+                            <input name="link_fb">
+                            <button type="submit">Link</button>
+                        </form>
+                        @if (session('class'))
+                            <span class="alert">{{ session('message') }}</span>
                         @endif
+                    @else
+                        <div style="margin-top: 1em;">
+                            <div class="info-object">
+                                <p class="info-element">UID:</p>
+                                <a href="{{ $user->link_fb }}">
+                                    <p class="info-user">{{ $user->uid_fb }}</p>
+                                </a>
+                            </div>
+                        </div>
+                    @endif
+                </div>
+
+                <div class="card-main">
+                    <h2>Giới thiệu</h2>
+                    @if ($user->invited_id == null)
+                        <span>(Lưu ý: Chỉ nhập email người giới thiệu đúng 1 lần)</span>
+                        <form class="card-input" method="POST" action="{{ route('profile.invite') }}">
+                            @csrf
+                            <input name="inviter">
+                            <button type="submit">Link</button>
+                        </form>
+                        @if (session('class'))
+                            <span class="alert">{{ session('message') }}</span>
+                        @endif
+                    @else
+                        <div style="margin-top: 1em;">
+                            <div class="info-object">
+                                <p class="info-element">Người giới thiệu:</p>
+                                <p class="info-user">{{ $user->inviter->name }}</p>
+                            </div>
+                        </div>
+                    @endif
+
                 </div>
             </div>
         </div>

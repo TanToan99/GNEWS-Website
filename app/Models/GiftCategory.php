@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class GiftCategory extends Model
 {
     use HasFactory;
+    
     const GIFT_CARD = 'card';
     const GIFT_WISH = 'wish';
 

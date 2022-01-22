@@ -15,7 +15,7 @@
             <span class="dot"></span>
         </div>
         <div class="join-now">
-            <a>Tham gia ngay</a>
+            <a href="{{ route('event') }}">Tham gia ngay</a>
         </div>
     </div>
 </div>
@@ -38,7 +38,7 @@
             <span class="dot"></span>
         </div>
         <div class="join-now">
-            <a>Tham gia ngay</a>
+            <a href="{{ route('event') }}">Tham gia ngay</a>
         </div>
     </div>
 </div>

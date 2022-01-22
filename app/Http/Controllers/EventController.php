@@ -18,7 +18,12 @@ class EventController extends Controller
         if ($currentDate > $startDate){   
             return view('event.countdown');
         }else{    
-            return view('event.index');
+            $agent = new \Jenssegers\Agent\Agent;
+            if($agent->isMobile()){
+                return view('event._event-mobile');
+            }else{
+                return view('event.index');
+            }
         }
     }
 }

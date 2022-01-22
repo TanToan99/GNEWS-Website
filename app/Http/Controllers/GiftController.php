@@ -2,12 +2,31 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Gift;
+use App\Models\GiftCategory;
+use App\Models\GiftUser;
 use Illuminate\Http\Request;
 
 class GiftController extends Controller
 {
     public function random(Request $request){
-        return response()->json(['error' => 0, 'img' => 'https://scontent.fdad3-4.fna.fbcdn.net/v/t1.15752-9/271656282_668517844287851_5529151578864252820_n.png?_nc_cat=104&ccb=1-5&_nc_sid=ae9488&_nc_ohc=fRTDMhB2EqAAX9Fmvd3&_nc_ht=scontent.fdad3-4.fna&oh=03_AVJaCfFXeaQoGvg3O2_DQByjWTylmpA05z-z7JNVmzIOfQ&oe=620FD71E']);
-        //return response()->json(['error' => 1, 'message' => 'Basdas']);
+        $user = \Auth::user();
+        if($user->times > 0){
+            
+            $gift = Gift::where('quantity','>','0')->inRandomOrder()->first();
+            if(!$gift){
+                return response()->json(['error' => 1, 'message' => 'Có lẽ là bạn quá đen cho tết 2022!']);
+            }
+            $gift->decrement('quantity', 1);
+            $gift->save();
+            GiftUser::create([
+                'gift_id' => $gift->id,
+                'user_id' => $user->id,
+                'received' => ($gift->name == GiftCategory::GIFT_CARD) ? false : true,
+                'value' => null
+            ]);
+            return response()->json(['error' => 0, 'img' => $gift->value]);
+        }
+        return response()->json(['error' => 1, 'message' => 'Bạn đã hết lượt, hãy làm nhiệm vụ ngay nào !']);
     }
 }
