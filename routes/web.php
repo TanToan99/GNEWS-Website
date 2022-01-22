@@ -33,3 +33,5 @@ Route::get('/event','EventController@index')->name('event');
 
 Route::get('messages', 'ChatsController@fetchMessages');
 Route::post('messages', 'ChatsController@sendMessage');
+
+Route::post("/gifts/random","GiftController@random")->name('random');

@@ -8,6 +8,7 @@ Route::resources([
     'posts' => PostController::class,
     'users' => UserController::class,
     'media' => MediaController::class,
+    'gifts' => GiftController::class,
 ]);
 
 Route::get("/export","ExportController@export")->name('export');
