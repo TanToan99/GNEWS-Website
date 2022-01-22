@@ -1,20 +1,54 @@
 @media (max-width: 1440px) {
-    .event-container {
-        
-    }
-
-    .event-main {
-        height: ;
-    }
-
     .event-menu {
         left: 5em;
     }
     .event-chat {
         right: 5em;
     }
+
+    .e-modal-rule {
+        left: 7em;
+    }
+    .e-modal-mi {
+        left: 7em;
+    }
+    .e-modal-hi {
+        left: 7em;
+    }
 }
 @media (max-width: 1200px) {
+    .bg-element-1 {
+        display: none;
+    }
+
+    .event-menu {
+        left: 1em;
+    }
+    .event-chat {
+        right: 1em;
+        width: 250px;
+    }
+
+    .e-modal-rule {
+        left: 5em;
+    }
+    .e-modal-mi {
+        left: 7em;
+    }
+    .e-modal-hi {
+        left: 7em;
+    }
+
+    .event-chat{
+        display: block;
+    }
+    .event-icon-mb {
+        display: none;
+    }
+
+    .e-modal-chat-mb {
+        display: block;
+    }
 }
 @media (max-width: 998px) {
     .event-container {
@@ -24,16 +58,24 @@
     .event-container-mb {
         display: block;
         padding-top: 50px;
+    }
+
+    .event-main-mb {
         position: relative;
     }
 
     .event-banner-mb {
         background-color: var(--do);
+        height: 3em;
+    }
+
+    .event-banner-mb img {
+        height: 3em;
     }
 
     .event-tree-mb {
         position: absolute;
-        top: 10em;
+        top: 7em;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -44,32 +86,139 @@
         height: auto;
     }
 
-    .bg-element-mb{
+    .bg-element-mb {
         position: absolute;
     }
 
-
     .tree-text-h1-mb {
-        /* font-size: 12px; */
+        font-size: 28px;
         color: var(--do);
-        padding: 2em;
+        padding: 1em;
     }
 
     .tree-text-h1-mb span {
+        font-size: 28px;
         font-weight: 600;
     }
 
     .tree-img-mb {
-        width: 100%;
+        width: 50%;
     }
     .tree-text-p-mb {
-        font-size: 12px;
+        font-size: 20px;
         color: var(--do);
+        padding: 2em 0;
     }
     .tree-btn-mb {
-        width: 50%;
+        width: 70%;
         display: block;
         margin: 0 auto;
+    }
+
+    .event-menu-mb {
+        position: absolute;
+        top: 2em;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .menu-element-mb {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        padding: 0 1em;
+    }
+
+    .menu-element-mb p {
+        padding: 0.2em 0;
+        color: var(--do);
+    }
+
+    .e-modal-mi-mb {
+        display: none;
+        position: absolute;
+        z-index: 6;
+        top: 10em;
+        width: auto;
+        height: auto;
+        background-color: var(--trang);
+        border-radius: 20px;
+    }
+
+    .e-modal-mb {
+        padding: 1em;
+        width: 20em;
+    }
+
+    .e-modal-mb h1 {
+        text-align: center;
+        padding: 1em 0;
+        color: var(--do);
+        font-weight: 600;
+    }
+
+    .e-close-mb {
+        color: var(--do);
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0.5em;
+    }
+
+    .list-mb {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 0.2em 0;
+    }
+    
+    .event-chat-mb {
+        position: absolute;
+        right: 2em; top: 30em;
+    }
+
+    .e-modal-chat-mb {
+        display: none;
+        position: absolute;
+        z-index: 6;
+        bottom: 0em; right: 10em;
+        width: auto;
+        height: auto;
+        /* background-color: var(--trang); */
+        border-radius: 20px;
+    }
+
+    .e-close-chat-mb {
+        color: var(--do);
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0.5em;
+    }
+
+    .event-chat {
+        position: static;
+    }
+
+    #eBtnChatMb {
+        display: block;
+    }
+    
+    .e-close-chat-mb {
+        display: block;
     }
 }
 @media (max-width: 768px) {

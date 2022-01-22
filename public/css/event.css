@@ -107,6 +107,7 @@ body {
 }
 .tree-btn {
     width: 20em;
+    cursor: pointer;
 }
 
 .tree-text-p {
@@ -432,6 +433,14 @@ strong.primary-font {
     border: none;
     background-color: transparent;
     color: var(--do);
+}
+
+#eBtnChatMb {
+    display: none;
+}
+
+.e-close-chat-mb {
+    display: none;
 }
 /* ============================ */
 /* event-noti */

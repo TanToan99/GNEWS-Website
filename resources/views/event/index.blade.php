@@ -2,12 +2,10 @@
 
 
 @section('custom-css')
-    <link rel="stylesheet" href="/css/event.css" />
-    <link rel="stylesheet" href="/css/event-responsive.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" />
+<link rel="stylesheet" href="/css/event.css" />
 @endsection
 
-@section('content') 
+@section('content')
 <div class="event-container">
     <div class="event-banner">
         <marquee scrollamount="15">
@@ -16,7 +14,7 @@
     </div>
     <div class="event-main">
         <div class="bg-element-1">
-            <video autoplay muted loop class="bg-video" id="myVideo" >
+            <video autoplay muted loop class="bg-video" id="myVideo">
                 <source src="/images/event-element/bg-motion-2.mp4" type="video/mp4">
             </video>
         </div>
@@ -26,24 +24,21 @@
             @else
             <h1 class="tree-text-h1">Ban đang có <span>{{ auth()->user()->times }}</span> lượt hái</h1>
             @endguest
-            <video autoplay muted loop class="tree-img" id="myVideo" >
+            <video autoplay muted loop class="tree-img" id="myVideo">
                 <source src="/images/event-element/tree-event.mp4" type="video/mp4">
             </video>
             <p class="tree-text-p">Thời gian hái lộc 20h00 - 21h00</p>
-            <a href="#"><img class="tree-btn" src="/images/event-element/button.png" /></a>
+            <img class="tree-btn" id="myBtn" src="/images/event-element/button.png" />
         </div>
+
+
+
+
         <!-- event menu -->
         <div class="event-menu">
             <div class="event-rule">
                 <p>Thể lệ</p>
-                <img id="eBtnRule" class="eventicon" src="/images/event-element/rule-icon.png" />
-                <div id="eModalRule" class="e-modal-rule">
-                    <div class="e-modal-content-rule">
-                        <span class="e-close-rule">&times;</span>
-                        <h1>LUẬT CHƠI</h1>
-                        <p>abcdf</p>
-                    </div>
-                </div>
+                <a href="#"><img id="eBtnRule" class="eventicon" src="/images/event-element/rule-icon.png" /></a>
             </div>
             <div class="event-rule">
                 <p>Nhiệm vụ</p>
@@ -84,13 +79,7 @@
             </div>
             <div class="event-rule">
                 <p>Lịch sử</p>
-                <img id="eBtnHi" class="eventicon" src="/images/event-element/history-icon.png" />
-                <div id="eModalHi" class="e-modal-hi">
-                    <div class="e-modal-content-hi">
-                        <span class="e-close-hi">&times;</span>
-                        <h1>LỊCH SỬ HÁI LỘC</h1>
-                    </div>
-                </div>
+                <a href="#"><img id="eBtnHi" class="eventicon" src="/images/event-element/history-icon.png" /></a>
             </div>
             <!-- The Modal -->
         </div>
@@ -111,17 +100,18 @@
             </div>
                 @endif
             </div>
+        
 
             <div class="event-noti">
             </div>
         </div>
+
     </div>
 </div>
 
-@include('event/_event-mobile')
-    @endsection
+@endsection
 
-    @section('custom-js')
-        <script src="/js/event.js"></script>
-        <script src="{{ mix('js/app.js') }}"></script>
-    @endsection
+@section('custom-js')
+<script src="/js/event.js"></script>
+<script src="{{ mix('js/app.js') }}"></script>
+@endsection
