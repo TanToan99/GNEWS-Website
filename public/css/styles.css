@@ -656,6 +656,11 @@ img {
     .nav-search {
         padding-right: 1em;
     }
+
+    .join-now {
+        bottom: 5em;
+    }
+
     .footer {
         padding: 0.5em 3em;
     }

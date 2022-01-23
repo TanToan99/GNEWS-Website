@@ -5,8 +5,8 @@
 
 .title h1 {
     text-align: center;
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 60px;
+    font-weight: 700;
     color: var(--cam);
 }
 
@@ -62,7 +62,7 @@
     justify-content: space-between;
     margin-top: 0.5em;
     padding-top: 0.5em;
-    padding-bottom: 2em;
+    padding-bottom: 1.5em;
     border-top: 1px solid var(--cam);
 }
 
@@ -114,6 +114,12 @@
     .card {
         width: 300px;
         height: auto;
+    }
+    .title h1 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+        color: var(--cam);
     }
 }
 

@@ -31,10 +31,14 @@
                 <p class="tree-text-p">Thời gian hái lộc 20h00 - 21h00</p>
                 @guest
                 @else
-                    <a onclick="">
-                        <img class="tree-btn" id="myBtn" src="/images/event-element/button.png" />
-                    </a>
-                    @endif
+                    <img class="tree-btn" id="myBtn" src="/images/event-element/button.png" />
+                    <div id="eModalQue" class="e-modal-que">
+                        <div class="e-modal-content-que">
+                            <span class="e-close-que">&times;</span>
+                            <img src="/images/que-chuc/que-chuc-1.jpg"/>
+                        </div>
+                    </div>
+                @endif
                 </div>
 
 

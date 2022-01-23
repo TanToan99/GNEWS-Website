@@ -33,15 +33,19 @@ body {
 }
 
 .tree-mb {
-    position: relative;
+    position: absolute;
+    top: 10em;
     width: 50%;
-    display: block;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .event-h1-mb {
-    position: absolute;
-    top: 8.5em;
+    
     width: 100%;
     text-align: center;
     color: var(--do);
@@ -112,7 +116,7 @@ body {
     display: none;
     position: absolute;
     z-index: 6;
-    top: 10em;
+    top: 5em;
     width: auto;
     height: auto;
     background-color: var(--trang);
@@ -296,7 +300,7 @@ button#btn-chat {
 
 @media (max-width: 1440px) {
     .tree-video-mb {
-        height: 50%;
+        width: 70%;
     }
 }
 @media (max-width: 1200px) {
@@ -310,13 +314,13 @@ button#btn-chat {
         margin-top: 3em;
     }
     .tree-mb {
-        width: 70%;
+        width: 100%;
     }
 }
 
 @media (max-width: 768px) {
-    .tree-mb {
-        width: 80%;
+    .tree-video-mb {
+        width: 90%;
     }
 }
 @media (max-width: 550px) {
@@ -329,11 +333,11 @@ button#btn-chat {
 
     .e-modal-chat-mb {
         bottom: 5em;
-        right: 1em;
+        right: 2em;
     }
 
     .event-chat-mb {
         right: 0;
-        bottom: 0em;
+        bottom: -7em;
     }
 }

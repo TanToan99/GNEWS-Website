@@ -22,7 +22,8 @@
     width: auto;
     text-decoration: none;
     text-align: center;
-    color: var(--den);
+    background-color: var(--cam);
+    color: var(--trang);
     font-weight: 500;
     padding: 1em;
     margin: 0.25em 2em;
@@ -85,7 +86,7 @@
 
 .info-user {
     padding: 0em 1em;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
 }
 
