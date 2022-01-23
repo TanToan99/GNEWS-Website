@@ -2,19 +2,26 @@
 
 @section('custom-css')
     <link rel="stylesheet" href="/css/profile.css" />
+    <style>
+        .footer {
 
+            position: absolute;
+            bottom: 0 !important;
+        }
+
+    </style>
 @endsection
 
 @section('content')
     <div class="container-profile">
         <div class="card-profile">
             <div class="card-left">
-                <a href="#">Thông tin cơ bản</a>
-                <a href="#">Liên kết Facebook</a>
-                <a href="#">Người giới thiệu</a>
+                <a class="activev" href="javascript:void(0)" onclick="like(1)" id="a1">Thông tin cơ bản</a>
+                <a href="#" href="javascript:void(0)" onclick="like(2)" id="a2">Liên kết Facebook</a>
+                <a href="#" href="javascript:void(0)" onclick="like(3)" id="a3">Người giới thiệu</a>
             </div>
             <div class="card-right">
-                <div class="card-main">
+                <div class="card-main" id="b1" style="display: block">
                     <h2>Thông tin cơ bản</h2>
                     <div class="card-info">
                         <div class="card-ava-user">
@@ -36,7 +43,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-main">
+                <div class="card-main" id="b2" style="display: none">
                     <h2>Liên kết Facebook</h2>
                     @if ($user->link_fb == null)
                         <span>(Lưu ý: Chỉ cập nhật liên kết FB đúng 1 lần)</span>
@@ -60,7 +67,7 @@
                     @endif
                 </div>
 
-                <div class="card-main">
+                <div class="card-main" id="b3" style="display: none">
                     <h2>Giới thiệu</h2>
                     @if ($user->invited_id == null)
                         <span>(Lưu ý: Chỉ nhập email người giới thiệu đúng 1 lần)</span>
@@ -85,6 +92,28 @@
             </div>
         </div>
     </div>
+@endsection
 
+@section('custom-js')
+    <script>
+        function like(id) {
+            $('#a1').removeClass('activev');
+            $('#a2').removeClass('activev');
+            $('#a3').removeClass('activev');
+            document.getElementById('b1').style.display = "none";
+            document.getElementById('b2').style.display = "none";
+            document.getElementById('b3').style.display = "none";
 
+            $('#a' + id).addClass('activev');
+            document.getElementById('b' + id).style.display = "block";
+            // var $elem = $("#likei" + id);
+            // if ($elem.hasClass("fas")) {
+            //     $elem.removeClass('fas');
+            //     $elem.addClass('far');
+            // } else if ($elem.hasClass("far")) {
+            //     $elem.removeClass('far');
+            //     $elem.addClass('fas');
+            // }
+        };
+    </script>
 @endsection

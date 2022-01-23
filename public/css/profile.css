@@ -14,7 +14,7 @@
 .card-left {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 27%;
     height: auto;
 }
 
@@ -22,15 +22,18 @@
     width: auto;
     text-decoration: none;
     text-align: center;
-    background-color: var(--cam);
-    color: var(--trang);
+    color: var(--den);
     font-weight: 500;
     padding: 1em;
-    margin: 0.25em 2em;
+    margin: 0.4em 2em;
     border-radius: 10px;
     /* border: 1px solid var(--den); */
     box-shadow: 3px 3px 10px 3px rgb(0 0 0 / 10%);
+}
 
+.activev {
+    color: white !important;
+    background: var(--cam);
 }
 
 .card-right {
@@ -41,7 +44,7 @@
 .card-main {
     padding: 1em 2em;
     margin: 0.25em 2em;
-    border-radius: 10px;    
+    border-radius: 10px;
     box-shadow: 3px 3px 10px 3px rgb(0 0 0 / 10%);
     /* border: 1px solid var(--den); */
     margin-bottom: 2em;
@@ -98,12 +101,13 @@
     justify-content: flex-start;
     padding: 0.5em 0;
 }
+
 .card-input {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-
 }
+
 .card-input input {
     margin: 1em 0;
     padding-left: 1em;
@@ -126,6 +130,7 @@
     color: var(--trang);
 }
 
+
 /*Alert*/
 
 .alert {
@@ -139,6 +144,7 @@
         width: 85%;
     }
 }
+
 @media (max-width: 1200px) {
     .card-profile {
         width: 90%;
@@ -150,6 +156,7 @@
         padding: 2em 2em;
     }
 }
+
 @media (max-width: 998px) {
     .container-profile {
         padding: 5em 0;
@@ -157,11 +164,9 @@
     .card-main h2 {
         text-align: center;
     }
-
     .card-left {
         display: none;
     }
-
     .card-profile {
         width: 80%;
         display: flex;
@@ -195,12 +200,12 @@
         padding: 0 1em;
     }
 }
+
 @media (max-width: 768px) {
     .container-profile {
         padding: 0;
         padding-top: 5em;
     }
-
     .card-info {
         flex-direction: column;
     }
@@ -210,7 +215,6 @@
     .card-input button {
         width: 20%;
     }
-
     .card-main {
         margin-bottom: 1em;
     }
@@ -229,21 +233,19 @@
     .info-object {
         flex-wrap: wrap;
     }
-    .info-element{
+    .info-element {
         padding: 0.5em 0.5em 0.5em 0;
     }
     .info-user {
         padding: 0;
         font-size: 16px;
     }
-
     .card-input input {
         width: 70%;
     }
     .card-input button {
         width: 30%;
     }
-
     .card-main span {
         font-size: 10px;
     }

@@ -21,9 +21,6 @@
     --bgevent: #fff5cc;
 }
 
-.body-section {
-    min-height: 100%;
-}
 
 /* hlml */
 
@@ -39,6 +36,7 @@ html::-webkit-scrollbar-thumb {
     background: var(--cam);
     opacity: 60%;
 }
+
 
 /* Header section */
 
@@ -117,6 +115,7 @@ html::-webkit-scrollbar-thumb {
     justify-content: space-between;
 }
 
+
 /* Search Box */
 
 .nav-search {
@@ -167,7 +166,7 @@ html::-webkit-scrollbar-thumb {
     pointer-events: painted;
 }
 
-.btn-search:focus ~ .input-search {
+.btn-search:focus~.input-search {
     width: 350px;
     border-radius: 0px;
     background-color: transparent;
@@ -182,6 +181,7 @@ html::-webkit-scrollbar-thumb {
     border-bottom: 1px solid var(--cam);
     transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
+
 
 /* button login */
 
@@ -235,9 +235,12 @@ html::-webkit-scrollbar-thumb {
     top: 1px;
 }
 
-/* ===================== */
 
 /* ===================== */
+
+
+/* ===================== */
+
 
 /* user dropdown */
 
@@ -249,6 +252,7 @@ html::-webkit-scrollbar-thumb {
     border: none;
     cursor: pointer;
 }
+
 
 /* .user-img:hover,
 .user-img:focus {} */
@@ -296,9 +300,12 @@ html::-webkit-scrollbar-thumb {
     display: block;
 }
 
-/* ===================== */
 
 /* ===================== */
+
+
+/* ===================== */
+
 
 /* body section */
 
@@ -309,6 +316,7 @@ html::-webkit-scrollbar-thumb {
 img {
     vertical-align: middle;
 }
+
 
 /* Slideshow container */
 
@@ -326,6 +334,7 @@ img {
     background-color: #ff0000;
     margin-top: 2em;
 }
+
 
 /* The dots/bullets/indicators */
 
@@ -370,6 +379,7 @@ img {
     color: var(--trang);
 }
 
+
 /* Fading animation */
 
 .fade {
@@ -397,12 +407,12 @@ img {
     }
 }
 
+
 /* footer section */
 
 .footer {
     padding: 0.5em 10em;
     display: flex;
-    bottom: 0;
     width: 100%;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -442,6 +452,7 @@ img {
     size: 30px;
     padding-left: 1em;
 }
+
 
 /* button support */
 
@@ -504,6 +515,7 @@ img {
     display: none;
 }
 
+
 /* @import url('responsive-1440px.css'); */
 
 @media (max-width: 1440px) {
@@ -529,7 +541,6 @@ img {
         font-weight: 600;
         font-size: 16px;
     }
-
     .user-content {
         left: -200px;
     }
@@ -572,7 +583,7 @@ img {
         background-color: transparent;
         pointer-events: painted;
     }
-    .btn-search:focus ~ .input-search {
+    .btn-search:focus~.input-search {
         width: 340px;
         border-radius: 0px;
         background-color: transparent;
@@ -643,7 +654,6 @@ img {
         width: 50%;
         font-size: 14px;
     }
-
     .copyright p {
         width: 70%;
     }
@@ -656,15 +666,13 @@ img {
     .nav-search {
         padding-right: 1em;
     }
-
     .join-now {
         bottom: 5em;
     }
-
     .footer {
         padding: 0.5em 3em;
     }
-    .btn-search:focus ~ .input-search {
+    .btn-search:focus~.input-search {
         width: 230px;
         border-radius: 0px;
         background-color: transparent;
@@ -840,7 +848,7 @@ img {
         font-weight: 500;
     }
     /* ///////////// */
-    .btn-search:focus ~ .input-search {
+    .btn-search:focus~.input-search {
         width: 500px;
         border-radius: 0px;
         background-color: transparent;
@@ -854,7 +862,6 @@ img {
         border-bottom: 1px solid var(--cam);
         transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
     }
-
     .copyright {
         width: 80%;
     }
@@ -862,7 +869,7 @@ img {
 
 @media (max-width: 768px) {
     /* search-input */
-    .btn-search:focus ~ .input-search {
+    .btn-search:focus~.input-search {
         width: 300px;
         border-radius: 0px;
         background-color: transparent;
@@ -880,7 +887,6 @@ img {
     .footer {
         flex-wrap: wrap;
     }
-
     .copyright {
         width: 100%;
     }
@@ -890,7 +896,7 @@ img {
 }
 
 @media (max-width: 550px) {
-    .btn-search:focus ~ .input-search {
+    .btn-search:focus~.input-search {
         width: 300px;
         border-radius: 0px;
         background-color: transparent;
@@ -911,7 +917,6 @@ img {
     .footer {
         padding: 0.5em 1em;
     }
-    
     .copyright {
         flex-wrap: wrap;
     }
@@ -920,7 +925,6 @@ img {
         border: none;
         font-size: 12px;
     }
-
     .social-icon {
         width: 70%;
         padding: 0;
