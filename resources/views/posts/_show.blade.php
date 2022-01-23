@@ -6,7 +6,7 @@
     </div>
     <div class="card-body">
         <div>
-            <span class="tag">{{ $post->created_at }}</span>
+            <span class="tag">{{ $post->created_at->toDateString() }}</span>
                 <h4 class="card-title">
                     {{ $post->title }}
                 </h4>

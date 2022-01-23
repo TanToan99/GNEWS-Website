@@ -38,4 +38,21 @@ class PostsController extends Controller
         }
         return redirect()->back();
     }
+
+    public function like(Request $request){
+        $music = Post::find($request->id);
+        $id_user = auth()->user()->id;
+        $like = 0;
+        if($music->liked($id_user))
+            $music->unlike($id_user);
+        else{
+            $music->like($id_user);
+            $like = 1;
+        }
+        $music->save();
+        return response()->json([
+            'like' => $like,
+            'like_total' => $music->likeCount,
+        ]);
+    }
 }

@@ -14,17 +14,19 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 //Auth::routes(); //no need to use
+Route::get('/', 'HomeController@index')->name('home');
+
+Route::get('/auth/{provider}', 'Auth\SocialAuthController@redirectToProvider');
+Route::get('/auth/{provide}/callback', 'Auth\SocialAuthController@handleProviderCallback');
+Route::get('logout', 'Auth\LoginController@logout')->name('logout');
+
 Route::get('/aboutus', 'AboutUsController@index')->name('aboutus');
 
 Route::get('/posts', 'PostsController@index')->name('posts');
 Route::post('/posts', 'PostsController@search')->name('posts.search');
 Route::get('/posts/{id}', 'PostsController@show')->name('posts.show');
+Route::post('/posts/like','PostsController@like')->name('posts.like')->middleware('auth');
 
-Route::get('/', 'HomeController@index')->name('home');
-Route::get('logout', 'Auth\LoginController@logout')->name('logout');
-
-Route::get('/auth/{provider}', 'Auth\SocialAuthController@redirectToProvider');
-Route::get('/auth/{provide}/callback', 'Auth\SocialAuthController@handleProviderCallback');
 
 Route::get('/event','EventController@index')->name('event');
 
