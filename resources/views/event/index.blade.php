@@ -3,6 +3,7 @@
 
 @section('custom-css')
     <link rel="stylesheet" href="/css/event.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" />
 @endsection
 
 @section('content')
@@ -145,4 +146,5 @@
             }
         });
     </script>
+
 @endsection

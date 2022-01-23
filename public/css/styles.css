@@ -348,7 +348,7 @@ img {
 
 .join-now {
     position: absolute;
-    bottom: 10%;
+    bottom: 10em;
     width: 100%;
     text-align: center;
     cursor: pointer;

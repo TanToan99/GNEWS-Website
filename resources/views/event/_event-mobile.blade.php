@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('custom-css')
-    <link rel="stylesheet" href="/css/event-responsive.css" />
+    <link rel="stylesheet" href="/css/event-mobile.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" />
 @endsection
 

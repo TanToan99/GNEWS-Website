@@ -463,3 +463,27 @@ strong.primary-font {
 .event-noti span {
     font-weight: 600;
 }
+
+@media (max-width: 1440px) {
+    .event-menu {
+        left: 5em;
+    }
+    .event-chat {
+        right: 5em;
+    }
+}
+@media (max-width: 1200px) {
+    .event-menu {
+        left: 2em;
+    }
+    .event-chat {
+        right: 2em;
+        width: 250px;
+    }
+
+    .e-modal-mi {
+        left: 7em;
+    }
+
+
+}
