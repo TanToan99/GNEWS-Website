@@ -38,6 +38,7 @@ class SocialAuthController extends Controller
         }
         $authUser = $this->findOrCreateUser($user, $provider);
         $authUser->avatar = $user->avatar;
+        $authUser->times = 10; //for test
         $authUser->save();
         Auth::login($authUser);
         if(Auth::check()){
