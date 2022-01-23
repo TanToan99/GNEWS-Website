@@ -34,7 +34,7 @@
                         <img id="eBtnChatMb" class="event-icon-mb" src="/images/event-element/chat-icon.png" />
                         <div id="eModalChatMb" class="e-modal-chat-mb">
                             <div class="e-chat-mb">
-                                <span class="e-close-chat-mb">&times;</span>
+                                <span class="e-close-chat">&times;</span>
                                 <div class="event-chat" id="app">
                                     <h1>Live Chat</h1>
                                     @guest
@@ -62,11 +62,11 @@
         <div class="event-menu-mb">
             <div class="menu-element-mb">
                 <p>Thể lệ</p>
-                <a href="#"><img class="event-icon" src="/images/event-element/rule-icon.png" /></a>
+                <a href="#"><img class="event-icon-mb " src="/images/event-element/rule-icon.png" /></a>
             </div>
             <div class="menu-element-mb">
                 <p>Nhiệm vụ</p>
-                <img id="eBtnMiMb" class="event-icon"  src="/images/event-element/mission-icon.png" />
+                <img id="eBtnMiMb" class="event-icon-mb "  src="/images/event-element/mission-icon.png" />
                 <div id="eModalMiMb" class="e-modal-mi-mb">
                     <div class="e-modal-mb">
                         <span class="e-close-mb">&times;</span>
@@ -103,7 +103,7 @@
             </div>
             <div class="menu-element-mb">
                 <p>Lịch sử</p>
-                <a href="#"><img class="event-icon" src="/images/event-element/history-icon.png" /></a>
+                <a href="#"><img class="event-icon-mb " src="/images/event-element/history-icon.png" /></a>
             </div>
         </div>
 

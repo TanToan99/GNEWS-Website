@@ -73,7 +73,7 @@
 }
 
 .text-like i {
-    padding-right: 1em;
+    padding-right: 0.5em;
     color: var(--cam);
     background-color: var(--trang);
     font-size: 20px;

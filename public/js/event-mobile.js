@@ -33,7 +33,7 @@ var modal4 = document.getElementById("eModalChatMb");
 var btn4 = document.getElementById("eBtnChatMb");
 
 // Get the <span> element that closes the modal
-var span4 = document.getElementsByClassName("e-close-chat-mb")[0];
+var span4 = document.getElementsByClassName("e-close-chat")[0];
 
 // When the user clicks the button, open the modal 
 btn4.onclick = function() {
@@ -45,6 +45,9 @@ btn4.onclick = function() {
 span4.onclick = function() {
   modal4.style.display = "none";
 }
+
+console.log(span4.onclick(),span3.onclick());
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {

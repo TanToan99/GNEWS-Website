@@ -12,15 +12,18 @@
                     <h2>{{ $post->title }}</h2>
                     <div class="Detail-copyright">
                         <small class="text-muted">{{ $post->author->name }} -
-                            {{ $post->created_at->toDateString() }}</small>
-                        <a class="text-like" href="javascript:void(0)" onclick="like({{ $post->id }})">
-                            @if ($post->liked())
-                                <i class="fas fa-heart" id="likei{{ $post->id }}" style=" color: red;"></i>
-                            @else
-                                <i class="far fa-heart" id="likei{{ $post->id }}" style=" color: red;"></i>
-                            @endif
-                        </a>
-                        <small id="likeCount">{{ $post->likeCount }} likes</small>
+                            {{ $post->created_at->toDateString() }}
+                        </small>
+                        <div class="like">
+                            <a style="text-decoration: none;" class="text-like" href="javascript:void(0)" onclick="like({{ $post->id }})">
+                                @if ($post->liked())
+                                    <i class="fas fa-heart" id="likei{{ $post->id }}" style=" color: red;"></i>
+                                @else
+                                    <i class="far fa-heart" id="likei{{ $post->id }}" style=" color: red;"></i>
+                                @endif
+                            </a>
+                            <small id="likeCount">{{ $post->likeCount }} Likes</small>
+                        </div>
                     </div>
                 </div>
                 <img class="detail-img" src="{{ $post->thumbnail->getUrl() }}" alt="">
@@ -38,7 +41,8 @@
             <div id="fb-root"></div>
             <script async defer crossorigin="anonymous"
                         src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0&appId=522765778912732&autoLogAppEvents=1"
-                        nonce="2OTNCf7a"></script>
+                        nonce="2OTNCf7a">
+            </script>
         </div>
     </div>
 @endsection
@@ -57,7 +61,7 @@
                     '_token': token
                 },
                 success: function(data) {
-                    document.getElementById('likeCount').innerText = data.like_total + " likes";
+                    document.getElementById('likeCount').innerText = data.like_total + " Likes";
                     var $elem = $("#likei" + id);
                     if ($elem.hasClass("fas")) {
                         $elem.removeClass('fas');
