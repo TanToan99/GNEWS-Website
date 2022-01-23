@@ -119,4 +119,5 @@
 @section('custom-js')
 <script src="/js/event-mobile.js"></script>
 <script src="{{ mix('js/app.js') }}"></script>
+<script type="text/javascript" src="/js/newyear.js"></script>
 @endsection

@@ -36,3 +36,7 @@
         </div>
     </div>
 @endsection
+
+@section('custom-js')
+    {{-- <script type="text/javascript" src="https://nhanh.vn/js/events/firework.js"></script> --}}
+@endsection

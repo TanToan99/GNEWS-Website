@@ -14,11 +14,11 @@
             </marquee>
         </div>
         <div class="event-main">
-            <div class="bg-element-1">
+            {{-- <div class="bg-element-1">
                 <video autoplay muted loop class="bg-video" id="myVideo">
                     <source src="/images/event-element/bg-motion-2.mp4" type="video/mp4">
                 </video>
-            </div>
+            </div> --}}
             <div class="event-tree">
                 @guest
                     <h1 class="tree-text-h1">Đăng nhập để hái lộc</span> lượt hái</h1>
@@ -146,5 +146,5 @@
             }
         });
     </script>
-
+    <script type="text/javascript" src="/js/newyear.js"></script>
 @endsection

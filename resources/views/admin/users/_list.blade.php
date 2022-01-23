@@ -4,6 +4,7 @@
         <tr>
             <th>Name</th>
             <th>Email</th>
+            <th>Role</th>
             <th>Registered at</th>
             <th>Edit</th>
         </tr>
@@ -13,6 +14,7 @@
             <tr>
                 <td>{{ $user->fullname }}</td>
                 <td>{{ $user->email }}</td>
+                <td>{{ ($user->hasRole('admin')) ? 'Admin' : 'Member' }}</td>
                 <td>{{ humanize_date($user->created_at, 'd/m/Y H:i:s') }}</td>
                 <td>
                     <a href="{{ route('admin.users.edit', $user) }}" class="btn btn-primary btn-sm">
