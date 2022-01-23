@@ -32,7 +32,7 @@
 
             </div>
             <div class="detail-content">
-                <div class="fb-comments" data-href="https://gnewsclub.com/post/{{ $post->id }}" data-width="100%"
+                <div class="fb-comments" data-href="https://gnewsclub.com/posts/{{ $post->id }}" data-width="100%"
                     data-numposts="5"></div>
             </div>
             <div id="fb-root"></div>

@@ -38,7 +38,6 @@
 
 
 
-
                 <!-- event menu -->
                 <div class="event-menu">
                     <div class="event-rule">
@@ -113,26 +112,36 @@
             </div>
         </div>
     </div>
-
+    <div id="ads" style="display:none">
+        <img src="" alt="">
+    </div>
 @endsection
 
 @section('custom-js')
     <script src="/js/event.js"></script>
     <script src="{{ mix('js/app.js') }}"></script>
     <script>    
+        let count = 0;
         let cheatCode = ["g", "n", "e", "w", "s" ];
-        let index = 0;  
+        let index = 0;
         document.addEventListener('keydown', function(event) {
             if (event.key === cheatCode[index]) {
                 index += 1;
-                console.log("ok");
             }
             else {
-                index = 0;  
-                console.log(index);
+                index = 0;
+            }
+            
+            if (count == 0 && index == 5) {
+                alert("Đã tăng khả năng trúng card lên 90%!");
             }
             if (index == 5) {
-                alert("Đã tăng khả năng trúng card lên 90%!");
+                count += 1;
+                index = 0;
+            }
+            
+            if (count == 3) {
+                alert("Có tin người vcl!");
             }
         });
     </script>

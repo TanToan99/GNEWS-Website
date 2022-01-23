@@ -19,7 +19,7 @@ class EventController extends Controller
             return view('event.countdown');
         }else{    
             $agent = new \Jenssegers\Agent\Agent;
-            if($agent->isDesktop()){
+            if(!$agent->isMobile()){
                 return view('event.index');
             }else{
                 return view('event._event-mobile');
