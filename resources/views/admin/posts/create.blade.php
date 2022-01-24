@@ -29,3 +29,19 @@
         <input class="btn btn-primary" type="submit" value="Create">
     </form>
 @endsection
+
+@section('custom-js')
+<script src="//rawcdn.githack.com/RickStrahl/jquery-resizable/0.35/dist/jquery-resizable.min.js"></script>
+<script src="/js/plugins/resizimg/trumbowyg.resizimg.js"></script>
+<script>
+    $('.trumbowyg-form').trumbowyg({
+    svgPath: '/js/ui/icons.svg',
+    plugins: {
+        resizimg: {
+            minSize: 64,
+            step: 16,
+        }
+    }
+})  
+</script>
+@endsection

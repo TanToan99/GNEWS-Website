@@ -26,8 +26,9 @@
         "font-awesome": "^4.7.0",
         "laravel-echo": "^1.11.3",
         "pusher-js": "^7.0.3",
-        "trumbowyg": "^2.23.0",
-        "vue": "^2.6.14",
-        "vue-loader": "^15.9.8"
+        "trumbowyg": "^2.25.1",
+        "vue": "^3.2.29",
+        "vue-loader": "^17.0.0",
+        "vue-router": "^4.0.12"
     }
 }
