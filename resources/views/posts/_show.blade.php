@@ -14,7 +14,7 @@
         </div>
         <div class="card-option">
             <a href="{{ route('posts.show',$post->id) }}" class="card-link">Xem thêm</a>
-            <a href="{{ route('posts.show',$post->id) }}"><i class="fas fa-long-arrow-alt-right"></i></a>
+            <a href="{{ route('posts.show',$post->id) }}"><i class="fal fa-angle-double-right"></i></a>
         </div>
     </div>
 </div> 
