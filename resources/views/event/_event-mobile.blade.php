@@ -15,19 +15,6 @@
     <div class="event-main-mb">
         <div class="event-tree-mb">
             <div class="tree-mb">
-                <!-- @guest
-                <h1 class="event-h1-mb">Đăng nhập để hái lộc</h1>
-                @else
-                <h1 class="event-h1-mb">Bạn đang có <span>{{ auth()->user()->times }}</span> lượt hái</h1>
-                @endguest
-                <video autoplay muted loop class="tree-video-mb" id="myVideo">
-                    <source src="/images/event-element/tree-event.mp4" type="video/mp4">
-                </video>
-                <div class="event-btn-mb">
-                    <p class="tree-p-mb">Thời gian hái lộc 20h00 - 21h00</p>
-                    <img class="tree-btn-mb" id="myBtn" src="/images/event-element/button.png" />  
-                </div> -->
-
                 @guest
                     <h1 class="event-h1-mb">Đăng nhập để hái lộc</span> lượt hái</h1>
                 @else

@@ -33,8 +33,8 @@
                 @else
                     <img class="tree-btn" id="myBtn" src="/images/event-element/button.png" />
                     <div id="eModalQue" class="e-modal-que">
-                        <div class="e-modal-content-que">
-                            <span class="e-close-que">&times;</span>
+                        <div  class="e-modal-content-que">
+                            <span id="close" class="e-close-que">&times;</span>
                             <img src="/images/que-chuc/que-chuc-1.jpg"/>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                         </div>
                         <div class="event-rule">
                             <p>Lịch sử</p>
-                            <a href="#"><img id="eBtnHi" class="eventicon" src="/images/event-element/history-icon.png" /></a>
+                            <a href="{{ route('history') }}"><img id="eBtnHi" class="eventicon" src="/images/event-element/history-icon.png" /></a>
                         </div>
                     @endif
                     <!-- The Modal -->

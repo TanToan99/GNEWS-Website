@@ -131,7 +131,7 @@ button:focus {
     display: none;
     position: fixed; /* Stay in place */
     z-index: 100;
-    padding-top: 10em;
+    padding-top: 9em;
     width: 100%; /* Full width */
     height: 100%;
     top: 0;
@@ -169,6 +169,38 @@ button:focus {
 
 .e-modal-content-que img {
     width: 100%;
+}
+
+#eModalQue>.e-modal-content-que {
+    animation: tada 2200ms ease-in-out both
+}
+
+@keyframes tada {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%,
+    20% {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%,
+    60%,
+    80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
 }
 
 /* ======================= */

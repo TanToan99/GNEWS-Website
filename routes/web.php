@@ -29,6 +29,7 @@ Route::post('/posts/like','PostsController@like')->name('posts.like')->middlewar
 
 
 Route::get('/event','EventController@index')->name('event');
+Route::get('/event/history','HistoryController@index')->name('history');
 
 Route::group(['middleware' => 'auth'], function(){
     Route::get('/profile','UserController@index')->name('profile');
