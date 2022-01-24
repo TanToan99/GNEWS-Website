@@ -8,7 +8,11 @@
             position: absolute;
             bottom: 0 !important;
         }
-
+        @media (max-width: 998px) {
+            .footer{
+                position: relative;
+            }
+        }
     </style>
 @endsection
 
