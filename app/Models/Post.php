@@ -31,7 +31,7 @@ class Post extends Model
 
     public function thumbnail(): BelongsTo
     {
-        return $this->belongsTo(Media::class, 'id');
+        return $this->belongsTo(Media::class);
     }
 
     public function hasThumbnail(): bool
