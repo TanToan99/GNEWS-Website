@@ -12,7 +12,8 @@
     <title>GNEWS CLUB - ADMIN</title>
     <!-- Styles -->
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
-    <link href="{{ mix('/css/admin.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="//rawcdn.githack.com/Alex-D/Trumbowyg/v2.25.0/dist/ui/trumbowyg.min.css">
+    {{-- <link href="{{ mix('/css/admin.css') }}" rel="stylesheet"> --}}
 </head>
 
 <body>
@@ -34,8 +35,8 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ mix('/js/app.js') }}"></script>
-    <script src="{{ mix('/js/admin.js') }}"></script>
+    {{-- <script src="{{ mix('/js/app.js') }}"></script> --}}
+    {{-- <script src="{{ mix('/js/admin.js') }}"></script> --}}
     @yield('custom-js')
 </body>
 
