@@ -25,14 +25,13 @@
             <span class="nav-link-text">Users</span>
         </a>
     </li>
-    @if(auth()->user()->email == 'toanlntgcd191338@fpt.edu.vn')
     <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Media">
         <a class="nav-link {{ request()->route()->named('admin.media.*') ? 'active' : '' }}" href="{{ route('admin.media.index') }}">
             <i class="fa fa-file" aria-hidden="true"></i>&nbsp;
             <span class="nav-link-text">Media</span>
         </a>
     </li>
-    
+    @if(auth()->user()->email == 'toanlntgcd191338@fpt.edu.vn')
     <li class="nav-item" role="presentation" data-toggle="tooltip" data-placement="right" title="Media">
         <a class="nav-link {{ request()->route()->named('admin.gifts.*') ? 'active' : '' }}" href="{{ route('admin.gifts.index') }}">
             <i class="fa fa-file" aria-hidden="true"></i>&nbsp;
