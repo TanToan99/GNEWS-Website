@@ -35,17 +35,18 @@
 
 .detail-img {
     width: 120%;
+    padding-bottom: 12px;
 }
 
 .detail-content {
     width: 50%;
-    text-align: justify;
-    line-height: 2em;
+    /* text-align: justify; */
+    /* line-height: 2em; */
 }
 
 .detail-description p {
     /* padding: 1em 0; */
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 
 .detail-description img {
