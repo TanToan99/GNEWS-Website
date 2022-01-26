@@ -15,7 +15,8 @@
                             {{ $post->created_at->toDateString() }}
                         </small>
                         <div class="like">
-                            <a style="text-decoration: none;" class="text-like" href="javascript:void(0)" onclick="like({{ $post->id }})">
+                            <a style="text-decoration: none;" class="text-like" href="javascript:void(0)"
+                                onclick="like({{ $post->id }})">
                                 @if ($post->liked())
                                     <i class="fas fa-heart" id="likei{{ $post->id }}" style=" color: red;"></i>
                                 @else
@@ -48,33 +49,41 @@
 @endsection
 
 @section('custom-js')
-    <script>
-        function like(id) {
-            console.log(id);
-            let token = $("meta[name='csrf-token']").attr("content");
-            $.post({
-                type: 'POST',
-                crossDomain: true,
-                url: '/posts/like',
-                data: {
-                    'id': id,
-                    '_token': token
-                },
-                success: function(data) {
-                    document.getElementById('likeCount').innerText = data.like_total + " Likes";
-                    var $elem = $("#likei" + id);
-                    if ($elem.hasClass("fas")) {
-                        $elem.removeClass('fas');
-                        $elem.addClass('far');
-                    } else if ($elem.hasClass("far")) {
-                        $elem.removeClass('far');
-                        $elem.addClass('fas');
+    @guest
+        <script>
+            function like(id) {
+                alert('Please login with FPT email first!');
+            }
+        </script>
+    @else
+        <script>
+            function like(id) {
+                console.log(id);
+                let token = $("meta[name='csrf-token']").attr("content");
+                $.post({
+                    type: 'POST',
+                    crossDomain: true,
+                    url: '/posts/like',
+                    data: {
+                        'id': id,
+                        '_token': token
+                    },
+                    success: function(data) {
+                        document.getElementById('likeCount').innerText = data.like_total + " Likes";
+                        var $elem = $("#likei" + id);
+                        if ($elem.hasClass("fas")) {
+                            $elem.removeClass('fas');
+                            $elem.addClass('far');
+                        } else if ($elem.hasClass("far")) {
+                            $elem.removeClass('far');
+                            $elem.addClass('fas');
+                        }
+                    },
+                    error: function(jqXHR, exception) {
+                        console.log(jqXHR);
                     }
-                },
-                error: function(jqXHR, exception) {
-                    console.log(jqXHR);
-                }
-            });
-        };
-    </script>
+                });
+            };
+        </script>
+    @endguest
 @endsection
