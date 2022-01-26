@@ -51,7 +51,7 @@
             <div class="block-white">
                 <h1>Gần 2000 followers</h1>
                 <div class="white">
-                    <p>fanpage GNews Club</p>
+                    <p>Fanpage GNews Club</p>
                 </div>
             </div>
             <i class="fas fa-angle-right"></i>
@@ -109,7 +109,7 @@
         <div class="block-white">
             <h1>Gần 2000 followers</h1>
             <div class="white">
-                <p>fanpage GNews Club</p>
+                <p>Fanpage GNews Club</p>
             </div>
         </div>
         <i class="fas fa-angle-right"></i>
