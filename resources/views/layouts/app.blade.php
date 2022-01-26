@@ -11,6 +11,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="/css/styles.css" />
+    <script src="https://kit.fontawesome.com/317c84764d.js" crossorigin="anonymous"></script>
+
     @yield('custom-css')
 </head>
 

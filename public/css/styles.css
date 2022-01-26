@@ -453,6 +453,7 @@ img {
     text-decoration: none;
     color: var(--xanhden);
     size: 30px;
+    width: 100%;
     padding-left: 1em;
 }
 
