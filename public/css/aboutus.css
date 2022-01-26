@@ -280,6 +280,7 @@ section {
 @media (max-width: 998px) {
     .about {
         min-height: 80%;
+        margin-top: 3em;
     }
     .img-pc {
         display: none;
