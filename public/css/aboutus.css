@@ -97,6 +97,7 @@ section {
     font-weight: 600;
 }
 
+
 /* road map */
 
 .roadmap {
@@ -117,9 +118,10 @@ section {
 }
 
 .block-1 i {
-    padding: 2em 1em 0;
-    font-size: 30px;
+    padding: 4em 1em 0;
+    font-size: 20px;
     color: var(--cam);
+    font-weight: 500;
 }
 
 .block-orange {
@@ -134,6 +136,8 @@ section {
 .block-orange h1 {
     color: var(--cam);
     padding: 1em 0;
+    width: 200px;
+    text-align: center;
 }
 
 .orange {
@@ -169,6 +173,8 @@ section {
 .block-white h1 {
     color: var(--cam);
     padding: 1em 0;
+    width: 250px;
+    text-align: center;
 }
 
 .white {
@@ -196,11 +202,14 @@ section {
     display: none;
 }
 
+.v2 {
+    padding-top: 5.5em !important;
+}
+
 @media (max-width: 1440px) {
     .about-title {
         padding: 3em 0;
     }
-
     .about-intro {
         padding: 1.5em 0;
         width: 60%;
@@ -209,7 +218,6 @@ section {
         padding: 1.5em 0;
         width: 80%;
     }
-
     .roadmap {
         padding: 0;
         display: flex;
@@ -228,11 +236,9 @@ section {
     .about-title h1 {
         font-size: 30px;
     }
-
     .about-title p {
         font-size: 30px;
     }
-
     .about-intro {
         width: 70%;
         padding: 1em 0;
@@ -253,16 +259,13 @@ section {
     .about-descr span {
         font-size: 18px;
     }
-
     .block-1 i {
         padding: 2em 0.5em 0;
     }
-
     .orange {
         width: 12.5em;
         height: 12.5em;
     }
-
     .white {
         width: 12.5em;
         height: 12.5em;
@@ -293,19 +296,15 @@ section {
     .img-mb {
         display: block;
     }
-
     .about-text {
         top: 10em;
     }
-
     .roadmap {
         display: none;
     }
-
     .roadmap-mb {
         display: block;
     }
-
     .block-2 {
         display: flex;
         flex-direction: row;
@@ -316,17 +315,14 @@ section {
         margin: 2em 0;
         width: 100%;
     }
-
     .block-2 i {
         padding: 0 1em 4.5em 1em;
         color: var(--cam);
     }
-
     .orange {
         height: 10em;
         width: 10em;
     }
-
     .orange p {
         font-size: 12px;
     }
@@ -334,16 +330,13 @@ section {
         height: 10em;
         width: 10em;
     }
-
     .white p {
         font-size: 12px;
     }
-
     .block-white h1 {
         font-size: 14px;
         font-weight: 300;
     }
-
     .block-orange h1 {
         font-size: 14px;
         font-weight: 400;
@@ -354,19 +347,16 @@ section {
     .about-text {
         top: 3em;
     }
-
     .about-title h1 {
         font-size: 20px;
     }
     .about-title p {
         font-size: 20px;
     }
-
     .orange {
         height: 7em;
         width: 7em;
     }
-
     .orange p {
         font-size: 8px;
     }
@@ -374,21 +364,17 @@ section {
         height: 7em;
         width: 7em;
     }
-
     .white p {
         font-size: 8px;
     }
-
     .block-white h1 {
         font-size: 12px;
         font-weight: 300;
     }
-
     .block-orange h1 {
         font-size: 12px;
         font-weight: 400;
     }
-
     .block-2 i {
         padding: 0 0.3em 3em 0.3em;
     }
@@ -398,14 +384,12 @@ section {
     .about-text {
         top: 2em;
     }
-
     .about-title h1 {
         /* font-size: 14px; */
     }
     .about-title p {
         /* font-size: 12px; */
     }
-
     .about-intro p {
         font-size: 14px;
     }
@@ -421,8 +405,6 @@ section {
 }
 
 @media (max-width: 450px) {
-    
-
     .about-intro p {
         font-size: 10px;
     }

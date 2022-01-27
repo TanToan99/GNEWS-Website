@@ -33,28 +33,28 @@
                     <p>Chính thức thành lập Greenwich Newspaper Club</p>
                 </div>
             </div>
-            <i class="fas fa-angle-right"></i>
+            <i class="fal fa-chevron-right"></i>
             <div class="block-white">
                 <h1>30 Thành viên</h1>
                 <div class="white">
                     <p>Sau gần 3 năm thành lập</p>
                 </div>
             </div>
-            <i class="fas fa-angle-right"></i>
+            <i class="fal fa-chevron-right"></i>
             <div class="block-orange">
                 <h1>4 Ban</h1>
                 <div class="orange">
                     <p>Content,<br>Creative (Design, Photo, Edit video),<br>Event,<br>HR</p>
                 </div>
             </div>
-            <i class="fas fa-angle-right"></i>
+            <i class="fal fa-chevron-right"></i>
             <div class="block-white">
                 <h1>Gần 2000 followers</h1>
                 <div class="white">
                     <p>Fanpage GNews Club</p>
                 </div>
             </div>
-            <i class="fas fa-angle-right"></i>
+            <i class="fal fa-chevron-right"></i>
         </div>
         <div class="block-1">
             <div class="block-orange">
@@ -63,14 +63,14 @@
                     <p>Greenwich Esport Championship 2020,<br>Talkshow Sex Education,<br>Hương tháng 10,<br>SOUL,<br>Tết dần đến,...</p>
                 </div>
             </div>
-            <i class="fas fa-angle-right"></i>
+            <i class="fal fa-chevron-right v2"></i>
             <div class="block-white">
                 <h1>4 Lần tôn vinh CLB hoạt động xuất sắc</h1>
                 <div class="white">
                     <p>Spring 2020,<br>Summer 2020,<br>Fall 2020,<br>Summer 2021</p>
                 </div>
             </div>
-            <i class="fas fa-angle-right"></i>
+            <i class="fal fa-chevron-right v2"></i>
             <div class="block-orange">
                 <h1>6 kênh truyền thông</h1>
                 <div class="orange">
@@ -89,14 +89,14 @@
                 <p>Chính thức thành lập Greenwich Newspaper Club</p>
             </div>
         </div>
-        <i class="fas fa-angle-right"></i>
+        <i class="fal fa-chevron-right"></i>
         <div class="block-white">
             <h1>30 Thành viên</h1>
             <div class="white">
                 <p>Sau gần 3 năm thành lập</p>
             </div>
         </div>
-        <i class="fas fa-angle-right"></i>
+        <i class="fal fa-chevron-right"></i>
     </div>
     <div class="block-2">
         <div class="block-orange">
@@ -105,14 +105,14 @@
                 <p>Content,<br>Creative (Design, Photo, Edit video),<br>Event,<br>HR</p>
             </div>
         </div>
-        <i class="fas fa-angle-right"></i>
+        <i class="fal fa-chevron-right"></i>
         <div class="block-white">
             <h1>Gần 2000 followers</h1>
             <div class="white">
                 <p>Fanpage GNews Club</p>
             </div>
         </div>
-        <i class="fas fa-angle-right"></i>
+        <i class="fal fa-chevron-right"></i>
     </div>
     <div class="block-2">
          <div class="block-orange">
@@ -121,14 +121,14 @@
                 <p>Greenwich Esport Championship 2020,<br>Talkshow Sex Education,<br>SOUL,<br>Tết dần đến,...</p>
             </div>
         </div>
-        <i class="fas fa-angle-right"></i>
+        <i class="fal fa-chevron-right"></i>
         <div class="block-white">
             <h1>4 Lần tôn vinh CLB hoạt động xuất sắc</h1>
             <div class="white">
                 <p>Spring 2020,<br>Summer 2020,<br>Fall 2020,<br>Summer 2021</p>
             </div>
         </div>
-        <i class="fas fa-angle-right"></i>
+        <i class="fal fa-chevron-right"></i>
     </div>
     <div class="block-2">
         <div class="block-orange">
