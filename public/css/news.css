@@ -119,7 +119,7 @@
     .title h1 {
         text-align: center;
         font-size: 30px;
-        font-weight: 900;
+        font-weight: 600;
         color: var(--cam);
     }
 }

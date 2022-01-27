@@ -948,4 +948,7 @@ img {
     .dropdown-search {
         min-width: 320px;
     }
+    .logo {
+        width: 7em;
+    }
 }

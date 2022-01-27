@@ -13,6 +13,6 @@
                 <a href="https://www.youtube.com/channel/UCrIe5kGIfdv3CHNXbKksycQ"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
-        <a class="button-btn-2">Support</a>
+        <a href="https://m.me/106506594176533" class="button-btn-2">Support</a>
     </div>
 @endif

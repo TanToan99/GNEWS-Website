@@ -2,18 +2,6 @@
 
 @section('custom-css')
     <link rel="stylesheet" href="/css/profile.css" />
-    <style>
-        .footer {
-
-            position: absolute;
-            bottom: 0 !important;
-        }
-        @media (max-width: 998px) {
-            .footer{
-                position: relative;
-            }
-        }
-    </style>
 @endsection
 
 @section('content')
