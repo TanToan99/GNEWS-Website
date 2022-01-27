@@ -84,11 +84,11 @@
 <div class="roadmap-mb">
     <div class="block-2">
         <div class="block-orange">
-            <h1>4 Ban</h1>
+            <h1>17.04.2020</h1>
             <div class="orange">
-                <p>Content,<br>Creative (Design, Photo, Edit video),<br>Event,<br>HR</p>
+                <p>Chính thức thành lập Greenwich Newspaper Club</p>
             </div>
-        </div>
+            </div>
         <i class="fas fa-angle-right"></i>
         <div class="block-white">
             <h1>30 Thành viên</h1>
