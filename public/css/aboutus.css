@@ -82,9 +82,14 @@ section {
 
 .about-descr p {
     color: var(--trang);
-    text-align: justify;
+    /* text-align: justify; */
     font-size: 20px;
     font-weight: 200;
+    text-align: justify !important;
+    text-align: justify;
+    text-align: justify;
+    text-align-last: center;
+    /* justify-content: center !important; */
 }
 
 .about-descr span {
@@ -280,6 +285,7 @@ section {
 @media (max-width: 998px) {
     .about {
         min-height: 80%;
+        margin-top: 3em;
     }
     .img-pc {
         display: none;
@@ -346,7 +352,7 @@ section {
 
 @media (max-width: 550px) {
     .about-text {
-        top: 2em;
+        top: 3em;
     }
 
     .about-title h1 {
@@ -390,14 +396,14 @@ section {
 
 @media (max-width: 450px) {
     .about-text {
-        top: 0;
+        top: 2em;
     }
 
     .about-title h1 {
-        font-size: 14px;
+        /* font-size: 14px; */
     }
     .about-title p {
-        font-size: 12px;
+        /* font-size: 12px; */
     }
 
     .about-intro p {

@@ -8,13 +8,13 @@
 <div class="about-pc">
     <section class="about">
         <div class="about-banner">
-            <img class="img-pc" src="images/bg-aboutus.jpg">
-            <img class="img-mb" src="images/bg-aboutus-mb.jpg">
+            <img class="img-pc" src="images/bg-aboutus.svg">
+            <img class="img-mb" src="images/bg-aboutus-mb.svg">
         </div>
         <div class="about-text">
             <div class="about-title">
-                <h1>" HIGHER</h1>
-                <p>FURTHER</p>
+                <h1> " HIGHER<span style="font-weight: 200">-</span></h1>
+                <p>-FURTHER</p>
                 <h1>FASTER "</h1>
             </div>
             <div class="about-intro">
@@ -84,9 +84,9 @@
 <div class="roadmap-mb">
     <div class="block-2">
         <div class="block-orange">
-            <h1>4 Ban</h1>
+            <h1>17.04.2020</h1>
             <div class="orange">
-                <p>Content,<br>Creative (Design, Photo, Edit video),<br>Event,<br>HR</p>
+                <p>Chính thức thành lập Greenwich Newspaper Club</p>
             </div>
         </div>
         <i class="fas fa-angle-right"></i>
