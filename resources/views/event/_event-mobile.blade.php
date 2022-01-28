@@ -26,9 +26,13 @@
                 <p class="tree-p-mb">Thời gian hái lộc 20h00 - 21h00</p>
                 @guest
                 @else
-                    <a onclick="">
-                        <img class="tree-btn-mb" id="myBtn" src="/images/event-element/button.png" />
-                    </a>
+                    <img class="tree-btn-mb" id="myBtn" src="/images/event-element/button.png" />
+                    <div id="eModalQue" class="e-modal-que">
+                        <div  class="e-modal-content-que">
+                            <span id="close" class="e-close-que">&times;</span>
+                            <img src="/images/que-chuc/que-chuc-1.jpg"/>
+                        </div>
+                    </div>
                 @endif
                 <div class="event-chat-mb">
                     <div class="menu-element-mb">
@@ -75,11 +79,14 @@
                         <span class="e-close-mb">&times;</span>
                         <h1>THỰC HIỆN NHIỆM VỤ ĐỂ NHẬN LƯỢT HÁI LỘC</h1>
                         <div class="list-mb">
-                            <div class="pretty p-default p-curve p-thick">
-                                <input type="checkbox" />
-                                <div class="state p-danger-o">
-                                    <label>Like bài viết... </label>
+                            <div class="check-mi">
+                                <div class="pretty p-default p-curve p-thick">
+                                    <input type="checkbox" />
+                                    <div class="state p-danger-o">
+                                        <label></label>
+                                    </div>
                                 </div>
+                                <p class="label-mi">Like bài viết... LikeLike bài viết... Like bài viết...Like bài viết... Like bài viết...Like bài viết... Like bài viết...Like bài viết... Like bài viết... bài viết...Like bài viết... Like bài viết... </p>
                             </div>
                             <p>+1 Lượt</p>
                         </div>

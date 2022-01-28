@@ -59,29 +59,38 @@
                                     <span class="e-close-mi">&times;</span>
                                     <h1>THỰC HIỆN NHIỆM VỤ ĐỂ NHẬN LƯỢT HÁI LỘC</h1>
                                     <div class="list-element">
-                                        <div class="pretty p-default p-curve p-thick">
-                                            <input type="checkbox" />
-                                            <div class="state p-danger-o">
-                                                <label>Like bài viết... </label>
+                                        <div class="check-mi">
+                                            <div class="pretty p-default p-curve p-thick">
+                                                <input type="checkbox" />
+                                                <div class="state p-danger-o">
+                                                    <label></label>
+                                                </div>
                                             </div>
+                                            <p class="label-mi">Like bài viết...Like bài viết...Like bài viết... </p>
                                         </div>
                                         <p>+1 Lượt</p>
                                     </div>
                                     <div class="list-element">
-                                        <div class="pretty p-default p-curve p-thick">
-                                            <input type="checkbox" />
-                                            <div class="state p-danger-o">
-                                                <label>Commnet bài viết... </label>
+                                        <div class="check-mi">
+                                            <div class="pretty p-default p-curve p-thick">
+                                                <input type="checkbox" />
+                                                <div class="state p-danger-o">
+                                                    <label></label>
+                                                </div>
                                             </div>
+                                            <p class="label-mi">Like bài viết...Like bài viết...Like bài viết... </p>
                                         </div>
                                         <p>+1 Lượt</p>
                                     </div>
                                     <div class="list-element">
-                                        <div class="pretty p-default p-curve p-thick">
-                                            <input type="checkbox" />
-                                            <div class="state p-danger-o">
-                                                <label>Share bài viết... </label>
+                                        <div class="check-mi">
+                                            <div class="pretty p-default p-curve p-thick">
+                                                <input type="checkbox" />
+                                                <div class="state p-danger-o">
+                                                    <label></label>
+                                                </div>
                                             </div>
+                                            <p class="label-mi">Like bài viết...Like bài viết...Like bài viết... </p>
                                         </div>
                                         <p>+1 Lượt</p>
                                     </div>

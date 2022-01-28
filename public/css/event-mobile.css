@@ -45,7 +45,7 @@ body {
 }
 
 .event-h1-mb {
-    
+    font-size: 20px;
     width: 100%;
     text-align: center;
     color: var(--do);
@@ -71,6 +71,81 @@ body {
     display: block;
     margin: 0 auto;
 }
+
+.e-modal-que {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 100;
+    padding-top: 10em;
+    width: 100%; /* Full width */
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.e-modal-content-que {
+    width: 70%;
+    border-radius: 20px;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+.e-close-que {
+    color: var(--do);
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    cursor: pointer;
+    padding: 0em;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: var(--trang);
+}
+
+.e-modal-content-que img {
+    width: 100%;
+}
+#eModalQue>.e-modal-content-que {
+    animation: tada 2200ms ease-in-out both
+}
+
+@keyframes tada {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    10%,
+    20% {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+
+    40%,
+    60%,
+    80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+/* ================= */
 
 .tree-video-mb {
     width: 100%;
@@ -129,6 +204,7 @@ body {
 }
 
 .e-modal-mb h1 {
+    font-size: 16px;
     text-align: center;
     padding: 1em 0;
     color: var(--do);
@@ -149,10 +225,30 @@ body {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
     padding: 0.2em 0;
     width: 90%;
+}
+
+.list-mb p {
+    font-weight: 600;
+}
+
+.label-mi {
+    font-weight: 400 !important;
+}
+
+.check-mi {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 14em;
+}
+.pretty.p-default.p-curve.p-thick {
+    margin-top: 0.3em;
+    margin-right: 0.3em;
 }
 
 .event-chat-mb {
