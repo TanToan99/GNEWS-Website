@@ -64,11 +64,10 @@
                                                 <div class="pretty p-default p-curve p-thick">
                                                     <input type="checkbox" checked onclick="return false;" />
                                                     <div class="state p-danger-o">
-                                                        <label>{{ $mission->name }}</label>
+                                                        <label></label>
                                                     </div>
-                                                    <p class="label-mi">Like bài viết...Like bài viết...Like bài
-                                                        viết... </p>
                                                 </div>
+                                                <p class="label-mi">{{ $mission->name }}</p>
                                                 <p>+{{ $mission->times }} Lượt</p>
                                             </div>
                                         </div>

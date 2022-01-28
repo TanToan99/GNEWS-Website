@@ -31,6 +31,6 @@ class EventController extends Controller
                     'missions' => $mission
                 ]);
             }
-        // } 
+        } 
     }
 }
