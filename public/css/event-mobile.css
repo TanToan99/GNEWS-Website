@@ -1,6 +1,7 @@
 body {
     background-color: var(--bgevent);
 }
+
 .event-container {
     display: none;
 }
@@ -45,7 +46,6 @@ body {
 }
 
 .event-h1-mb {
-    
     width: 100%;
     text-align: center;
     color: var(--do);
@@ -60,12 +60,14 @@ body {
     bottom: 5em;
     width: 100%;
 }
+
 .tree-p-mb {
     width: 100%;
     text-align: center;
     color: var(--do);
     padding: 1em 0;
 }
+
 .tree-btn-mb {
     width: 50%;
     display: block;
@@ -222,9 +224,9 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 70%;
+    height: 80%;
     background-color: var(--trang);
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 .chat {
@@ -246,14 +248,15 @@ body {
 }
 
 strong.primary-font {
-    font-weight: 700;
+    font-weight: 600;
     padding-right: 0.5em;
     color: var(--do);
+    font-size: 85%;
 }
 
 .body-chat p {
     word-wrap: break-word;
-    width: 200px;
+    /* width: 200px; */
     padding-right: 0.5em;
     color: var(--do);
 }
@@ -303,6 +306,7 @@ button#btn-chat {
         width: 70%;
     }
 }
+
 @media (max-width: 1200px) {
     .tree-mb {
         width: 100%;
@@ -323,6 +327,7 @@ button#btn-chat {
         width: 90%;
     }
 }
+
 @media (max-width: 550px) {
     .tree-mb {
         width: 100%;
@@ -330,12 +335,10 @@ button#btn-chat {
     .tree-btn-mb {
         width: 60%;
     }
-
     .e-modal-chat-mb {
         bottom: 5em;
         right: 2em;
     }
-
     .event-chat-mb {
         right: 0;
         bottom: -7em;

@@ -1,7 +1,7 @@
 <template>
     <ul class="chat">
         <li class="left clearfix" v-for="(message, id) in messages" :key="id">
-            <div class="chat-body clearfix">
+            <div class="chat-body">
                 <div class="header">
                     <strong class="primary-font">{{ message.user.name }}: </strong>
                 </div>

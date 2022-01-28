@@ -7,6 +7,7 @@ use Illuminate\Database\Seeder;
 use App\Models\Role;
 use App\Models\User;
 use App\Models\MediaLibrary;
+use App\Models\MissionType;
 use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
@@ -19,7 +20,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // Roles
-        Role::firstOrCreate(['name' => Role::ROLE_EDITOR]);
+        /*Role::firstOrCreate(['name' => Role::ROLE_EDITOR]);
         $role_admin = Role::firstOrCreate(['name' => Role::ROLE_ADMIN]);
 
         // MediaLibrary
@@ -32,6 +33,9 @@ class DatabaseSeeder extends Seeder
 
         
         GiftCategory::firstOrCreate(['name' => GiftCategory::GIFT_CARD]);
-        GiftCategory::firstOrCreate(['name' => GiftCategory::GIFT_WISH]);
+        GiftCategory::firstOrCreate(['name' => GiftCategory::GIFT_WISH]);*/
+        MissionType::firstOrCreate(['name' => MissionType::MISSION_INVITE]);
+        MissionType::firstOrCreate(['name' => MissionType::MISSION_LIKE]);
+        MissionType::firstOrCreate(['name' => MissionType::MISSION_COMMENT]);
     }
 }

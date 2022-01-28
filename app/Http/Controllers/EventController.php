@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Mission;
 use Illuminate\Http\Request;
 
 class EventController extends Controller
@@ -15,14 +16,20 @@ class EventController extends Controller
         $currentDate = date('Y-m-d');
         $currentDate = date('Y-m-d', strtotime($currentDate));   
         $startDate = date('Y-m-d', strtotime("02/01/2022"));
-        if ($currentDate < $startDate){   
+        if ($currentDate > $startDate){   
             return view('event.countdown');
         }else{    
+            $mission = Mission::where('day',date('Y-m-d'))->get();
+            //dd($mission);
             $agent = new \Jenssegers\Agent\Agent;
             if(!$agent->isMobile()){
-                return view('event.index');
+                return view('event.index',[
+                    'missions' => $mission
+                ]);
             }else{
-                return view('event._event-mobile');
+                return view('event._event-mobile',[
+                    'missions' => $mission
+                ]);
             }
         }
     }

@@ -23,7 +23,7 @@
                 @guest
                     <h1 class="tree-text-h1">Đăng nhập để hái lộc</span> lượt hái</h1>
                 @else
-                    <h1 class="tree-text-h1">Ban đang có <span>{{ auth()->user()->times }}</span> lượt hái</h1>
+                    <h1 class="tree-text-h1">Bạn đang có <span>{{ auth()->user()->times }}</span> lượt hái</h1>
                 @endguest
                 <video autoplay muted loop class="tree-img" id="myVideo">
                     <source src="/images/event-element/tree-event.mp4" type="video/mp4">
@@ -58,33 +58,17 @@
                                 <div class="e-modal-content-mi">
                                     <span class="e-close-mi">&times;</span>
                                     <h1>THỰC HIỆN NHIỆM VỤ ĐỂ NHẬN LƯỢT HÁI LỘC</h1>
+                                    @foreach($missions as $mission)
                                     <div class="list-element">
                                         <div class="pretty p-default p-curve p-thick">
-                                            <input type="checkbox" />
+                                            <input type="checkbox" checked onclick="return false;" />
                                             <div class="state p-danger-o">
-                                                <label>Like bài viết... </label>
+                                                <label>{{ $mission->name }}</label>
                                             </div>
                                         </div>
-                                        <p>+1 Lượt</p>
+                                        <p>+{{$mission->times}} Lượt</p>
                                     </div>
-                                    <div class="list-element">
-                                        <div class="pretty p-default p-curve p-thick">
-                                            <input type="checkbox" />
-                                            <div class="state p-danger-o">
-                                                <label>Commnet bài viết... </label>
-                                            </div>
-                                        </div>
-                                        <p>+1 Lượt</p>
-                                    </div>
-                                    <div class="list-element">
-                                        <div class="pretty p-default p-curve p-thick">
-                                            <input type="checkbox" />
-                                            <div class="state p-danger-o">
-                                                <label>Share bài viết... </label>
-                                            </div>
-                                        </div>
-                                        <p>+1 Lượt</p>
-                                    </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
