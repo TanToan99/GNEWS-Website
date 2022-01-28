@@ -33,12 +33,12 @@
                 @else
                     <img class="tree-btn" id="myBtn" src="/images/event-element/button.png" />
                     <div id="eModalQue" class="e-modal-que">
-                        <div  class="e-modal-content-que">
+                        <div class="e-modal-content-que">
                             <span id="close" class="e-close-que">&times;</span>
-                            <img src="/images/que-chuc/que-chuc-1.jpg"/>
+                            <img src="/images/que-chuc/que-chuc-1.jpg" />
                         </div>
                     </div>
-                @endif
+                    @endif
                 </div>
 
 
@@ -58,81 +58,85 @@
                                 <div class="e-modal-content-mi">
                                     <span class="e-close-mi">&times;</span>
                                     <h1>THỰC HIỆN NHIỆM VỤ ĐỂ NHẬN LƯỢT HÁI LỘC</h1>
-                                    @foreach($missions as $mission)
-                                    <div class="list-element">
-                                        <div class="pretty p-default p-curve p-thick">
-                                            <input type="checkbox" checked onclick="return false;" />
-                                            <div class="state p-danger-o">
-                                                <label>{{ $mission->name }}</label>
+                                    @foreach ($missions as $mission)
+                                        <div class="list-element">
+                                            <div class="check-mi">
+                                                <div class="pretty p-default p-curve p-thick">
+                                                    <input type="checkbox" checked onclick="return false;" />
+                                                    <div class="state p-danger-o">
+                                                        <label>{{ $mission->name }}</label>
+                                                    </div>
+                                                    <p class="label-mi">Like bài viết...Like bài viết...Like bài
+                                                        viết... </p>
+                                                </div>
+                                                <p>+{{ $mission->times }} Lượt</p>
                                             </div>
                                         </div>
-                                        <p>+{{$mission->times}} Lượt</p>
-                                    </div>
                                     @endforeach
                                 </div>
                             </div>
                         </div>
                         <div class="event-rule">
                             <p>Lịch sử</p>
-                            <a href="{{ route('history') }}"><img id="eBtnHi" class="eventicon" src="/images/event-element/history-icon.png" /></a>
+                            <a href="{{ route('history') }}"><img id="eBtnHi" class="eventicon"
+                                    src="/images/event-element/history-icon.png" /></a>
                         </div>
-                    @endif
-                    <!-- The Modal -->
-                </div>
-                <!-- end event menu -->
-                <!-- event chat -->
-                <div class="event-chat" id="app">
-                    <h1>Live Chat</h1>
-                    @guest
-                        <h1>You need login first!</h1>
-                    @else
-                    <div class="event-chat-main">
-                        <div class="panel-body">
-                            <chat-messages :messages="messages"></chat-messages>
+                        @endif
+                        <!-- The Modal -->
+                    </div>
+                    <!-- end event menu -->
+                    <!-- event chat -->
+                    <div class="event-chat" id="app">
+                        <h1>Live Chat</h1>
+                        @guest
+                            <h1>You need login first!</h1>
+                        @else
+                            <div class="event-chat-main">
+                                <div class="panel-body">
+                                    <chat-messages :messages="messages"></chat-messages>
+                                </div>
+                                <div class="panel-footer">
+                                    <chat-form v-on:messagesent="addMessage" :user="{{ Auth::user() }}"></chat-form>
+                                </div>
+                            </div>
+                            @endif
                         </div>
-                        <div class="panel-footer">
-                            <chat-form v-on:messagesent="addMessage" :user="{{ Auth::user() }}"></chat-form>
+                        <div class="event-noti">
                         </div>
                     </div>
-                    @endif
                 </div>
-                <div class="event-noti">
                 </div>
-            </div>
-        </div>
-    </div>
-    <div id="ads" style="display:none">
-        <img src="" alt="">
-    </div>
-@endsection
+                <div id="ads" style="display:none">
+                    <img src="" alt="">
+                </div>
+            @endsection
 
-@section('custom-js')
-    <script src="/js/event.js"></script>
-    <script src="{{ mix('js/app.js') }}"></script>
-    <script>    
-        let count = 0;
-        let cheatCode = ["g", "n", "e", "w", "s" ];
-        let index = 0;
-        document.addEventListener('keydown', function(event) {
-            if (event.key === cheatCode[index]) {
-                index += 1;
-            }
-            else {
-                index = 0;
-            }
-            
-            if (count == 0 && index == 5) {
-                alert("Đã tăng khả năng trúng card lên 90%!");
-            }
-            if (index == 5) {
-                count += 1;
-                index = 0;
-            }
-            
-            if (count == 3) {
-                alert("Có tin người vcl!");
-            }
-        });
-    </script>
-    <script type="text/javascript" src="/js/newyear.js"></script>
-@endsection
+            @section('custom-js')
+                <script src="/js/event.js"></script>
+                <script src="{{ mix('js/app.js') }}"></script>
+                <script>
+                    let count = 0;
+                    let cheatCode = ["g", "n", "e", "w", "s"];
+                    let index = 0;
+                    document.addEventListener('keydown', function(event) {
+                        if (event.key === cheatCode[index]) {
+                            index += 1;
+                        } else {
+                            index = 0;
+                        }
+
+                        if (count == 0 && index == 5) {
+                            alert("Đã tăng khả năng trúng card lên 90%!");
+                        }
+                        if (index == 5) {
+                            count += 1;
+                            index = 0;
+                        }
+
+                        if (count == 3) {
+                            alert("Có tin người vcl!");
+                        }
+                    });
+                </script>
+                <script type="text/javascript" src="/js/newyear.js"></script>
+            @endsection

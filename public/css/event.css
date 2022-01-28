@@ -141,7 +141,7 @@ button:focus {
     position: fixed;
     /* Stay in place */
     z-index: 100;
-    padding-top: 8em;
+    padding-top: 5em;
     width: 100%;
     /* Full width */
     height: 100%;
@@ -154,7 +154,7 @@ button:focus {
 }
 
 .e-modal-content-que {
-    width: 500px;
+    width: 25%;
     border-radius: 20px;
     height: auto;
     margin: auto;
@@ -218,58 +218,6 @@ button:focus {
 /* Style event-menu */
 
 
-/* Rule */
-
-.e-modal-rule {
-    display: none;
-    /* Hidden by default */
-    position: absolute;
-    /* Stay in place */
-    z-index: 5;
-    left: 10em;
-    top: 0em;
-    width: 20em;
-    height: 40em;
-    overflow: visible;
-}
-
-
-/* Modal Content */
-
-.e-modal-content-rule {
-    background-color: var(--trang);
-    border-radius: 10px;
-    width: 100%;
-    height: auto;
-    padding: 1em;
-}
-
-.e-modal-content-rule h1 {
-    padding: 2em 1em;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--do);
-}
-
-
-/* The Close Button */
-
-.e-close-rule {
-    color: var(--do);
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.e-close-rule:hover,
-.e-close-rule:focus {
-    color: var(--do);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
 /* ======================== */
 
 
@@ -325,61 +273,6 @@ button:focus {
 }
 
 
-/* ======================= */
-
-
-/* history */
-
-.e-modal-hi {
-    display: none;
-    /* Hidden by default */
-    position: absolute;
-    /* Stay in place */
-    z-index: 5;
-    left: 10em;
-    top: 0em;
-    width: 20em;
-    height: 40em;
-    overflow: visible;
-}
-
-
-/* Modal Content */
-
-.e-modal-content-hi {
-    background-color: var(--trang);
-    border-radius: 10px;
-    width: 100%;
-    height: auto;
-    padding: 1em;
-}
-
-.e-modal-content-hi h1 {
-    padding: 2em 1em;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--do);
-}
-
-
-/* The Close Button */
-
-.e-close-hi {
-    color: var(--do);
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.e-close-hi:hover,
-.e-close-hi:focus {
-    color: var(--do);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
 /* =========================== */
 
 .list-element {
@@ -388,15 +281,32 @@ button:focus {
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    align-items: center;
+    align-items: flex-start;
+    width: 18.5em;
 }
 
 .list-element p {
     padding: 0;
 }
 
-.list-element label {
+.check-mi {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pretty.p-default.p-curve.p-thick {
+    width: 0.5em;
+    margin-top: 0.2em;
+}
+
+.label-mi {
     color: var(--do);
+    height: auto;
+    font-weight: 400 !important;
 }
 
 
