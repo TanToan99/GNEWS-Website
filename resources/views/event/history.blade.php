@@ -21,11 +21,12 @@
                 <div class="history-content">
                     <h1>Ngày 01/02/2022</h1>
                     <ul>
-                        <li>Đã hái <span>quẻ số 1</span></li>
-                        <li>Đã hái <span>quẻ số 7</span></li>
-                        <li>Đã hái <span>thẻ nạp 50k</span></li>
-                        <li>Đã hái <span>thẻ nạp 100k</span></li>
-                        <li>Đã hái <span>quẻ số 11</span></li>
+                        @if(count($day1) == 0)
+                        <li>Chưa có dữ liệu</li>
+                        @endif
+                        @foreach ($day1 as $gift)
+                            <li>Đã hái <span>{{ $gift->gift->name }}</span></li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
@@ -33,11 +34,13 @@
                 <div class="history-content">
                     <h1>Ngày 01/02/2022</h1>
                     <ul>
-                        <li>Đã hái <span>quẻ số 1</span></li>
-                        <li>Đã hái <span>quẻ số 7</span></li>
-                        <li>Đã hái <span>thẻ nạp 50k</span></li>
-                        <li>Đã hái <span>thẻ nạp 100k</span></li>
-                        <li>Đã hái <span>quẻ số 11</span></li>
+                        
+                        @if(count($day2) == 0)
+                        <li>Chưa có dữ liệu</li>
+                        @endif
+                        @foreach ($day2 as $gift)
+                            <li>Đã hái <span>{{ $gift->gift->name }}</span></li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
@@ -45,11 +48,13 @@
                 <div class="history-content">
                     <h1>Ngày 01/02/2022</h1>
                     <ul>
-                        <li>Đã hái <span>quẻ số 1</span></li>
-                        <li>Đã hái <span>quẻ số 7</span></li>
-                        <li>Đã hái <span>thẻ nạp 50k</span></li>
-                        <li>Đã hái <span>thẻ nạp 100k</span></li>
-                        <li>Đã hái <span>quẻ số 11</span></li>
+                        
+                        @if(count($day3) == 0)
+                        <li>Chưa có dữ liệu</li>
+                        @endif
+                        @foreach ($day3 as $gift)
+                            <li>Đã hái <span>{{ $gift->gift->name }}</span></li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
