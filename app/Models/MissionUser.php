@@ -9,6 +9,6 @@ class MissionUser extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'gift_id', 'user_id', 'received', 'value'
+        'mission_id', 'user_id'
     ];
 }

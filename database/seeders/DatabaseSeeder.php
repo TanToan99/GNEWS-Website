@@ -37,5 +37,6 @@ class DatabaseSeeder extends Seeder
         MissionType::firstOrCreate(['name' => MissionType::MISSION_INVITE]);
         MissionType::firstOrCreate(['name' => MissionType::MISSION_LIKE]);
         MissionType::firstOrCreate(['name' => MissionType::MISSION_COMMENT]);
+        MissionType::firstOrCreate(['name' => MissionType::MISSION_LINKFB]);
     }
 }

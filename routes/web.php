@@ -39,6 +39,8 @@ Route::group(['middleware' => 'auth'], function(){
     Route::post('messages', 'ChatsController@sendMessage'); //todo: fix dont save chat
     
     Route::post("/gifts/random","GiftController@random")->name('random');
+    Route::post("/gifts/result","GiftController@result")->name('result');
     
     Route::get('/event/history','HistoryController@index')->name('history');
 });
+Route::get('/cron/mission','Cron\MissionController@index');

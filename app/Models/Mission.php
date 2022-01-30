@@ -12,4 +12,8 @@ class Mission extends Model
     protected $fillable = [
         'name','mission_id','require','times', 'day'
     ];
+
+    public function users(){
+        return $this->hasMany(MissionUser::class);
+    }
 }

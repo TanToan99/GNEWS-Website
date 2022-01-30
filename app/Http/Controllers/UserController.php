@@ -72,7 +72,8 @@ class UserController extends Controller
             return redirect()->back()->with(['class' => 'danger', 'message' => "Email invalid"]);
         $user->invited_id = $inviter->id;
         $user->save();
-        //todo: check mission daily
+        $inviter->invite_count = $inviter->invite_count + 1;
+        $inviter->save();
         return redirect()->back()->with(['class' => 'success', 'message' => "Add success"]);
     }
 }

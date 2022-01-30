@@ -79,6 +79,11 @@
                             </div>
                         </div>
                     @endif
+                    
+                    <div class="info-object">
+                        <p class="info-element">Bạn đã mời:</p>
+                        <p class="info-user">{{ $user->invite_count }} người bạn</p>
+                    </div>
 
                 </div>
             </div>

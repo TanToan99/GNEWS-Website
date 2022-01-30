@@ -31,7 +31,7 @@ class ChatsController extends Controller
      */
     public function fetchMessages()
     {
-        return Message::with('user')->limit(10)->get();
+        return Message::with('user')->limit(4)->get();
     }
 
     /**

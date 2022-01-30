@@ -12,6 +12,7 @@ class MissionType extends Model
     const MISSION_LIKE = 'like';
     const MISSION_COMMENT = 'comment';
     const MISSION_INVITE = 'invite';
+    const MISSION_LINKFB = 'linkfb';
 
     protected $fillable = ['name'];
 }

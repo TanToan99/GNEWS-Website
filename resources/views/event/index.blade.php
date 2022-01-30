@@ -62,7 +62,7 @@
                                     <div class="list-element">
                                         <div class="check-mi">
                                             <div class="pretty p-default p-curve p-thick">
-                                                <input type="checkbox" checked onclick="return false;" />
+                                                <input type="checkbox"  {{ (in_array($mission->id,$missionDone)) ? 'checked' : ''}} onclick="return false;"/>
                                                 <div class="state p-danger-o">
                                                     <label></label>
                                                 </div>

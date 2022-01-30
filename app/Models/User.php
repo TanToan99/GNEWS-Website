@@ -25,7 +25,9 @@ class User extends Authenticatable
         'password',
         'provider',
         'provider_id',
-        'times'
+        'times',
+        'invite_id',
+        'invite_count',
     ];
 
     /**

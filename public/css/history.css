@@ -129,10 +129,78 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);
     /* Black w/ opacity */
+}
+
+.e-modal-card {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 45%;
+    top: 60%;
+    margin-left: -150px;
+    margin-top: -150px;
+    background-color: white;
+    z-index: 100;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.e-modal-card input[type=text],
+select {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.e-modal-card input[type=submit] {
+    width: 100%;
+    background-color: var(--cam);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.e-modal-card input[type=submit]:hover {
+    background-color: var(--cam);
+}
+
+.e-modal-card button {
+    background-color: var(--cam);
+    /* Green */
+    float: right;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 10px;
+}
+
+.e-modal-card-result {
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 45%;
+    top: 60%;
+    /* margin-left: -150px; */
+    margin-top: -150px;
+    background-color: white;
+    z-index: 100;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .e-modal-content-que {
@@ -199,7 +267,6 @@
     .history-bar {
         display: none;
     }
-
     .btn-back {
         width: 100%;
         padding: 1.5em 0.7em;
@@ -268,8 +335,6 @@
 }
 
 @media (max-width: 420px) {
-
-    
     .history-main {
         justify-content: flex-start;
         padding-left: 1em;
