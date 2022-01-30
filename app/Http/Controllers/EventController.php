@@ -17,7 +17,7 @@ class EventController extends Controller
         $currentDate = date('Y-m-d');
         $currentDate = date('Y-m-d', strtotime($currentDate));
         $startDate = date('Y-m-d', strtotime("02/01/2022"));
-        if ($currentDate < $startDate) {
+        if ($currentDate > $startDate) {
             return view('event.countdown');
         } else {
             
@@ -25,7 +25,7 @@ class EventController extends Controller
             if(auth()->user()){
                 $missionDone = Mission::whereHas('users', function($q){
                     $q->where('user_id', auth()->user()->id);
-                })->where('day', date('Y-m-d'))->pluck('mission_id')->toArray();
+                })->where('day', date('Y-m-d'))->pluck('id')->toArray();
             }else{
                 $missionDone = [];
             }

@@ -83,7 +83,7 @@
                                 <div class="list-mb">
                                     <div class="check-mi">
                                         <div class="pretty p-default p-curve p-thick">
-                                            <input type="checkbox" />
+                                            <input type="checkbox" {{ (in_array($mission->id,$missionDone)) ? 'checked' : ''}}  onclick="return false;"/>
                                             <div class="state p-danger-o">
                                                 <label></label>
                                             </div>
@@ -93,6 +93,7 @@
                                     <p>+{{ $mission->times }} Lượt</p>
                                 </div>
                             @endforeach
+                            <span style="color: var(--cam);font-size: 80%; font-weight: 500;">Nhiệm vụ sẽ được cập nhật mỗi 5p</span>
                         </div>
                     </div>
                 </div>

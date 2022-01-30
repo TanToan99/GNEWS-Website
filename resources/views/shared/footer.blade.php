@@ -3,7 +3,7 @@
     <div class="footer">
         <div class="copyright">
             <p>
-                © 2022 - Greenwich Newspaper Club <br /> Câu lạc bộ báo chí thuộc Đại học Greenwich Việt Nam - CS Đà
+                © 2022 - Greenwich Newspaper Club <br /> Câu lạc bộ báo chí và truyền thông thuộc Greenwich Việt Nam - CS Đà
                 Nẵng
             </p>
             <div class="social-icon">

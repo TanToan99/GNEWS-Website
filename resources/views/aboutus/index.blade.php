@@ -18,10 +18,10 @@
                 <h1>FASTER "</h1>
             </div>
             <div class="about-intro">
-                <p><span>GNews Club</span> là <span>Câu Lạc Bộ Truyền thông</span> của trường Đại học Greenwich Việt Nam - cơ sở Đà Nẵng.</p>
+                <p><span>GNews Club</span> là <span>Câu Lạc Bộ Truyền thông</span> thuộc Greenwich Việt Nam - cơ sở Đà Nẵng.</p>
             </div>
             <div class="about-descr">
-                <p>Với sứ mệnh truyền thông đại chúng, GNews luôn nỗ lực cập nhật nhanh chóng và chính xác những tin tức liên quan đến Đại học Greenwich Việt Nam tại cơ sở Đà Nẵng, trong những năm gần đây, GNews đã phát triển và mở rộng <span>phạm vi toàn quốc</span> để đăng tải trang thông tin trên các cơ sở của Đại học Greenwich Việt Nam.<br><br>Ngoài việc được công nhận là Câu lạc bộ xuất sắc qua mỗi học kỳ, GNews đã thu về <span>nhiều thành tích</span> từ các cuộc thi đa dạng quy mô và hình thức, cùng <span>hợp tác</span> với các CLB và đơn vị khác để tổ chức các sự kiện lớn nhỏ tại Thành phố Đà Nẵng. </p>
+                <p>Với sứ mệnh truyền thông đại chúng, GNews luôn nỗ lực cập nhật nhanh chóng và chính xác những tin tức liên quan đến Greenwich Việt Nam tại cơ sở Đà Nẵng, trong những năm gần đây, GNews đã phát triển và mở rộng <span>phạm vi toàn quốc</span> để đăng tải trang thông tin trên các cơ sở của Đại học Greenwich Việt Nam.<br><br>Ngoài việc được công nhận là Câu lạc bộ xuất sắc qua mỗi học kỳ, GNews đã thu về <span>nhiều thành tích</span> từ các cuộc thi đa dạng quy mô và hình thức, cùng <span>hợp tác</span> với các CLB và đơn vị khác để tổ chức các sự kiện lớn nhỏ tại Thành phố Đà Nẵng. </p>
             </div>
         </div>
     </section>

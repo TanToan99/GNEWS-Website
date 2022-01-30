@@ -12,8 +12,8 @@ class GiftController extends Controller
     public function random(Request $request)
     {
         $user = \Auth::user();
-        $timeStart = date('H:i:s', strtotime("6 PM"));
-        $timeEnd = date('H:i:s', strtotime("11:59 PM"));
+        $timeStart = date('H:i:s', strtotime("1 PM"));
+        $timeEnd = date('H:i:s', strtotime("11 PM"));
         if (!(date('H:i:s') > $timeStart && date('H:i:s') < $timeEnd)) {
             return response()->json(['error' => 1, 'message' => 'Chưa đến thời gian hái lộc 20-21h!']);
         }

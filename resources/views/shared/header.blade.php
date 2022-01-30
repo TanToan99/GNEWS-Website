@@ -26,18 +26,18 @@
                 <div class="nav-btn">
                     <div class="nav-search">
                         <div class="search-box">
-                            <button class="btn-search">
-                                <i class="fas fa-search"></i>
-                            </button>
                             <form class="search-box" method="post" action="{{ route('posts.search') }}">
                             @csrf
                             <input type="text" class="input-search" name="keysearch" placeholder="Type to search..." />
+                            
+                            <button class="btn-search">
+                                <i class="fas fa-search"></i>
+                            </button>
                             </form>
                         </div>
                     </div>
                     @guest
-                        <a href="{{ URL::to('auth/google') }}" class="button-btn-2"><i class="fab fa-google"></i>Sign
-                            In</a>
+                        <a href="{{ URL::to('auth/google') }}" class="button-btn-2"><i class="fab fa-google"></i>Sign with FPT email</a>
                     @else
                         <div class="user-dropdown">
                             <img onclick="userFunction()" class="user-img" src="{{ auth()->user()->avatar }}" />
@@ -60,7 +60,7 @@
             <div><i onclick="myFunction()" class="dropbtn fas fa-bars"></i></div>
             <div id="myDropdown" class="dropdown-content">
                 @guest
-                    <a href="{{ URL::to('auth/google') }}"><i class="fab fa-google"></i>Sign In with Google</a>
+                    <a href="{{ URL::to('auth/google') }}"><i class="fab fa-google"></i>Sign with FPT email</a>
                     @endif
                     <a href="{{ route('home') }}"><i class="fas fa-home"></i>Home</a>
                     <a href="{{ route('posts') }}"><i class="fas fa-newspaper"></i>News</a>

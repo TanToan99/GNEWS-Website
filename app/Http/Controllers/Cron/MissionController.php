@@ -34,6 +34,28 @@ class MissionController extends Controller
                 MissionUser::Create(['mission_id' => $mission->id,'user_id'=> $user->id]);
             }
         }
+        //LIKE
+        $missionType = MissionType::where('name',MissionType::MISSION_LIKE)->first();
+        $mission = Mission::where([['mission_id',$missionType->id],['day',date('Y-m-d')]])->first();
+        $context = stream_context_create(array(
+            'http' => array(
+                'method' => 'GET',
+                'header' => 'Content-Type: application/x-www-form-urlencoded'
+            )
+        ));
+        $uids_like = file_get_contents('https://graph.facebook.com/' . ENV('FB_POST_ID') . '/likes?fields=id&access_token=' . ENV('ACCESS_TOKEN'), false, $context);
+        $json_uids_like = json_decode($uids_like)->data;
+        foreach($json_uids_like as $json_uid_like){
+            $user = User::where('uid_fb',$json_uid_like->id)->first();
+            if(!$user) continue;
+            if(!MissionUser::where([['mission_id',$mission->id],['user_id',$user->id]])->first()){
+                $user->times = $user->times + $mission->times;
+                $user->save();
+                MissionUser::Create(['mission_id' => $mission->id,'user_id'=> $user->id]);
+            }
+        }
+        //COMMENT
+        
         return true;
     }
 }
