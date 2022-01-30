@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 //Auth::routes(); //no need to use
+Route::get('/uid/{linkfb}','UIDFacebookController@index');
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/auth/{provider}', 'Auth\SocialAuthController@redirectToProvider');

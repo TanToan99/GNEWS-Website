@@ -30,7 +30,7 @@
                         <div id="eModalQue" class="e-modal-que">
                             <div class="e-modal-content-que">
                                 <span id="close" class="e-close-que">&times;</span>
-                                <img src="/images/que-chuc/que-chuc-1.jpg" />
+                                <img id="img-que" src="/images/que-chuc/que-chuc-1.jpg" />
                             </div>
                         </div>
                     @endif

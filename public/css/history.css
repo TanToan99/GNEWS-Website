@@ -246,6 +246,9 @@ select {
 }
 
 @media (max-width: 1200px) {
+    .e-modal-content-que {
+        width: 70%;
+    }
     .history-bar {
         width: 90%;
     }

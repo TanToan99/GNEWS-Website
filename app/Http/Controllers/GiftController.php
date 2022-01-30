@@ -12,11 +12,11 @@ class GiftController extends Controller
     public function random(Request $request)
     {
         $user = \Auth::user();
-        $timeStart = date('H:i:s', strtotime("1 PM"));
-        $timeEnd = date('H:i:s', strtotime("11 PM"));
-        if (!(date('H:i:s') > $timeStart && date('H:i:s') < $timeEnd)) {
-            return response()->json(['error' => 1, 'message' => 'Chưa đến thời gian hái lộc 20-21h!']);
-        }
+        $timeStart = date('H:i:s', strtotime("8 PM"));
+        $timeEnd = date('H:i:s', strtotime("9 PM"));
+        //if (!(date('H:i:s') > $timeStart && date('H:i:s') < $timeEnd)) {
+        //    return response()->json(['error' => 1, 'message' => 'Chưa đến thời gian hái lộc 20-21h!']);
+        //}
         if ($user->times > 0) {
             $user->times = $user->times - 1;
             $user->save();

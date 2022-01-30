@@ -9,21 +9,21 @@ var span3 = document.getElementsByClassName("e-close-mb")[0];
 
 // When the user clicks the button, open the modal 
 btn3.onclick = function() {
-  modal3.style.display = "block";
-  modal4.style.display = "none"
-  modal1.style.display = "none"
+    modal3.style.display = "block";
+    modal4.style.display = "none"
+    modal1.style.display = "none"
 }
 
 // When the user clicks on <span> (x), close the modal
 span3.onclick = function() {
-  modal3.style.display = "none";
+    modal3.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal3) {
-    modal3.style.display = "none";
-  }
+    if (event.target == modal3) {
+        modal3.style.display = "none";
+    }
 }
 
 
@@ -38,24 +38,24 @@ var span4 = document.getElementsByClassName("e-close-chat")[0];
 
 // When the user clicks the button, open the modal 
 btn4.onclick = function() {
-  modal4.style.display = "block";
-  modal3.style.display = "none"
-  modal1.style.display = "none"
+    modal4.style.display = "block";
+    modal3.style.display = "none"
+    modal1.style.display = "none"
 }
 
 // When the user clicks on <span> (x), close the modal
 span4.onclick = function() {
-  modal4.style.display = "none";
+    modal4.style.display = "none";
 }
 
-console.log(span4.onclick(),span3.onclick());
+console.log(span4.onclick(), span3.onclick());
 
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal4) {
-    modal4.style.display = "none";
-  }
+    if (event.target == modal4) {
+        modal4.style.display = "none";
+    }
 }
 
 var modal1 = document.getElementById("eModalQue");
@@ -65,22 +65,44 @@ var btn1 = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
 var span1 = document.getElementsByClassName("e-close-que")[0];
+var imgQue = document.getElementById("img-que");
 
 // When the user clicks the button, open the modal 
 btn1.onclick = function() {
-  modal1.style.display = "block";
-  modal4.style.display = "none"
-  modal3.style.display = "none"
+    let token = $("meta[name='csrf-token']").attr("content");
+    $.post({
+        type: 'POST',
+        crossDomain: true,
+        url: '/gifts/random',
+        data: {
+            '_token': token
+        },
+        success: function(data) {
+            console.log(data);
+            if (data.error == 1) {
+                alert(data.message);
+            } else {
+                imgQue.src = data.img;
+                modal1.style.display = "block";
+                modal4.style.display = "none"
+                modal3.style.display = "none"
+                times.innerHTML = times.innerHTML - 1;
+            }
+        },
+        error: function(jqXHR, exception) {
+            console.log(jqXHR);
+        }
+    });
 }
 
 // When the user clicks on <span> (x), close the modal
 span1.onclick = function() {
-  modal1.style.display = "none";
+    modal1.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal2) {
-    modal1.style.display = "none";
-  }
+    if (event.target == modal2) {
+        modal1.style.display = "none";
+    }
 }
