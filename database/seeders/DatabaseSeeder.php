@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\CardType;
 use App\Models\GiftCategory;
 use Illuminate\Database\Seeder;
 use App\Models\Role;
@@ -34,9 +35,12 @@ class DatabaseSeeder extends Seeder
         
         GiftCategory::firstOrCreate(['name' => GiftCategory::GIFT_CARD]);
         GiftCategory::firstOrCreate(['name' => GiftCategory::GIFT_WISH]);*/
-        MissionType::firstOrCreate(['name' => MissionType::MISSION_INVITE]);
+        /*MissionType::firstOrCreate(['name' => MissionType::MISSION_INVITE]);
         MissionType::firstOrCreate(['name' => MissionType::MISSION_LIKE]);
         MissionType::firstOrCreate(['name' => MissionType::MISSION_COMMENT]);
-        MissionType::firstOrCreate(['name' => MissionType::MISSION_LINKFB]);
+        MissionType::firstOrCreate(['name' => MissionType::MISSION_LINKFB]);*/
+        CardType::firstOrCreate(['name' => CardType::C_MB]);
+        CardType::firstOrCreate(['name' => CardType::C_VT]);
+        CardType::firstOrCreate(['name' => CardType::C_VN]);
     }
 }

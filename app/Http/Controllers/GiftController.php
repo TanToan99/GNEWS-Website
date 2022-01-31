@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CardInfo;
+use App\Models\CardType;
 use App\Models\Gift;
 use App\Models\GiftCategory;
 use App\Models\GiftUser;
@@ -48,9 +50,17 @@ class GiftController extends Controller
                 case GiftCategory::GIFT_CARD:
                     if ($giftUser->value == NULL) {
                         if (isset($request->nhamang)) {
-                            $result_card = $this->buycard('VTT:10000:1');
-                            dd($result_card); //todo: waiting 
-                            return response()->json(['error' => 0, 'type' => 3, 'value' => $result_card]);
+                            //dd($request->nhamang);
+                            $card_type = CardType::where('name',strtolower($request->nhamang))->first()->id;
+                            $card_info = CardInfo::where([['card_id',$card_type],['used',false]])->first();
+                            if(!$card_info){
+                                return response()->json(['error' => 0, 'type' => 3, 'value' => "Có lỗi không xác định, thử lại sau"]);
+                            }
+                            $card_info->used = true;
+                            $card_info->save();
+                            $giftUser->value = $request->nhamang."\nSeri:".$card_info->seri.+"\nPin:".$card_info->pin;
+                            $giftUser->save();
+                            return response()->json(['error' => 0, 'type' => 3, 'value' => $giftUser->value]);
                         }
                         return response()->json(['error' => 0, 'type' => 2]);
                     }

@@ -22,7 +22,7 @@
             <span id="number" style="display: none"></span>
             <span id="idgift" style="display: none"></span>
             <label for="fname">Chọn nhà mạng</label>
-            <select name="card">
+            <select name="card" id="aioConceptName">
                 <option value="0">Viettel</option>
                 <option value="1">Mobifone</option>
                 <option value="2">Vinaphone</option>
@@ -154,16 +154,19 @@
     btnSubmit.onclick = function(){
         btnSubmit.innerHTML = "Đang xử lý";
         let token = $("meta[name='csrf-token']").attr("content");
+        var conceptName = $('#aioConceptName').find(":selected").text();
+        console.log(conceptName);
         $.post({
             type: 'POST',
             crossDomain: true,
             url: '/gifts/result',
             data: {
                 'id': number.innerHTML,
-                'nhamang': 1,
+                'nhamang': conceptName,
                 '_token': token
             },
             success: function(data) {
+                btnSubmit.innerHTML = "Submit";
                 if (data.error == 1) {
                     alert(data.message);
                 } else {
