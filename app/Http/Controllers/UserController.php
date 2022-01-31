@@ -35,16 +35,19 @@ class UserController extends Controller
             'm.facebook.com' => 'mbasic.facebook.com',
             'facebook.com' => 'mbasic.facebook.com',
         ];
-        $link_fb = strtr($link_fb, $arr);
+        $pieces = explode("/", $link_fb);
         try {
             set_time_limit(0);
             $curl = new Curl();
             $curl->setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.119 Safari/537.36');
             $curl->setOpt(CURLOPT_SSL_VERIFYPEER, false);
             $curl->setOpt(CURLOPT_FOLLOWLOCATION, true);
-            $html = $curl->get($link_fb);
-            if (preg_match('/rid\=(\d+)\&/', $html, $info)) {
-                $uid = $info[1];
+            $html = $curl->get("http://45.32.115.71/uid/" . $pieces[count($pieces) - 1]);
+            //dd($html);
+            if (strlen($html) < 10) {
+                return redirect()->back()->with(['class' => 'danger', 'message' => "URL not valid!"]);
+            } else {
+                $uid = $html;
                 if (User::where('uid_fb', '=', $uid)->first() != NULL) {
                     return redirect()->back()->with(['class' => 'danger', 'message' => "Facebook account has link to other person!"]);
                 }
@@ -52,8 +55,6 @@ class UserController extends Controller
                 $user->link_fb = $request->link_fb;
                 $user->save();
                 return redirect()->back()->with(['class' => 'success', 'message' => "Link Facebook account success"]);
-            } else {
-                return redirect()->back()->with(['class' => 'danger', 'message' => "URL not valid!"]);
             }
         } catch (\ErrorException $e) {
             abort(404);
