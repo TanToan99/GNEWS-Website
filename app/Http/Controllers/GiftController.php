@@ -58,7 +58,7 @@ class GiftController extends Controller
                             }
                             $card_info->used = true;
                             $card_info->save();
-                            $giftUser->value = $request->nhamang."\nSeri:".$card_info->seri.+"\nPin:".$card_info->pin;
+                            $giftUser->value = $request->nhamang."\nSeri:".$card_info->seri."\nPin:".$card_info->pin;
                             $giftUser->save();
                             return response()->json(['error' => 0, 'type' => 3, 'value' => $giftUser->value]);
                         }
