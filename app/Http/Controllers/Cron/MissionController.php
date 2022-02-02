@@ -51,6 +51,7 @@ class MissionController extends Controller
             ));
             $uids_like = file_get_contents('https://graph.facebook.com/' . ENV('FB_POST_ID') . '/likes?fields=id&access_token=' . ENV('ACCESS_TOKEN'), false, $context);
             $json_uids_like = json_decode($uids_like)->data;
+			dd($json_uids_like);
             foreach ($json_uids_like as $json_uid_like) {
                 $user = User::where('uid_fb', $json_uid_like->id)->first();
                 if (!$user) continue;
@@ -65,18 +66,9 @@ class MissionController extends Controller
 
         $missionType = MissionType::where('name', MissionType::MISSION_COMMENT)->first();
         $mission = Mission::where([['mission_id', $missionType->id], ['day', date('Y-m-d')]])->first();
-        //if ($mission) {
-            $context = stream_context_create(array(
-                'http' => array(
-                    'method' => 'GET',
-                    'header' => 'Content-Type: application/x-www-form-urlencoded'
-                )
-            ));
-            $uids_cmt = file_get_contents('https://graph.facebook.com/' . ENV('FB_POST_ID') . '/comments?limit=5000&fields=id&access_token=' . ENV('ACCESS_TOKEN'), false, $context);
-            $json_uids_cmt = json_decode($uids_cmt)->data;
-            foreach ($json_uids_cmt as $json_uid_cmt) {
-                $uid = explode("_", $json_uid_cmt->id)[1];
-                $user = User::where('uid_fb', $uid)->first();
+        if ($mission) {
+            $users = User::all();
+            foreach ($users as $user) {
                 if (!$user) continue;
                 if (!MissionUser::where([['mission_id', $mission->id], ['user_id', $user->id]])->first()) {
                     $user->times = $user->times + $mission->times;
@@ -84,7 +76,7 @@ class MissionController extends Controller
                     MissionUser::Create(['mission_id' => $mission->id, 'user_id' => $user->id]);
                 }
             }
-        //}
+        }
         return true;
     }
 }

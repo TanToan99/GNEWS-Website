@@ -16,9 +16,9 @@ class GiftController extends Controller
         $user = \Auth::user();
         $timeStart = date('H:i:s', strtotime("8 PM"));
         $timeEnd = date('H:i:s', strtotime("9 PM"));
-        //if (!(date('H:i:s') > $timeStart && date('H:i:s') < $timeEnd)) {
-        //    return response()->json(['error' => 1, 'message' => 'Chưa đến thời gian hái lộc 20-21h!']);
-        //}
+        if (!(date('H:i:s') > $timeStart && date('H:i:s') < $timeEnd)) {
+            return response()->json(['error' => 1, 'message' => 'Chưa đến thời gian hái lộc 20-21h!']);
+        }
         if ($user->times > 0) {
             $user->times = $user->times - 1;
             $user->save();
@@ -42,6 +42,9 @@ class GiftController extends Controller
     public function result(Request $request)
     {
         $giftUser = GiftUser::find($request->id);
+		if($giftUser->user_id != auth()->user()->id){
+			return abort(404);
+		}
         if (!$giftUser) {
             return response()->json(['error' => 1, 'message' => 'Error something']);
         } else {
@@ -51,8 +54,10 @@ class GiftController extends Controller
                     if ($giftUser->value == NULL) {
                         if (isset($request->nhamang)) {
                             //dd($request->nhamang);
+							$str = $giftUser->gift->name;
+							$str = preg_replace('/\D/', '', $str);
                             $card_type = CardType::where('name',strtolower($request->nhamang))->first()->id;
-                            $card_info = CardInfo::where([['card_id',$card_type],['used',false]])->first();
+                            $card_info = CardInfo::where([['card_id',$card_type],['used',false],['value',$str]])->first();
                             if(!$card_info){
                                 return response()->json(['error' => 0, 'type' => 3, 'value' => "Có lỗi không xác định, thử lại sau"]);
                             }

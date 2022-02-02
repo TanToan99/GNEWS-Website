@@ -72,7 +72,10 @@
                                         </div>
                                     </div>
                                 @endforeach
-                                <span style="color: var(--cam);font-size: 80%; font-weight: 500;">Nhiệm vụ sẽ được cập nhật mỗi 5p</span>
+                                <span style="color: var(--cam);font-size: 80%; font-weight: 500;">Nhiệm vụ sẽ được cập nhật mỗi 5p</span><br>
+							<span style="color: var(--cam);font-size: 80%; font-weight: 500;">Lưu ý: Liên kết facebook tại Menu->Profile</span><br>
+							<span style="color: var(--cam);font-size: 80%; font-weight: 500;">Chỉ tính like và thương thương bài viết</span><br>
+                                <a href="https://www.facebook.com/493344172159438" style="color: var(--cam);font-size: 80%; font-weight: 500;">Link: Bài viết Facebook</a>
                             </div>
                         </div>
                     </div>

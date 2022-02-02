@@ -63,7 +63,7 @@
             </div>
             <div class="history-block">
                 <div class="history-content">
-                    <h1>Ngày 01/02/2022</h1>
+                    <h1>Ngày 02/02/2022</h1>
                     <ul>
                         @if(count($day2) == 0)
                         <li>Chưa có dữ liệu</li>
@@ -76,7 +76,7 @@
             </div>
             <div class="history-block">
                 <div class="history-content">
-                    <h1>Ngày 01/02/2022</h1>
+                    <h1>Ngày 03/02/2022</h1>
                     <ul>
                         
                         @if(count($day3) == 0)

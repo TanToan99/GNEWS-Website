@@ -17,7 +17,7 @@ class EventController extends Controller
         $currentDate = date('Y-m-d');
         $currentDate = date('Y-m-d', strtotime($currentDate));
         $startDate = date('Y-m-d', strtotime("02/01/2022"));
-        if ($currentDate > $startDate) {
+        if ($currentDate < $startDate) {
             return view('event.countdown');
         } else {
             

@@ -24,9 +24,9 @@ class HistoryController extends Controller
     */
    public function index()
    {
-      $day1 = GiftUser::whereBetween('created_at', [date('2022-01-29'), date('2022-02-02')])->get();
-      $day2 = GiftUser::whereBetween('created_at', [date('2022-02-02'), date('2022-02-03')])->get();
-      $day3 = GiftUser::whereBetween('created_at', [date('2022-02-03'), date('2022-02-04')])->get();
+      $day1 = GiftUser::whereBetween('created_at', [date('2022-01-29'), date('2022-02-02')])->where('user_id',auth()->user()->id)->get();
+      $day2 = GiftUser::whereBetween('created_at', [date('2022-02-02'), date('2022-02-03')])->where('user_id',auth()->user()->id)->get();
+      $day3 = GiftUser::whereBetween('created_at', [date('2022-02-03'), date('2022-02-04')])->where('user_id',auth()->user()->id)->get();
       //dd($days1);
       return view('event.history',[
          'day1' => $day1,
